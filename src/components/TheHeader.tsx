@@ -11,24 +11,28 @@ import {
   ModelTrainingRounded,
   InfoRounded,
 } from "@mui/icons-material";
-import EcoCloud from "@/images/logoTurbo.png";
-import Image from "next/image";
+// import Image from "next/image";
 import { Button, Menu, MenuItem } from "@mui/material";
 import { projects } from "@/app/libs/data";
 
 export default function TheHeaderComponent() {
   const [navigation, setNavigation] = React.useState(false);
-
-  function handleNavigation() {
-    setNavigation(!navigation);
-  }
-
+  const [seletcted, setSeletcted] = React.useState(null);
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const openSubLinks = Boolean(anchorEl);
+
+  const handleNavigation = () => {
+    setNavigation(!navigation);
+  };
+
+  const handleSelected = () => {
+    setSeletcted(seletcted);
+  };
 
   const handleOpenSubLinks = (event: React.MouseEvent<HTMLButtonElement>) => {
     setAnchorEl(event.currentTarget);
   };
+
   const handleCloseSubLinks = () => {
     setAnchorEl(null);
   };
@@ -38,31 +42,33 @@ export default function TheHeaderComponent() {
       <nav className="h-[10vh] flex justify-between items-center p-4 ">
         <div className=" font-bold text-3xl text-amber-400 hover:text-amber-200">
           <Link href="/">
-            <Image
+            {/* <Image
               src={EcoCloud}
               className="w-28 h-10"
               title="Trang chủ"
               alt="logo_turbo_solutions"
-            />
+            /> */}
           </Link>
         </div>
 
         {/* navbar for PC */}
         <div className="hidden text-[1rem] lg:flex justify-between items-center ">
-          <Button href="/trang-chu" className="navLink">
+          <Button href="/home" className="navLink" onClick={handleSelected}>
             trang chủ
           </Button>
-          <Button href="/gioi-thieu" className=" navLink active">
+
+          <Button href="/gioi-thieu" className="navLink">
             giới thiệu
           </Button>
 
           <Button
             onClick={handleOpenSubLinks}
             endIcon={<KeyboardArrowDownRounded />}
-            className="navLink py-3"
+            className="navLink"
           >
-            dịch vụ
+            dự án
           </Button>
+
           <Menu
             id="projects"
             anchorEl={anchorEl}
@@ -77,9 +83,10 @@ export default function TheHeaderComponent() {
                   onClick={() => {
                     handleCloseSubLinks();
                     handleNavigation();
+                    handleSelected();
                   }}
                 >
-                  <Link href={project.url} className="navSubLink">
+                  <Link href={project.url} className="subLink">
                     {project.name}
                   </Link>
                 </MenuItem>
@@ -87,10 +94,15 @@ export default function TheHeaderComponent() {
             })}
           </Menu>
 
-          <Button href="/tin-tuc" className=" navLink ">
+          <Button
+            href="/tin-tuc"
+            className={seletcted ? `text-red-600` : `navLink`}
+            onClick={handleSelected}
+          >
             tin tức
           </Button>
-          <Button href="/lien-he" className=" navLink ">
+
+          <Button href="/lien-he" className="navLink" onClick={handleSelected}>
             liên hệ
           </Button>
         </div>
@@ -135,7 +147,7 @@ export default function TheHeaderComponent() {
                   <InfoRounded className="opacity-60" fontSize="small" />
                 }
                 href="/gioi-thieu"
-                className="navLink "
+                className="navLink"
               >
                 giới thiệu
               </Button>
@@ -148,12 +160,12 @@ export default function TheHeaderComponent() {
                   />
                 }
                 onClick={handleOpenSubLinks}
-                className="navLink "
+                className="navLink"
               >
-                dịch vụ
+                dự án
               </Button>
               <Menu
-                id="services"
+                id="projects"
                 anchorEl={anchorEl}
                 open={openSubLinks}
                 onClick={handleCloseSubLinks}
@@ -168,7 +180,7 @@ export default function TheHeaderComponent() {
                         handleNavigation();
                       }}
                     >
-                      <Link href={project.url} className="navSubLink">
+                      <Link href={project.url} className="subLink">
                         {project.name}
                       </Link>
                     </MenuItem>
@@ -183,8 +195,8 @@ export default function TheHeaderComponent() {
                     fontSize="small"
                   />
                 }
-                href="/lien-he"
-                className="navLink "
+                href="/contact"
+                className="navLink"
               >
                 liên hệ
               </Button>

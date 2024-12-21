@@ -57,3 +57,23 @@ body {
 .scrollable::-webkit-scrollbar {
   display: none;
 }
+
+.navLink {
+  text-transform: uppercase;
+  color: goldenrod;
+  margin: 0 1rem 0 1rem;
+}
+
+.subLink {
+  text-transform: capitalize;
+  color: goldenrod;
+  margin: 0 1rem 0 1rem;
+}
+
+.navLink:hover,
+.subLink:hover {
+  font-weight: 500;
+  border-bottom: 2px solid #4f94dd;
+  transition-duration: 2000ms;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
