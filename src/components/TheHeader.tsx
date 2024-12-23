@@ -14,6 +14,9 @@ import {
 // import Image from "next/image";
 import { Button, Menu, MenuItem } from "@mui/material";
 import { projects } from "@/app/libs/data";
+import Image from "next/image";
+import logo from "../app/assets/images/logo.png";
+import InputSearch from "./InputSearch";
 
 export default function TheHeaderComponent() {
   const [navigation, setNavigation] = React.useState(false);
@@ -42,29 +45,39 @@ export default function TheHeaderComponent() {
       <nav className="h-[10vh] flex justify-between items-center p-4 ">
         <div className=" font-bold text-3xl text-amber-400 hover:text-amber-200">
           <Link href="/">
-            {/* <Image
-              src={EcoCloud}
-              className="w-28 h-10"
+            <Image
+              src={logo}
+              className="w-24 h-24 text-amber-500"
               title="Trang chủ"
-              alt="logo_turbo_solutions"
-            /> */}
+              alt="logo"
+            />
           </Link>
         </div>
 
         {/* navbar for PC */}
         <div className="hidden text-[1rem] lg:flex justify-between items-center ">
-          <Button href="/home" className="navLink" onClick={handleSelected}>
+          <Button
+            href="/"
+            color="warning"
+            className="navLink px-[1rem] hover:ease-linear hover:duration-500"
+            onClick={handleSelected}
+          >
             trang chủ
           </Button>
 
-          <Button href="/gioi-thieu" className="navLink">
+          <Button
+            href="/gioi-thieu"
+            color="warning"
+            className="navLink px-[1rem]"
+          >
             giới thiệu
           </Button>
 
           <Button
+            color="warning"
             onClick={handleOpenSubLinks}
             endIcon={<KeyboardArrowDownRounded />}
-            className="navLink"
+            className="navLink px-[1rem]"
           >
             dự án
           </Button>
@@ -79,14 +92,14 @@ export default function TheHeaderComponent() {
             {projects.map((project) => {
               return (
                 <MenuItem
-                  key={project.url}
+                  key={project.projectUrl}
                   onClick={() => {
                     handleCloseSubLinks();
                     handleNavigation();
                     handleSelected();
                   }}
                 >
-                  <Link href={project.url} className="subLink">
+                  <Link href={project.projectUrl} className="subLink">
                     {project.name}
                   </Link>
                 </MenuItem>
@@ -96,15 +109,24 @@ export default function TheHeaderComponent() {
 
           <Button
             href="/tin-tuc"
-            className={seletcted ? `text-red-600` : `navLink`}
+            color="warning"
+            className={seletcted ? `text-red-600` : `navLink px-[1rem]`}
             onClick={handleSelected}
           >
             tin tức
           </Button>
 
-          <Button href="/lien-he" className="navLink" onClick={handleSelected}>
+          <Button
+            href="/lien-he"
+            color="warning"
+            className="navLink px-[1rem]"
+            onClick={handleSelected}
+          >
             liên hệ
           </Button>
+          <div className="hidden lg:block">
+            <InputSearch />
+          </div>
         </div>
 
         {/* Handle the menu icon */}
@@ -132,7 +154,7 @@ export default function TheHeaderComponent() {
         >
           {/* navbar links */}
           <ul className="text-center text-[1rem] fond-bold mt-6">
-            <li className="text-[1rem] flex flex-col justify-center items-start px-[25%]">
+            <li className="text-[1rem] flex flex-col justify-center items-start w-full mx-[35%] md:mx-[40%] lg:mx-0">
               <Button
                 startIcon={
                   <HomeRounded className="opacity-60" fontSize="small" />
@@ -174,13 +196,13 @@ export default function TheHeaderComponent() {
                 {projects.map((project) => {
                   return (
                     <MenuItem
-                      key={project.url}
+                      key={project.projectUrl}
                       onClick={() => {
                         handleCloseSubLinks();
                         handleNavigation();
                       }}
                     >
-                      <Link href={project.url} className="subLink">
+                      <Link href={project.projectUrl} className="subLink">
                         {project.name}
                       </Link>
                     </MenuItem>

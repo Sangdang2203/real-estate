@@ -41,12 +41,12 @@ body {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: #13911c;
 }
 
 * {
   scrollbar-width: thin;
-  scrollbar-color: #888 #f1f1f1;
+  scrollbar-color: #8f8f8f #f1f1f1;
 }
 
 .scrollable {
@@ -60,8 +60,7 @@ body {
 
 .navLink {
   text-transform: uppercase;
-  color: goldenrod;
-  margin: 0 1rem 0 1rem;
+  /* color: goldenrod; */
 }
 
 .subLink {
@@ -73,7 +72,22 @@ body {
 .navLink:hover,
 .subLink:hover {
   font-weight: 500;
-  border-bottom: 2px solid #4f94dd;
-  transition-duration: 2000ms;
+  border-bottom: 2px solid goldenrod;
+  transition-duration: 5000ms;
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
+
+.blinking-text {
+  font-size: 1.25rem;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1; /* Hiển thị chữ */
+  }
+  50% {
+    opacity: 0; /* Ẩn chữ */
+  }
 }

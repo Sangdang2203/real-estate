@@ -1,7 +1,20 @@
+import { projects } from "@/app/libs/data";
+import { Container, Typography } from "@mui/material";
+
 export default function CelestaGold() {
+  const project = projects.find((project) => project.projectUrl === "/");
+
   return (
-    <div>
-      <h1>Celesta Gold</h1>
-    </div>
+    <Container>
+      {project ? (
+        <h1 className="capitalize">{project.name}</h1>
+      ) : (
+        <div className="flex justify-center items-center">
+          <Typography variant="body2" className="capitalize">
+            đang cập nhật ...
+          </Typography>
+        </div>
+      )}
+    </Container>
   );
 }

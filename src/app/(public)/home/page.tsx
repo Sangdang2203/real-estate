@@ -1,71 +1,89 @@
 "use client";
 import * as React from "react";
-import Card from "@mui/material/Card";
-import CardHeader from "@mui/material/CardHeader";
-import CardMedia from "@mui/material/CardMedia";
-import CardContent from "@mui/material/CardContent";
-import CardActions from "@mui/material/CardActions";
-import Avatar from "@mui/material/Avatar";
-import Typography from "@mui/material/Typography";
-import { red } from "@mui/material/colors";
-import FavoriteIcon from "@mui/icons-material/Favorite";
-import ShareIcon from "@mui/icons-material/Share";
-import { IconButton } from "@mui/material";
+import Link from "next/link";
 import { projects } from "@/app/libs/data";
+import {
+  Avatar,
+  Card,
+  CardActions,
+  CardContent,
+  CardHeader,
+  IconButton,
+  Typography,
+} from "@mui/material";
+import Image from "next/image";
+import ShareIcon from "@mui/icons-material/Share";
+import ReadMoreIcon from "@mui/icons-material/ReadMore";
+import CarouselImages from "@/components/Carousel";
 
 export default function HomePage() {
+  const hotProjects = projects.filter((project) => project.type === "hot");
+
   return (
     <>
-      <section id="slideshow"></section>
+      <section id="slideshow">
+        <CarouselImages />
+      </section>
 
       <section
         id="projects"
-        className=" grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 overflow-auto"
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 overflow-auto"
       >
-        {projects.length > 0
-          ? projects.map((project) => (
-              <Card key={project.id}>
-                <CardHeader
-                  avatar={
-                    <Avatar
-                      sx={{
-                        bgcolor: red[500],
-                        textTransform: "lowercase",
-                      }}
-                      aria-label="recipe"
-                    >
-                      {project.name.slice(0, 1)}
-                    </Avatar>
-                  }
-                  title={project.name.toUpperCase()}
-                  subheader={project.location ? project.location : ""}
-                  sx={{
-                    color: "red",
-                  }}
-                />
-                <CardMedia
-                  component="img"
-                  height="194"
-                  image="/static/images/cards/paella.jpg"
-                  alt="Paella dish"
-                />
-                <CardContent>
-                  <Typography variant="body2" sx={{ color: "text.secondary" }}>
-                    {project.description}
-                  </Typography>
-                </CardContent>
-                <CardActions disableSpacing>
-                  <IconButton aria-label="add to favorites">
-                    <FavoriteIcon />
-                  </IconButton>
-                  <IconButton aria-label="share" href={project.url}>
-                    <ShareIcon />
-                  </IconButton>
-                </CardActions>
-              </Card>
-            ))
-          : ""}
+        {hotProjects.length > 0 &&
+          hotProjects.slice(0, 8).map((project) => (
+            <Card key={project.id}>
+              <CardHeader
+                avatar={
+                  <Avatar className="bg-red-500 uppercase">
+                    {project.name.slice(0, 1).toUpperCase()}
+                  </Avatar>
+                }
+                title={project.name.toUpperCase()}
+                subheader={
+                  project.location ? project.location : "Đang cập nhật"
+                }
+                className="text-red-800"
+              />
+              <Image
+                alt={project.images[1]?.alt}
+                src={project.images ? project.images[0].src : ""}
+                width={500}
+                height={300}
+              />
+
+              <CardContent>
+                <Typography
+                  variant="body2"
+                  className="text-slate-500 text-wrap line-clamp-4 text-justify"
+                >
+                  {project.description ? (
+                    project.description
+                  ) : (
+                    <Typography variant="body2">Đang cập nhật</Typography>
+                  )}
+                </Typography>
+              </CardContent>
+              <CardActions disableSpacing>
+                <IconButton aria-label="share" href={project.projectUrl}>
+                  <ShareIcon />
+                </IconButton>
+                <IconButton
+                  aria-label="read more"
+                  title="Xem thêm"
+                  href={project.projectUrl}
+                >
+                  <ReadMoreIcon />
+                </IconButton>
+              </CardActions>
+            </Card>
+          ))}
+        {/* <ProjectPage /> */}
       </section>
+      <div className="flex justify-center mt-10">
+        <Link href="/projects" className="uppercase readMore text-center">
+          xem thêm...
+        </Link>
+      </div>
 
       <section id="contact"></section>
     </>
