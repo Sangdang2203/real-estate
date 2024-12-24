@@ -13,12 +13,13 @@ import {
 } from "@mui/icons-material";
 // import Image from "next/image";
 import { Button, Menu, MenuItem } from "@mui/material";
-import { projects } from "@/app/libs/data";
+import { projects } from "@/shared/libs/data";
 import Image from "next/image";
-import logo from "../app/assets/images/logo.png";
+import logo from "../shared/assets/images/logo.png";
 import InputSearch from "./InputSearch";
+import { InputSearchProps } from "@/app/interfaces";
 
-export default function TheHeaderComponent() {
+const TheHeaderComponent: React.FC<InputSearchProps> = ({ onSearch }) => {
   const [navigation, setNavigation] = React.useState(false);
   const [seletcted, setSeletcted] = React.useState(null);
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
@@ -42,7 +43,7 @@ export default function TheHeaderComponent() {
 
   return (
     <header className="w-full fixed top-0 left-0 z-30 bg-white shadow-lg">
-      <nav className="h-[10vh] flex justify-between items-center p-4 ">
+      <nav className="h-[10vh] flex justify-between items-center px-4 py-10 ">
         <div className=" font-bold text-3xl text-amber-400 hover:text-amber-200">
           <Link href="/">
             <Image
@@ -124,8 +125,8 @@ export default function TheHeaderComponent() {
           >
             liên hệ
           </Button>
-          <div className="hidden lg:block">
-            <InputSearch />
+          <div className="hidden mx-4 lg:block">
+            <InputSearch onSearch={onSearch} />
           </div>
         </div>
 
@@ -228,4 +229,6 @@ export default function TheHeaderComponent() {
       </nav>
     </header>
   );
-}
+};
+
+export default TheHeaderComponent;

@@ -1,7 +1,7 @@
-export const navprojectUrls = [
-  { id: 1, projectUrl: "home" },
-  { id: 2, projectUrl: "" },
-  { id: 3, projectUrl: "contact" },
+export const navLinks = [
+  { id: 1, path: "/" },
+  { id: 2, path: "/projects" },
+  { id: 3, path: "/contact" },
 ];
 
 export const projects = [
@@ -24,7 +24,7 @@ export const projects = [
         src: "/assets/images/haus_dalat/haus_dalat.png",
       },
     ],
-    projectUrl: "/eco-retreat-long-an",
+    projectUrl: "/projects/eco-retreat-long-an",
     details: {
       area: "2 hecta",
       block: 4,
@@ -52,7 +52,7 @@ export const projects = [
         src: "/assets/images/haus_dalat/haus_dalat.png",
       },
     ],
-    projectUrl: "/haus-dalat",
+    projectUrl: "projects/haus-dalat",
     details: {
       area: "2 hecta",
       block: 4,
@@ -80,7 +80,7 @@ export const projects = [
         src: "/assets/images/haus_dalat/haus_dalat.png",
       },
     ],
-    projectUrl: "/celesta-rise",
+    projectUrl: "/projects/celesta-rise",
     details: {
       area: "2 hecta",
       block: 4,
@@ -108,7 +108,7 @@ export const projects = [
         src: "/assets/images/haus_dalat/haus_dalat.png",
       },
     ],
-    projectUrl: "/celesta-heights",
+    projectUrl: "/projects/celesta-heights",
     details: {
       area: "2 hecta",
       block: 4,
@@ -136,7 +136,7 @@ export const projects = [
         src: "/assets/images/haus_dalat/haus_dalat.png",
       },
     ],
-    projectUrl: "/celesta-gold",
+    projectUrl: "/projects/celesta-gold",
     details: {
       area: "2 hecta",
       block: 4,
@@ -164,7 +164,7 @@ export const projects = [
         src: "/assets/images/haus_dalat/haus_dalat.png",
       },
     ],
-    projectUrl: "/eaton-park",
+    projectUrl: "/projects/eaton-park",
     details: {
       area: "2 hecta",
       block: 4,

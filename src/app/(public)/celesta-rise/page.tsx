@@ -1,6 +1,6 @@
 "use client";
 
-import { projects } from "@/app/libs/data";
+import { projects } from "@/shared/libs/data";
 import { Container, Typography } from "@mui/material";
 
 export default function CelestaRise() {

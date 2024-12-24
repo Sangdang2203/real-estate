@@ -1,5 +1,5 @@
 "use client";
-import UpIcon from "@/app/assets/icons/UpIcon";
+import UpIcon from "@/shared/assets/icons/UpIcon";
 import { IconButton } from "@mui/material";
 import React from "react";
 

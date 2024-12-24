@@ -1,7 +1,7 @@
 "use client";
 import * as React from "react";
 import Link from "next/link";
-import { projects } from "@/app/libs/data";
+import { projects } from "@/shared/libs/data";
 import {
   Avatar,
   Card,
@@ -15,22 +15,34 @@ import Image from "next/image";
 import ShareIcon from "@mui/icons-material/Share";
 import ReadMoreIcon from "@mui/icons-material/ReadMore";
 import CarouselImages from "@/components/Carousel";
+import TheHeaderComponent from "@/components/TheHeader";
+import { Project } from "@/app/interfaces";
+// import haus from "../../assets/images/haus_dalat/haus_dalat.png";
 
 export default function HomePage() {
-  const hotProjects = projects.filter((project) => project.type === "hot");
+  //const hotProjects = projects.filter((project) => project.type === "hot");
+  const [filteredProjects, setFilteredProjects] = React.useState(projects);
+  const handleSearch = (result: Project[]) => {
+    setFilteredProjects(result);
+  };
 
   return (
     <>
+      <TheHeaderComponent onSearch={handleSearch} />
+
+      {/* Carousel section */}
       <section id="slideshow">
         <CarouselImages />
+        {/* <Image src={haus} alt="haus" width={1920} height={800} /> */}
       </section>
 
+      {/* Projects section  */}
       <section
         id="projects"
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 overflow-auto"
+        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 overflow-auto"
       >
-        {hotProjects.length > 0 &&
-          hotProjects.slice(0, 8).map((project) => (
+        {filteredProjects.length > 0 ? (
+          filteredProjects.slice(0, 8).map((project) => (
             <Card key={project.id}>
               <CardHeader
                 avatar={
@@ -76,10 +88,17 @@ export default function HomePage() {
                 </IconButton>
               </CardActions>
             </Card>
-          ))}
+          ))
+        ) : (
+          <div className="grid grid-cols-1">
+            <Typography variant="body2" className="uppercase text-red-500">
+              không tìm thấy kết quả phù hợp
+            </Typography>
+          </div>
+        )}
         {/* <ProjectPage /> */}
       </section>
-      <div className="flex justify-center mt-10">
+      <div className="flex justify-center mt-10 z-0">
         <Link href="/projects" className="uppercase readMore text-center">
           xem thêm...
         </Link>
