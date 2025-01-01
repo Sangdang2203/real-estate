@@ -12,12 +12,13 @@ import {
   InfoRounded,
 } from "@mui/icons-material";
 // import Image from "next/image";
-import { Button, Menu, MenuItem } from "@mui/material";
+import { Button, IconButton, Menu, MenuItem } from "@mui/material";
 import { projects } from "@/shared/libs/data";
 import Image from "next/image";
 import logo from "../shared/assets/images/logo.png";
 import InputSearch from "./InputSearch";
 import { InputSearchProps } from "@/app/interfaces";
+import CallCenter from "@/shared/assets/icons/CallCenter";
 
 const TheHeaderComponent: React.FC<InputSearchProps> = ({ onSearch }) => {
   const [navigation, setNavigation] = React.useState(false);
@@ -48,7 +49,7 @@ const TheHeaderComponent: React.FC<InputSearchProps> = ({ onSearch }) => {
           <Link href="/">
             <Image
               src={logo}
-              className="w-24 h-24 text-amber-500"
+              className="hidden sm:block w-24 h-24 text-amber-500"
               title="Trang chủ"
               alt="logo"
             />
@@ -56,101 +57,117 @@ const TheHeaderComponent: React.FC<InputSearchProps> = ({ onSearch }) => {
         </div>
 
         {/* navbar for PC */}
-        <div className="hidden text-[1rem] lg:flex justify-between items-center ">
-          <Button
-            href="/"
-            color="warning"
-            className="navLink px-[1rem] hover:ease-linear hover:duration-500"
-            onClick={handleSelected}
-          >
-            trang chủ
-          </Button>
+        <div className="hidden text-[1rem] md:flex justify-between items-center ">
+          <div>
+            <Button
+              href="/"
+              color="warning"
+              className="navLink px-[1rem] hover:ease-linear hover:duration-500"
+              onClick={handleSelected}
+            >
+              trang chủ
+            </Button>
 
-          <Button
-            href="/gioi-thieu"
-            color="warning"
-            className="navLink px-[1rem]"
-          >
-            giới thiệu
-          </Button>
+            <Button
+              href="/gioi-thieu"
+              color="warning"
+              className="navLink px-[1rem]"
+            >
+              giới thiệu
+            </Button>
 
-          <Button
-            color="warning"
-            onClick={handleOpenSubLinks}
-            endIcon={<KeyboardArrowDownRounded />}
-            className="navLink px-[1rem]"
-          >
-            dự án
-          </Button>
+            <Button
+              color="warning"
+              onClick={handleOpenSubLinks}
+              endIcon={<KeyboardArrowDownRounded />}
+              className="navLink px-[1rem]"
+            >
+              dự án
+            </Button>
 
-          <Menu
-            id="projects"
-            anchorEl={anchorEl}
-            open={openSubLinks}
-            onClose={handleOpenSubLinks}
-            MenuListProps={{ "aria-labelledby": "basic-button" }}
-          >
-            {projects.map((project) => {
-              return (
-                <MenuItem
-                  key={project.projectUrl}
-                  onClick={() => {
-                    handleCloseSubLinks();
-                    handleNavigation();
-                    handleSelected();
-                  }}
-                >
-                  <Link href={project.projectUrl} className="subLink">
-                    {project.name}
-                  </Link>
-                </MenuItem>
-              );
-            })}
-          </Menu>
+            <Menu
+              id="projects"
+              anchorEl={anchorEl}
+              open={openSubLinks}
+              onClose={handleOpenSubLinks}
+              MenuListProps={{ "aria-labelledby": "basic-button" }}
+            >
+              {projects.map((project) => {
+                return (
+                  <MenuItem
+                    key={project.projectUrl}
+                    onClick={() => {
+                      handleCloseSubLinks();
+                      handleNavigation();
+                      handleSelected();
+                    }}
+                  >
+                    <Link href={project.projectUrl} className="subLink">
+                      {project.name}
+                    </Link>
+                  </MenuItem>
+                );
+              })}
+            </Menu>
 
-          <Button
-            href="/tin-tuc"
-            color="warning"
-            className={seletcted ? `text-red-600` : `navLink px-[1rem]`}
-            onClick={handleSelected}
-          >
-            tin tức
-          </Button>
+            <Button
+              href="/tin-tuc"
+              color="warning"
+              className={seletcted ? `text-red-600` : `navLink px-[1rem]`}
+              onClick={handleSelected}
+            >
+              tin tức
+            </Button>
 
-          <Button
-            href="/lien-he"
-            color="warning"
-            className="navLink px-[1rem]"
-            onClick={handleSelected}
-          >
-            liên hệ
-          </Button>
+            <Button
+              href="/lien-he"
+              color="warning"
+              className="navLink px-[1rem]"
+              onClick={handleSelected}
+            >
+              liên hệ
+            </Button>
+          </div>
+
           <div className="hidden mx-4 lg:block">
             <InputSearch onSearch={onSearch} />
+          </div>
+
+          <IconButton
+            title="Hotline: 0909.751.772"
+            href="tel:0909751772"
+            className="my-4 justify-end blinking-text text-green-600 hidden "
+          >
+            <CallCenter />
+          </IconButton>
+        </div>
+
+        {/* Smaller screen: IPAD, PHONE */}
+        <div className="flex justify-center items-center">
+          <div className="block mr-4 md:hidden">
+            <InputSearch onSearch={onSearch} />
+          </div>
+          <div className="flex md:hidden z-50" onClick={handleNavigation}>
+            {navigation ? (
+              <Close
+                fontSize="large"
+                className="text-[#002D62] hover:opacity-80 cursor-pointer z-50"
+              />
+            ) : (
+              <MenuRounded
+                fontSize="large"
+                className="text-[#002D62] hover:opacity-80 cursor-pointer z-50"
+              />
+            )}
           </div>
         </div>
 
         {/* Handle the menu icon */}
-        <div className="flex lg:hidden z-50" onClick={handleNavigation}>
-          {navigation ? (
-            <Close
-              fontSize="medium"
-              className="text-[#002D62] hover:opacity-80 cursor-pointer z-50"
-            />
-          ) : (
-            <MenuRounded
-              fontSize="large"
-              className="text-[#002D62] hover:opacity-80 cursor-pointer z-50"
-            />
-          )}
-        </div>
-
-        {/* Smaller screen: IPAD, PHONE */}
         <div
           className={
             navigation
-              ? "lg:hidden absolute top-[10vh] right-0 left-0 bottom-0 bg-slate-200 w-full h-screen ease-in duration-300"
-              : "lg:hidden absolute top-[10vh] right-0 left-[-100%] bottom-0 bg-slate-200 w-full h-screen ease-in duration-300"
+              ? "lg:hidden absolute top-[12vh] right-0 left-0 bottom-0 bg-slate-200 w-full h-screen ease-in duration-300"
+              : "lg:hidden absolute top-[12vh] right-0 left-[-100%] bottom-0 bg-slate-200 w-full h-screen ease-in duration-300"
           }
         >
           {/* navbar links */}

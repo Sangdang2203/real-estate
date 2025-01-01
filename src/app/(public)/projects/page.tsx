@@ -15,6 +15,8 @@ import { IconButton } from "@mui/material";
 import Image from "next/image";
 import { Project } from "@/app/interfaces";
 import TheHeaderComponent from "@/components/TheHeader";
+import no_image from "../../../shared/assets/images/no_image.jpg";
+import Link from "next/link";
 
 export default function ProjectPage() {
   const [filteredProjects, setFilteredProjects] = React.useState(projects);
@@ -26,11 +28,11 @@ export default function ProjectPage() {
     <>
       <TheHeaderComponent onSearch={handleSearch} />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 overflow-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
         {filteredProjects.length > 0 ? (
           filteredProjects.map((project) => {
             return (
-              <Card key={project.id}>
+              <Card key={project.id} className="">
                 <CardHeader
                   avatar={
                     <Avatar className="bg-red-500 uppercase">
@@ -39,16 +41,17 @@ export default function ProjectPage() {
                   }
                   title={project.name.toUpperCase()}
                   subheader={project.location ? project.location : ""}
-                  className="text-red-800"
+                  className="text-red-800 card shadow-sm"
                 />
-                <Image
-                  alt={project.images[1]?.alt}
-                  src={
-                    project.images[0].src || "/assets/images/unknown_photo.jpg"
-                  }
-                  width={500}
-                  height={300}
-                />
+                <Link href={project.projectUrl}>
+                  <Image
+                    src={no_image}
+                    alt={project.images[0]?.alt}
+                    width={500}
+                    height={300}
+                    title="Press to explore more information."
+                  />
+                </Link>
 
                 <CardContent>
                   <Typography
@@ -65,12 +68,16 @@ export default function ProjectPage() {
                   </Typography>
                 </CardContent>
                 <CardActions disableSpacing>
-                  <IconButton aria-label="share" href={project.projectUrl}>
+                  <IconButton
+                    title="Share"
+                    aria-label="share"
+                    href={project.projectUrl}
+                  >
                     <ShareIcon />
                   </IconButton>
                   <IconButton
                     aria-label="read more"
-                    title="Xem thêm"
+                    title="Read more"
                     href={project.projectUrl}
                   >
                     <ReadMoreIcon />

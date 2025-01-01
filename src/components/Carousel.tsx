@@ -1,32 +1,23 @@
 import PreviousStep from "@/shared/assets/icons/PreviousStep";
 import NextStep from "@/shared/assets/icons/SkipNext";
 import Image from "next/image";
-import haus from "../shared/assets/images/haus_dalat/haus_dalat_1.jpg";
+import haus_dalat from "../shared/assets/images/haus_dalat/haus_dalat.png";
 
 export default function CarouselImages() {
   return (
     <>
       <div
         id="default-carousel"
-        className="relative w-full z-50"
+        className="relative w-full md:mb-6"
         data-carousel="slide"
       >
-        <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
-          <div className="hidden duration-700 ease-in-out" data-carousel-item>
+        <div className="relative h-56 md:h-96 overflow-hidden rounded-lg md:max-h-[500px]">
+          <div className=" duration-700 ease-in-out" data-carousel-item>
             <Image
               layout="responsive"
-              src={haus}
+              src={haus_dalat}
               className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              alt="..."
-            />
-          </div>
-
-          <div className="hidden duration-700 ease-in-out" data-carousel-item>
-            <Image
-              layout="responsive"
-              src={haus}
-              className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              alt="..."
+              alt="haus"
             />
           </div>
         </div>

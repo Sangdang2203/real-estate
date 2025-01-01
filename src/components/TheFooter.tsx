@@ -8,9 +8,9 @@ import Link from "next/link";
 export default function TheFooterComponent() {
   return (
     <>
-      <div className="grid grid-cols-1 md:grid-cols-3 p-4 h-auto w-full text-white bg-slate-900">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-4 h-auto w-full text-white bg-slate-900">
         <div>
-          <Typography variant="body2" className="text-justify italic">
+          <Typography variant="caption" className="text-justify italic">
             &quot; Với 10 năm kinh nghiệm trong lĩnh vực bất động sản, chúng tôi
             chuyên cung cấp sản phẩm từ các Chủ Đầu Tư uy tín như Keppel Land,
             Capitaland, GamudaLand, Eco Group, Khang Điền, Nam Long,... Khách
@@ -29,7 +29,7 @@ export default function TheFooterComponent() {
         </Tooltip>
 
         {/* Social media */}
-        <Box className="flex justify-center">
+        <Box className="hidden lg:flex justify-center">
           <Tooltip title="Twitter">
             <Link href="/" target="_blank" className="mx-1">
               <Twitter className="text-white" />

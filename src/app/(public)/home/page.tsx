@@ -17,7 +17,8 @@ import ReadMoreIcon from "@mui/icons-material/ReadMore";
 import CarouselImages from "@/components/Carousel";
 import TheHeaderComponent from "@/components/TheHeader";
 import { Project } from "@/app/interfaces";
-// import haus from "../../assets/images/haus_dalat/haus_dalat.png";
+
+import no_image from "../../../shared/assets/images/no_image.jpg";
 
 export default function HomePage() {
   //const hotProjects = projects.filter((project) => project.type === "hot");
@@ -33,7 +34,6 @@ export default function HomePage() {
       {/* Carousel section */}
       <section id="slideshow">
         <CarouselImages />
-        {/* <Image src={haus} alt="haus" width={1920} height={800} /> */}
       </section>
 
       {/* Projects section  */}
@@ -43,7 +43,7 @@ export default function HomePage() {
       >
         {filteredProjects.length > 0 ? (
           filteredProjects.slice(0, 8).map((project) => (
-            <Card key={project.id}>
+            <Card key={project.id} className="">
               <CardHeader
                 avatar={
                   <Avatar className="bg-red-500 uppercase">
@@ -54,14 +54,17 @@ export default function HomePage() {
                 subheader={
                   project.location ? project.location : "Đang cập nhật"
                 }
-                className="text-red-800"
+                className="text-red-800 card shadow-sm"
               />
-              <Image
-                alt={project.images[1]?.alt}
-                src={project.images ? project.images[0].src : ""}
-                width={500}
-                height={300}
-              />
+              <Link href={project.projectUrl}>
+                <Image
+                  src={no_image}
+                  alt={project.images[0]?.alt}
+                  width={500}
+                  height={300}
+                  title="Press to explore more information."
+                />
+              </Link>
 
               <CardContent>
                 <Typography
@@ -76,12 +79,16 @@ export default function HomePage() {
                 </Typography>
               </CardContent>
               <CardActions disableSpacing>
-                <IconButton aria-label="share" href={project.projectUrl}>
+                <IconButton
+                  title="Share"
+                  aria-label="share"
+                  href={project.projectUrl}
+                >
                   <ShareIcon />
                 </IconButton>
                 <IconButton
                   aria-label="read more"
-                  title="Xem thêm"
+                  title="Read more"
                   href={project.projectUrl}
                 >
                   <ReadMoreIcon />
@@ -98,6 +105,7 @@ export default function HomePage() {
         )}
         {/* <ProjectPage /> */}
       </section>
+
       <div className="flex justify-center mt-10 z-0">
         <Link href="/projects" className="uppercase readMore text-center">
           xem thêm...

@@ -77,17 +77,35 @@ body {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
-
 .blinking-text {
   font-size: 1.25rem;
   animation: blink 1s infinite;
 }
 
 @keyframes blink {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 1; /* Hiển thị chữ */
   }
   50% {
     opacity: 0; /* Ẩn chữ */
   }
+}
+.card:hover {
+  z-index: 1;
+  transform: scale(1.05);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  cursor: pointer;
+}
+
+.swiper-wrapper {
+  width: 100%;
+  height: max-content !important;
+  padding-bottom: 64px !important;
+  -webkit-transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
+  position: relative;
+}
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+  background: #4f46e5 !important;
 }

@@ -21,7 +21,6 @@ const InputSearch: React.FC<InputSearchProps> = ({ onSearch }) => {
         project.name.toLowerCase().includes(nameSearch.toLowerCase()) ||
         project.location.toLowerCase().includes(nameSearch.toLowerCase())
     );
-    //console.log("Searching for:", filteredProjects);
     onSearch(filteredProjects);
   };
 
