@@ -37,7 +37,7 @@ export default function RootLayout({
           <TheHeaderComponent />
         </header>
 
-        <div className="mt-[15vh] mb-[40vh] py-4 h-auto mx-6 z-50 md:block md:mb-[15vh]">
+        <div className="mt-[12vh] mb-[40vh] py-4 h-auto mx-6 z-50 md:block md:mb-[15vh]">
           {children}
         </div>
 

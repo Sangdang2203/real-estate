@@ -4,6 +4,7 @@ import Link from "next/link";
 import { projects } from "@/shared/libs/data";
 import {
   Avatar,
+  Box,
   Card,
   CardActions,
   CardContent,
@@ -28,7 +29,7 @@ export default function HomePage() {
   };
 
   return (
-    <>
+    <Box>
       <TheHeaderComponent onSearch={handleSearch} />
 
       {/* Carousel section */}
@@ -39,7 +40,7 @@ export default function HomePage() {
       {/* Projects section  */}
       <section
         id="projects"
-        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 overflow-auto"
+        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 overflow-auto"
       >
         {filteredProjects.length > 0 ? (
           filteredProjects.slice(0, 8).map((project) => (
@@ -84,14 +85,14 @@ export default function HomePage() {
                   aria-label="share"
                   href={project.projectUrl}
                 >
-                  <ShareIcon />
+                  <ShareIcon fontSize="small" color="info" />
                 </IconButton>
                 <IconButton
                   aria-label="read more"
                   title="Read more"
                   href={project.projectUrl}
                 >
-                  <ReadMoreIcon />
+                  <ReadMoreIcon fontSize="medium" color="info" />
                 </IconButton>
               </CardActions>
             </Card>
@@ -106,13 +107,13 @@ export default function HomePage() {
         {/* <ProjectPage /> */}
       </section>
 
-      <div className="flex justify-center mt-10 z-0">
+      <div className="flex justify-center my-10 z-0">
         <Link href="/projects" className="uppercase readMore text-center">
           xem thêm...
         </Link>
       </div>
 
       <section id="contact"></section>
-    </>
+    </Box>
   );
 }

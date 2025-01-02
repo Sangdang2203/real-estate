@@ -21,6 +21,16 @@ export default function CarouselImages() {
             />
           </div>
         </div>
+        {/* <div className="relative h-56 md:h-96 overflow-hidden rounded-lg md:max-h-[500px]">
+          <div className=" duration-700 ease-in-out" data-carousel-item>
+            <Image
+              layout="responsive"
+              src={haus_dalat}
+              className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt="haus"
+            />
+          </div>
+        </div> */}
 
         <div className="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
           <button

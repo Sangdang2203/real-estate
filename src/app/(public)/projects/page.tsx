@@ -11,7 +11,7 @@ import Typography from "@mui/material/Typography";
 import ShareIcon from "@mui/icons-material/Share";
 import ReadMoreIcon from "@mui/icons-material/ReadMore";
 import { projects } from "@/shared/libs/data";
-import { IconButton } from "@mui/material";
+import { Box, IconButton } from "@mui/material";
 import Image from "next/image";
 import { Project } from "@/app/interfaces";
 import TheHeaderComponent from "@/components/TheHeader";
@@ -25,10 +25,10 @@ export default function ProjectPage() {
     setFilteredProjects(result);
   };
   return (
-    <>
+    <Box>
       <TheHeaderComponent onSearch={handleSearch} />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
         {filteredProjects.length > 0 ? (
           filteredProjects.map((project) => {
             return (
@@ -94,6 +94,6 @@ export default function ProjectPage() {
           </div>
         )}
       </div>
-    </>
+    </Box>
   );
 }

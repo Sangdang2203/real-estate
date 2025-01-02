@@ -72,9 +72,14 @@ body {
 .navLink:hover,
 .subLink:hover {
   font-weight: 500;
-  border-bottom: 2px solid goldenrod;
   transition-duration: 5000ms;
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  cursor: pointer;
+}
+.footer:hover {
+  color: goldenrod;
+  padding-left: 4px;
+  transition: transform 5000ms ease-in;
 }
 
 .blinking-text {
