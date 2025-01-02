@@ -2,7 +2,7 @@
 
 import CallCenter from "@/shared/assets/icons/CallCenter";
 import { projects } from "@/shared/libs/data";
-import { Facebook, LinkedIn, Twitter, YouTube } from "@mui/icons-material";
+// import { Facebook, LinkedIn, Twitter, YouTube } from "@mui/icons-material";
 import { Box, IconButton, Tooltip, Typography } from "@mui/material";
 import Link from "next/link";
 
@@ -10,7 +10,7 @@ export default function TheFooterComponent() {
   return (
     <div className="p-4 h-auto w-full text-white bg-slate-900">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-        <Typography variant="caption" className="text-justify italic">
+        <Typography className="text-justify italic text-[14px] md:text-[16px]">
           &quot; Với 10 năm kinh nghiệm trong lĩnh vực bất động sản, chúng tôi
           chuyên cung cấp sản phẩm từ các Chủ Đầu Tư uy tín như Keppel Land,
           Capitaland, GamudaLand, Eco Group, Khang Điền, Nam Long,... Khách hàng
@@ -58,11 +58,11 @@ export default function TheFooterComponent() {
             </Link>
           </Tooltip>
         </Box> */}
-        <Box sx={{ textAlign: "center" }}>FORM ĐANG KÝ</Box>
+        <div className="hidden md:block">FORM ĐANG KÝ</div>
 
-        <Box>
+        <div className="hidden md:block">
           {projects.length > 0 &&
-            projects.slice(0, 4).map((project) => {
+            projects.slice(0, 5).map((project) => {
               return (
                 <div key={project.id} className="footer">
                   <Link
@@ -70,12 +70,14 @@ export default function TheFooterComponent() {
                     key={project.id}
                     className="capitalize"
                   >
-                    <Typography variant="caption">{project.name}</Typography>
+                    <Typography className="text-[14px] md:text-[16px]">
+                      {project.name}
+                    </Typography>
                   </Link>
                 </div>
               );
             })}
-        </Box>
+        </div>
       </div>
       <div className="flex justify-center mt-4">
         <Typography variant="body2">

@@ -43,32 +43,26 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #13911c;
 }
-
 * {
   scrollbar-width: thin;
   scrollbar-color: #8f8f8f #f1f1f1;
 }
-
 .scrollable {
   overflow-y: scroll;
   overflow-x: hidden;
 }
-
 .scrollable::-webkit-scrollbar {
   display: none;
 }
-
 .navLink {
   text-transform: uppercase;
   /* color: goldenrod; */
 }
-
 .subLink {
   text-transform: capitalize;
   color: goldenrod;
   margin: 0 1rem 0 1rem;
 }
-
 .navLink:hover,
 .subLink:hover {
   font-weight: 500;
@@ -81,19 +75,17 @@ body {
   padding-left: 4px;
   transition: transform 5000ms ease-in;
 }
-
 .blinking-text {
   font-size: 1.25rem;
   animation: blink 1s infinite;
 }
-
 @keyframes blink {
   0%,
   100% {
-    opacity: 1; /* Hiển thị chữ */
+    opacity: 1;
   }
   50% {
-    opacity: 0; /* Ẩn chữ */
+    opacity: 0;
   }
 }
 .card:hover {
@@ -102,7 +94,6 @@ body {
   transition: transform 0.5s ease, opacity 0.5s ease;
   cursor: pointer;
 }
-
 .swiper-wrapper {
   width: 100%;
   height: max-content !important;
@@ -113,4 +104,8 @@ body {
 }
 .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
   background: #4f46e5 !important;
+}
+
+#grad {
+  background-image: linear-gradient(to right, #11053a, #11053a);
 }

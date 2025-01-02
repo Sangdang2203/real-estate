@@ -10,6 +10,7 @@ import {
   CardContent,
   CardHeader,
   IconButton,
+  Tooltip,
   Typography,
 } from "@mui/material";
 import Image from "next/image";
@@ -22,7 +23,6 @@ import { Project } from "@/app/interfaces";
 import no_image from "../../../shared/assets/images/no_image.jpg";
 
 export default function HomePage() {
-  //const hotProjects = projects.filter((project) => project.type === "hot");
   const [filteredProjects, setFilteredProjects] = React.useState(projects);
   const handleSearch = (result: Project[]) => {
     setFilteredProjects(result);
@@ -40,7 +40,7 @@ export default function HomePage() {
       {/* Projects section  */}
       <section
         id="projects"
-        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 overflow-auto"
+        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 "
       >
         {filteredProjects.length > 0 ? (
           filteredProjects.slice(0, 8).map((project) => (
@@ -68,16 +68,20 @@ export default function HomePage() {
               </Link>
 
               <CardContent>
-                <Typography
-                  variant="body2"
-                  className="text-slate-500 text-wrap line-clamp-4 text-justify"
-                >
-                  {project.description ? (
-                    project.description
-                  ) : (
-                    <Typography variant="body2">Đang cập nhật</Typography>
-                  )}
-                </Typography>
+                <Tooltip title={project.description}>
+                  <Typography
+                    variant="body2"
+                    className="text-slate-500 text-wrap line-clamp-4 text-justify"
+                  >
+                    {project.description ? (
+                      project.description
+                    ) : (
+                      <Typography variant="body2" className="md:mb-14">
+                        Đang cập nhật
+                      </Typography>
+                    )}
+                  </Typography>
+                </Tooltip>
               </CardContent>
               <CardActions disableSpacing>
                 <IconButton
@@ -104,7 +108,6 @@ export default function HomePage() {
             </Typography>
           </div>
         )}
-        {/* <ProjectPage /> */}
       </section>
 
       <div className="flex justify-center my-10 z-0">

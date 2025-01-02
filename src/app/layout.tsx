@@ -37,11 +37,9 @@ export default function RootLayout({
           <TheHeaderComponent />
         </header>
 
-        <div className="mt-[12vh] mb-[40vh] py-4 h-auto mx-6 z-50 md:block md:mb-[15vh]">
-          {children}
-        </div>
+        <div className="mt-[12vh] py-4 h-auto mx-6 z-50">{children}</div>
 
-        <footer className="fixed bottom-0 left-0 w-full z-50">
+        <footer className="w-full z-50">
           <div className="hidden md:block fixed bottom-[6rem] right-3">
             <Tooltip title="Back to top">
               <BackButton />

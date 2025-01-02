@@ -11,7 +11,7 @@ import Typography from "@mui/material/Typography";
 import ShareIcon from "@mui/icons-material/Share";
 import ReadMoreIcon from "@mui/icons-material/ReadMore";
 import { projects } from "@/shared/libs/data";
-import { Box, IconButton } from "@mui/material";
+import { Box, IconButton, Tooltip } from "@mui/material";
 import Image from "next/image";
 import { Project } from "@/app/interfaces";
 import TheHeaderComponent from "@/components/TheHeader";
@@ -28,7 +28,7 @@ export default function ProjectPage() {
     <Box>
       <TheHeaderComponent onSearch={handleSearch} />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
         {filteredProjects.length > 0 ? (
           filteredProjects.map((project) => {
             return (
@@ -54,18 +54,20 @@ export default function ProjectPage() {
                 </Link>
 
                 <CardContent>
-                  <Typography
-                    variant="body2"
-                    className="text-slate-500 text-wrap line-clamp-4 text-justify"
-                  >
-                    {project.description ? (
-                      project.description
-                    ) : (
-                      <Typography variant="body2" className="md:mb-14">
-                        Đang cập nhật
-                      </Typography>
-                    )}
-                  </Typography>
+                  <Tooltip title={project.description}>
+                    <Typography
+                      variant="body2"
+                      className="text-slate-500 text-wrap line-clamp-4 text-justify"
+                    >
+                      {project.description ? (
+                        project.description
+                      ) : (
+                        <Typography variant="body2" className="md:mb-14">
+                          Đang cập nhật
+                        </Typography>
+                      )}
+                    </Typography>
+                  </Tooltip>
                 </CardContent>
                 <CardActions disableSpacing>
                   <IconButton
@@ -73,14 +75,14 @@ export default function ProjectPage() {
                     aria-label="share"
                     href={project.projectUrl}
                   >
-                    <ShareIcon />
+                    <ShareIcon fontSize="medium" color="info" />
                   </IconButton>
                   <IconButton
                     aria-label="read more"
                     title="Read more"
                     href={project.projectUrl}
                   >
-                    <ReadMoreIcon />
+                    <ReadMoreIcon fontSize="medium" color="info" />
                   </IconButton>
                 </CardActions>
               </Card>
