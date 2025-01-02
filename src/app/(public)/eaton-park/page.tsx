@@ -4,7 +4,6 @@ import React from "react";
 import { projects } from "@/shared/libs/data";
 import { Typography } from "@mui/material";
 import Image from "next/image";
-import eaton_park from "../../../shared/assets/images/eaton_park/landscape.jpg";
 import model_housing from "../../../shared/assets/images/eaton_park/model_housing.jpg";
 import banner from "../../../shared/assets/images/eaton_park/banner.jpg";
 import location from "../../../shared/assets/images/eaton_park/location.png";
@@ -29,11 +28,11 @@ export default function EatonPark() {
 
           {/* Giới thiệu dự án */}
           <section id="introdution" className="text-justify">
-            <Image
-              src={eaton_park}
+            {/* <Image
+              src={landscape}
               className="w-full h-full rounded-lg"
               alt="eaton park"
-            />
+            /> */}
             <Typography className="py-2 text-[14px] md:text-[16px]">
               <strong className="text-red-700 blinking-text">
                 Dự án Eaton Park
