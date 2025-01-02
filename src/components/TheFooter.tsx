@@ -2,8 +2,7 @@
 
 import CallCenter from "@/shared/assets/icons/CallCenter";
 import { projects } from "@/shared/libs/data";
-// import { Facebook, LinkedIn, Twitter, YouTube } from "@mui/icons-material";
-import { Box, IconButton, Tooltip, Typography } from "@mui/material";
+import { IconButton, Tooltip, Typography } from "@mui/material";
 import Link from "next/link";
 
 export default function TheFooterComponent() {
@@ -27,37 +26,6 @@ export default function TheFooterComponent() {
           </IconButton>
         </Tooltip>
 
-        {/* Social media */}
-        {/* <Box className="hidden lg:flex justify-center">
-          <Tooltip title="Twitter">
-            <Link href="/" target="_blank" className="mx-1">
-              <Twitter className="text-white" />
-            </Link>
-          </Tooltip>
-          <Tooltip title="Facebook">
-            <Link
-              href="https://www.facebook.com/ecocloud.vn"
-              target="_blank"
-              className="mx-1"
-            >
-              <Facebook color="primary" />
-            </Link>
-          </Tooltip>
-          <Tooltip title="Youtube">
-            <Link
-              href="https://www.youtube.com/@turbosolutions506"
-              target="_blank"
-              className="mx-1"
-            >
-              <YouTube color="error" />
-            </Link>
-          </Tooltip>
-          <Tooltip title="LinkedIn">
-            <Link href="/" target="_blank" className="mx-1">
-              <LinkedIn color="info" />
-            </Link>
-          </Tooltip>
-        </Box> */}
         <div className="hidden md:block">FORM ĐANG KÝ</div>
 
         <div className="hidden md:block">
