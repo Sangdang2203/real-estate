@@ -1,6 +1,5 @@
 "use client";
 
-import SideBar from "@/components/Drawer";
 import { projects } from "@/shared/libs/data";
 import { Container, Typography } from "@mui/material";
 
@@ -12,15 +11,7 @@ export default function HausDalat() {
   return (
     <Container>
       {project ? (
-        <div>
-          <div className="flex justify-end">
-            <SideBar />
-          </div>
-          <section id="introduction"></section>
-          <section id="location"></section>
-          <section id="facilities"></section>
-          <section id="layout"></section>
-        </div>
+        <h1 className="capitalize">{project.name}</h1>
       ) : (
         <div className="flex justify-center items-center">
           <Typography variant="body2" className="capitalize">

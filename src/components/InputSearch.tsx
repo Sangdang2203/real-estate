@@ -18,8 +18,8 @@ const InputSearch: React.FC<InputSearchProps> = ({ onSearch }) => {
     event.preventDefault();
     const filteredProjects = projects.filter(
       (project) =>
-        project.name.toLowerCase().includes(nameSearch.toLowerCase()) ||
-        project.location.toLowerCase().includes(nameSearch.toLowerCase())
+        project.name.toLowerCase().includes(nameSearch.toLowerCase().trim()) ||
+        project.location.toLowerCase().includes(nameSearch.toLowerCase().trim())
     );
     onSearch(filteredProjects);
   };

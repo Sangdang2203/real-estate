@@ -21,7 +21,7 @@ export default function EatonPark() {
 
   return (
     <div className="md:mx-[10%]">
-      {project ? (
+      {project !== null ? (
         <div className="mb-14">
           <div className="flex justify-end">
             <SideBar />

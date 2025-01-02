@@ -11,14 +11,12 @@ import {
   ModelTrainingRounded,
   InfoRounded,
 } from "@mui/icons-material";
-// import Image from "next/image";
-import { Button, IconButton, Menu, MenuItem } from "@mui/material";
+import { Button, Menu, MenuItem } from "@mui/material";
 import { projects } from "@/shared/libs/data";
 import Image from "next/image";
 import logo from "../shared/assets/images/logo.png";
 import InputSearch from "./InputSearch";
 import { InputSearchProps } from "@/app/interfaces";
-import CallCenter from "@/shared/assets/icons/CallCenter";
 
 const TheHeaderComponent: React.FC<InputSearchProps> = ({ onSearch }) => {
   const [navigation, setNavigation] = React.useState(false);
@@ -132,14 +130,6 @@ const TheHeaderComponent: React.FC<InputSearchProps> = ({ onSearch }) => {
           <div className="hidden mx-4 lg:block">
             <InputSearch onSearch={onSearch} />
           </div>
-
-          <IconButton
-            title="Hotline: 0909.751.772"
-            href="tel:0909751772"
-            className="my-4 justify-end blinking-text text-green-600 hidden "
-          >
-            <CallCenter />
-          </IconButton>
         </div>
 
         {/* Smaller screen: IPAD, PHONE */}

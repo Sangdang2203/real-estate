@@ -10,8 +10,8 @@ export default function EcoRetreat() {
 
   return (
     <Container>
-      {project ? (
-        <h1 className="capitalize">{project.name}</h1>
+      {project !== null ? (
+        <h1 className="capitalize">{project!.name}</h1>
       ) : (
         <div className="flex justify-center items-center">
           <Typography variant="body2" className="capitalize">

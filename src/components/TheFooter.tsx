@@ -1,15 +1,15 @@
 "use client";
 
-import CallCenter from "@/shared/assets/icons/CallCenter";
 import { projects } from "@/shared/libs/data";
-import { IconButton, Tooltip, Typography } from "@mui/material";
+import { Typography } from "@mui/material";
 import Link from "next/link";
+import ContactForm from "./ContactForm";
 
 export default function TheFooterComponent() {
   return (
     <div className="p-4 h-auto w-full text-white bg-slate-900">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-        <Typography className="text-justify italic text-[14px] md:text-[16px]">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6">
+        <Typography className="text-justify italic text-[14px] md:text-[16px] leading-loose">
           &quot; Với 10 năm kinh nghiệm trong lĩnh vực bất động sản, chúng tôi
           chuyên cung cấp sản phẩm từ các Chủ Đầu Tư uy tín như Keppel Land,
           Capitaland, GamudaLand, Eco Group, Khang Điền, Nam Long,... Khách hàng
@@ -17,18 +17,11 @@ export default function TheFooterComponent() {
           lợi cũng như là an cư lập nghiệp. &quot;
         </Typography>
 
-        <Tooltip title="Liên hệ tư vấn">
-          <IconButton
-            href="tel:0909751772"
-            className="my-4 flex justify-end blinking-text text-green-600 md:hidden"
-          >
-            <CallCenter />
-          </IconButton>
-        </Tooltip>
+        <div className="hidden lg:block">
+          <ContactForm />
+        </div>
 
-        <div className="hidden md:block">FORM ĐANG KÝ</div>
-
-        <div className="hidden md:block">
+        <div className="hidden lg:block">
           {projects.length > 0 &&
             projects.slice(0, 5).map((project) => {
               return (
