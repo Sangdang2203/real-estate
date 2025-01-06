@@ -8,7 +8,7 @@ import model_housing from "../../../shared/assets/images/eaton_park/model_housin
 import banner from "../../../shared/assets/images/eaton_park/banner.jpg";
 import location from "../../../shared/assets/images/eaton_park/location.png";
 import master_layout from "../../../shared/assets/images/eaton_park/master_layout.jpg";
-import alpin_layout from "../../../shared/assets/images/eaton_park/alpine.png";
+import alpine_layout from "../../../shared/assets/images/eaton_park/alpine.png";
 import forest_layout from "../../../shared/assets/images/eaton_park/forest.png";
 import master_landscape from "../../../shared/assets/images/eaton_park/master_landscape.jpg";
 import SideBar from "@/components/Drawer";
@@ -162,7 +162,7 @@ export default function EatonPark() {
               <div className="absolute inset-0 flex justify-center items-center ">
                 <div className="grid grid-cols-2 gap-0">
                   <Image
-                    src={alpin_layout}
+                    src={alpine_layout}
                     className="w-full h-[80%] z-10"
                     alt="alpine layout"
                   />
