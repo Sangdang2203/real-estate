@@ -14,7 +14,7 @@ export default function CelestaGold() {
       ) : (
         <div className="flex justify-center items-center">
           <Typography variant="body2" className="capitalize">
-            đang cập nhật ...
+            đang cập nhật ... aaa
           </Typography>
         </div>
       )}
