@@ -3,15 +3,13 @@ import PreviousStep from "@/shared/assets/icons/PreviousStep";
 import NextStep from "@/shared/assets/icons/SkipNext";
 import Image from "next/image";
 import haus_dalat from "../shared/assets/images/haus_dalat/haus_dalat.png";
-import eaton_park from "../shared/assets/images/eaton_park/master_landscape_1.jpg";
-import celesta_city from "../shared/assets/images/celesta/celesta_city.jpg";
+import eaton_park from "../shared/assets/images/eaton_park/banner.jpg";
 import ecoretreat_longan from "../shared/assets/images/eco_retreat/Ecoretreat_Longan_Landscape.jpg";
 
 const images = [
   { src: haus_dalat, alt: "haus dalat" },
   { src: ecoretreat_longan, alt: "eco retreat long na" },
   { src: eaton_park, alt: "eaton park" },
-  { src: celesta_city, alt: "celesta city by keppel land" },
 ];
 
 export default function CarouselImages() {
