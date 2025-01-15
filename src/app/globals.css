@@ -9,8 +9,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #ededed;
-    --foreground: #ededed;
+    --background: #ffffff;
+    --foreground: #ffffff;
   }
 }
 
@@ -23,6 +23,10 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
   color: #171717;
+}
+
+ul {
+  list-style-type: square;
 }
 
 ::-webkit-scrollbar {
@@ -56,19 +60,17 @@ body {
 }
 .navLink {
   text-transform: uppercase;
-  /* color: goldenrod; */
 }
 .subLink {
   text-transform: capitalize;
-  color: goldenrod;
+  color: forestgreen;
   margin: 0 1rem 0 1rem;
 }
 .navLink:hover,
 .subLink:hover {
-  font-weight: 500;
-  transition-duration: 5000ms;
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
   cursor: pointer;
+  color: rgb(84, 202, 84);
 }
 .footer:hover {
   color: goldenrod;

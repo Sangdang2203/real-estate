@@ -11,7 +11,7 @@ import {
   ModelTrainingRounded,
   InfoRounded,
 } from "@mui/icons-material";
-import { Button, Menu, MenuItem } from "@mui/material";
+import { Button, Menu, MenuItem, Typography } from "@mui/material";
 import { projects } from "@/shared/libs/data";
 import Image from "next/image";
 import logo from "../shared/assets/images/logo.png";
@@ -59,28 +59,34 @@ const TheHeaderComponent: React.FC<InputSearchProps> = ({ onSearch }) => {
           <div>
             <Button
               href="/"
-              color="warning"
+              color="success"
               className="navLink px-[1rem] hover:ease-linear hover:duration-500"
               onClick={handleSelected}
             >
-              trang chủ
+              <Typography variant="body1" className="font-semibold">
+                trang chủ
+              </Typography>
             </Button>
 
             <Button
               href="/gioi-thieu"
-              color="warning"
+              color="success"
               className="navLink px-[1rem]"
             >
-              giới thiệu
+              <Typography variant="body1" className="font-semibold">
+                giới thiệu
+              </Typography>
             </Button>
 
             <Button
-              color="warning"
+              color="success"
               onClick={handleOpenSubLinks}
               endIcon={<KeyboardArrowDownRounded />}
               className="navLink px-[1rem]"
             >
-              dự án
+              <Typography variant="body1" className="font-semibold">
+                dự án
+              </Typography>
             </Button>
 
             <Menu
@@ -110,20 +116,24 @@ const TheHeaderComponent: React.FC<InputSearchProps> = ({ onSearch }) => {
 
             <Button
               href="/tin-tuc"
-              color="warning"
+              color="success"
               className={seletcted ? `text-red-600` : `navLink px-[1rem]`}
               onClick={handleSelected}
             >
-              tin tức
+              <Typography variant="body1" className="font-semibold">
+                tin tức
+              </Typography>
             </Button>
 
             <Button
               href="/lien-he"
-              color="warning"
+              color="success"
               className="navLink px-[1rem]"
               onClick={handleSelected}
             >
-              liên hệ
+              <Typography variant="body1" className="font-semibold">
+                liên hệ
+              </Typography>
             </Button>
           </div>
 
@@ -156,8 +166,8 @@ const TheHeaderComponent: React.FC<InputSearchProps> = ({ onSearch }) => {
         <div
           className={
             navigation
-              ? "lg:hidden absolute top-[12vh] right-0 left-0 bottom-0 bg-slate-200 w-full h-screen ease-in duration-300"
-              : "lg:hidden absolute top-[12vh] right-0 left-[-100%] bottom-0 bg-slate-200 w-full h-screen ease-in duration-300"
+              ? "lg:hidden absolute top-[10vh] right-0 left-0 bottom-0 bg-slate-200 w-full h-screen ease-in duration-300"
+              : "lg:hidden absolute top-[10vh] right-0 left-[-100%] bottom-0 bg-slate-200 w-full h-screen ease-in duration-300"
           }
         >
           {/* navbar links */}
