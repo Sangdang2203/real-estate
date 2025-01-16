@@ -48,14 +48,14 @@ export default function HomePage() {
       {/* Projects section  */}
       <section id="projects">
         <div className="flex justify-center items-center mb-6">
-          <Divider className="w-1/3 text-[#dec4a7]" />
+          <Divider className="md:w-1/3 text-[#dec4a7]" />
           <Typography
             className="text-[#dec4a7] text-center uppercase leading-loose px-2"
             variant="h5"
           >
             quan tâm nhiều nhất
           </Typography>
-          <Divider className="w-1/3 text-[]" />
+          <Divider className="md:w-1/3 text-[]" />
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 ">
           {filteredProjects.length > 0 ? (
