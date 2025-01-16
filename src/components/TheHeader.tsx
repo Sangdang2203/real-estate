@@ -47,7 +47,7 @@ const TheHeaderComponent: React.FC<InputSearchProps> = ({ onSearch }) => {
           <Link href="/">
             <Image
               src={logo}
-              className="w-20 h-20 md:w-24 md:h-24 text-amber-500"
+              className="hidden w-24 md:h-24 md:block text-amber-500"
               title="Trang chủ"
               alt="logo"
             />
