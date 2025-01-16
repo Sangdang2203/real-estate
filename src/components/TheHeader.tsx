@@ -43,11 +43,11 @@ const TheHeaderComponent: React.FC<InputSearchProps> = ({ onSearch }) => {
   return (
     <header className="w-full fixed top-0 left-0 z-30 bg-white shadow-lg">
       <nav className="h-[10vh] flex justify-between items-center px-4 py-10 ">
-        <div className=" font-bold text-3xl text-amber-400 hover:text-amber-200">
+        <div className="font-bold text-3xl text-amber-400 hover:text-amber-200">
           <Link href="/">
             <Image
               src={logo}
-              className="hidden sm:block w-24 h-24 text-amber-500"
+              className="w-20 h-20 md:w-24 md:h-24 text-amber-500"
               title="Trang chủ"
               alt="logo"
             />
@@ -55,7 +55,7 @@ const TheHeaderComponent: React.FC<InputSearchProps> = ({ onSearch }) => {
         </div>
 
         {/* navbar for PC */}
-        <div className="hidden text-[1rem] md:flex justify-between items-center ">
+        <div className="hidden text-[1rem] md:flex justify-between items-center">
           <div>
             <Button
               href="/"
@@ -150,12 +150,12 @@ const TheHeaderComponent: React.FC<InputSearchProps> = ({ onSearch }) => {
           <div className="flex md:hidden z-50" onClick={handleNavigation}>
             {navigation ? (
               <Close
-                fontSize="large"
+                fontSize="medium"
                 className="text-[#002D62] hover:opacity-80 cursor-pointer z-50"
               />
             ) : (
               <MenuRounded
-                fontSize="large"
+                fontSize="medium"
                 className="text-[#002D62] hover:opacity-80 cursor-pointer z-50"
               />
             )}
@@ -174,18 +174,14 @@ const TheHeaderComponent: React.FC<InputSearchProps> = ({ onSearch }) => {
           <ul className="text-center text-[1rem] fond-bold mt-6">
             <li className="text-[1rem] flex flex-col justify-center items-start w-full mx-[35%] md:mx-[40%] lg:mx-0">
               <Button
-                startIcon={
-                  <HomeRounded className="opacity-60" fontSize="small" />
-                }
+                startIcon={<HomeRounded fontSize="small" color="primary" />}
                 href="/home"
                 className="navLink "
               >
                 trang chủ
               </Button>
               <Button
-                startIcon={
-                  <InfoRounded className="opacity-60" fontSize="small" />
-                }
+                startIcon={<InfoRounded fontSize="small" color="primary" />}
                 href="/gioi-thieu"
                 className="navLink"
               >
@@ -194,10 +190,7 @@ const TheHeaderComponent: React.FC<InputSearchProps> = ({ onSearch }) => {
 
               <Button
                 startIcon={
-                  <ModelTrainingRounded
-                    className="opacity-60"
-                    fontSize="small"
-                  />
+                  <ModelTrainingRounded fontSize="small" color="primary" />
                 }
                 onClick={handleOpenSubLinks}
                 className="navLink"
@@ -230,10 +223,7 @@ const TheHeaderComponent: React.FC<InputSearchProps> = ({ onSearch }) => {
 
               <Button
                 startIcon={
-                  <ContactPhoneRounded
-                    className="opacity-60"
-                    fontSize="small"
-                  />
+                  <ContactPhoneRounded fontSize="small" color="primary" />
                 }
                 href="/contact"
                 className="navLink"

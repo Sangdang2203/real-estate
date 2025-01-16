@@ -7,7 +7,7 @@ import ecopark from "../../../shared/assets/images/eco_retreat/Ecopark.jpg";
 import ecoretreat_longan from "../../../shared/assets/images/eco_retreat/Ecoretreat_Longan_Landscape.jpg";
 import location from "../../../shared/assets/images/eco_retreat/ecoretreat_longan_location.jpg";
 import facilities from "../../../shared/assets/images/eco_retreat/ecoretreat_longan_facilities.jpg";
-import SideBar from "@/components/Drawer";
+import SideBar from "@/components/SideBar";
 
 export default function EcoRetreat() {
   const project = projects.find(
@@ -24,7 +24,7 @@ export default function EcoRetreat() {
 
           {/* Giới thiệu dự án */}
           <section id="introdution" className="text-justify">
-            <Typography className="text-[14px] md:text-[16px]">
+            <Typography className="text-[13px] md:text-[16px]">
               <strong className="text-green-700">Ecopark</strong> là một tập
               đoàn đa ngành, tập trung vào việc phát triển bền vững và đa dạng
               hóa đầu tư trong các lĩnh vực như giáo dục, y tế, nông nghiệp
@@ -47,7 +47,7 @@ export default function EcoRetreat() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3 my-5">
               <Image className="rounded-lg" src={ecopark} alt="ecopark" />
-              <Typography className="text-[14px] md:text-[16px]">
+              <Typography className="text-[13px] md:text-[16px]">
                 Năm 2003, một nhóm nhà đầu tư, bằng tâm huyết và kinh nghiệm
                 thành công trên nhiều lĩnh vực kinh doanh đã quyết định thành
                 lập Công ty CP đầu tư và phát triển đô thị Việt Hưng (Vihajico).
@@ -69,7 +69,7 @@ export default function EcoRetreat() {
             </div>
 
             <div>
-              <Typography className="text-[14px] md:text-[16px]">
+              <Typography className="text-[13px] md:text-[16px]">
                 <strong>
                   Eco Retreat, nơi tâm hồn gia chủ tìm lại sự an nhiên giữa
                   không gian thiên nhiên xanh mát, cùng hương vị khoáng nóng
@@ -125,11 +125,11 @@ export default function EcoRetreat() {
               <div id="grad" className="p-4 rounded-t-lg opacity-95">
                 <Typography
                   variant="h5"
-                  className="text-[#dec4a7] uppercase leading-loose"
+                  className="text-[#dec4a7] py-2 uppercase leading-loose"
                 >
                   vị trí giao lộ hoàn kim
                 </Typography>
-                <Typography className="text-white text-justify  leading-loose text-[12px] md:text-[16px]">
+                <Typography className="text-white text-justify  leading-loose text-[13px] md:text-[16px]">
                   Nằm trên bờ sông Vàm Cỏ Đông thơ mộng, Tổ hợp dự án Eco
                   Retreat tỏa sáng như một viên ngọc bên dòng nước xanh mát. Chỉ
                   cách trung tâm thành phố Hồ Chí Minh 18Km, Eco Treat là nơi
@@ -148,7 +148,7 @@ export default function EcoRetreat() {
                 alt="ecoretreat long an location"
               />
 
-              <Typography className="py-4 text-[14px] md:text-[16px]">
+              <Typography className="py-4 text-[13px] md:text-[16px]">
                 Nằm ngay mặt tiền đường Mai Chí Thọ, chỉ cách trung tâm quận 1
                 với 15 phút di chuyển, Eaton Park sở hữu vị thế đắc địa bậc nhất
                 khu vực phường An Phú, trung tâm của quận 2 cũ, nay là TP Thủ
@@ -166,13 +166,13 @@ export default function EcoRetreat() {
           <section id="facilities" className="my-5">
             <Typography
               variant="h5"
-              className="text-[#dec4a7] uppercase text-center leading-loose"
+              className="text-[#dec4a7] py-2 uppercase text-center leading-loose"
             >
               chuỗi tiện ích đỉnh cao
             </Typography>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
               <div>
-                <Typography className="text-[14px] md:text-[16px]">
+                <Typography className="text-[13px] md:text-[16px]">
                   Eco Retreat dưới sự quản lý và điều hành của một thương hiệu
                   quản lý 5 sao quốc tế, không chỉ đơn thuần là một nơi ở. Eco
                   Retreat mang đến cho quý cư dân không gian sống phong cách
@@ -181,7 +181,7 @@ export default function EcoRetreat() {
                   xanh và không khí trong lành, tươi mới theo triết lý 5 chữ E
                   gồm:
                 </Typography>
-                <ul className="px-10 text-[14px] md:text-[16px]">
+                <ul className="px-10 text-[15px] md:text-[16px] py-2">
                   <li>Eco (Sinh thái)</li>
                   <li>Emotion (Cảm xúc) </li>
                   <li>Edu-entertainment (Giải trí – Giáo dục) </li>
@@ -202,7 +202,7 @@ export default function EcoRetreat() {
           <section id="payment">
             <Typography
               variant="h5"
-              className="text-[#dec4a7] uppercase text-center leading-loose"
+              className="text-[#dec4a7] py-2 uppercase text-center leading-loose"
             >
               thanh toán hấp dẫn
             </Typography>
@@ -215,7 +215,7 @@ export default function EcoRetreat() {
           <section id="layout" className="my-5">
             <Typography
               variant="h5"
-              className="text-[#dec4a7] uppercase text-center leading-loose"
+              className="text-[#dec4a7] py-2 uppercase text-center leading-loose"
             >
               mặt bằng thiết kế
             </Typography>

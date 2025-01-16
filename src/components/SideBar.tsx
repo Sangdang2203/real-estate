@@ -22,12 +22,36 @@ export default function SideBar() {
   };
 
   const sideBarItems = [
-    { title: "Giới thiệu", url: "#introduction", icon: <InfoIcon /> },
-    { title: "Vị trí", url: "#location", icon: <LocationOnIcon /> },
-    { title: "Tiện ích", url: "#facilities", icon: <ParkIcon /> },
-    { title: "Thanh toán", url: "#payment", icon: <PaymentIcon /> },
-    { title: "Mặt bằng & Thiết kế", url: "#layout", icon: <ApartmentIcon /> },
-    { title: "Liên hệ", url: "tel:0909751772", icon: <ContactPhoneIcon /> },
+    {
+      title: "Giới thiệu",
+      url: "#introduction",
+      icon: <InfoIcon color="primary" fontSize="small" />,
+    },
+    {
+      title: "Vị trí",
+      url: "#location",
+      icon: <LocationOnIcon color="primary" fontSize="small" />,
+    },
+    {
+      title: "Tiện ích",
+      url: "#facilities",
+      icon: <ParkIcon color="primary" fontSize="small" />,
+    },
+    {
+      title: "Thanh toán",
+      url: "#payment",
+      icon: <PaymentIcon color="primary" fontSize="small" />,
+    },
+    {
+      title: "Mặt bằng & Thiết kế",
+      url: "#layout",
+      icon: <ApartmentIcon color="primary" fontSize="small" />,
+    },
+    {
+      title: "Liên hệ",
+      url: "tel:0909751772",
+      icon: <ContactPhoneIcon color="primary" fontSize="small" />,
+    },
   ];
 
   const DrawerList = (
@@ -53,7 +77,7 @@ export default function SideBar() {
     <div>
       <IconButton onClick={toggleDrawer(true)}>
         <Tooltip title="Menu">
-          <MenuOpenIcon fontSize="large" color="info" />
+          <MenuOpenIcon fontSize="medium" color="primary" />
         </Tooltip>
       </IconButton>
       <Drawer open={open} onClose={toggleDrawer(false)}>

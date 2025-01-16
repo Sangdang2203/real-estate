@@ -6,6 +6,7 @@ export default function NextStep() {
         width={16}
         height={16}
         viewBox="0 0 24 24"
+        className="text-white"
       >
         <path
           fill="currentColor"

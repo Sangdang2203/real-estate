@@ -44,7 +44,7 @@ export default function CarouselImages() {
               <Image
                 layout="responsive"
                 src={image.src}
-                className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-md"
                 alt={image.alt}
               />
             </div>
@@ -66,22 +66,24 @@ export default function CarouselImages() {
 
         <button
           type="button"
+          title="Previous"
           className="z-0 absolute top-0 start-0 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
           onClick={prevSlide}
         >
           <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
-            <NextStep />
+            <PreviousStep />
             <span className="sr-only">Previous</span>
           </span>
         </button>
 
         <button
           type="button"
+          title="Next"
           className="z-0 absolute top-0 end-0 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
           onClick={nextSlide}
         >
           <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
-            <PreviousStep />
+            <NextStep />
             <span className="sr-only">Next</span>
           </span>
         </button>

@@ -11,7 +11,7 @@ import master_layout from "../../../shared/assets/images/eaton_park/master_layou
 import alpine_layout from "../../../shared/assets/images/eaton_park/alpine.png";
 import forest_layout from "../../../shared/assets/images/eaton_park/forest.png";
 import master_landscape from "../../../shared/assets/images/eaton_park/master_landscape.jpg";
-import SideBar from "@/components/Drawer";
+import SideBar from "@/components/SideBar";
 
 export default function EatonPark() {
   const project = projects.find(
@@ -64,8 +64,8 @@ export default function EatonPark() {
             <div className="flex-col justify-between">
               <div id="grad" className="p-4 rounded-t-lg opacity-95">
                 <Typography
-                  variant="h4"
-                  className="text-[#dec4a7] uppercase leading-loose"
+                  variant="h5"
+                  className="text-[#dec4a7] py-2 uppercase leading-loose"
                 >
                   vị trí trung tâm
                 </Typography>
@@ -107,8 +107,8 @@ export default function EatonPark() {
           {/* Tiện ích dự án */}
           <section id="facilities" className="my-5">
             <Typography
-              variant="h4"
-              className="text-[#dec4a7] uppercase text-center leading-loose"
+              variant="h5"
+              className="text-[#dec4a7] py-2 uppercase text-center leading-loose"
             >
               sống đẳng cấp
             </Typography>
@@ -122,8 +122,8 @@ export default function EatonPark() {
           {/* Thanh toán */}
           <section id="payment">
             <Typography
-              variant="h4"
-              className="text-[#dec4a7] uppercase text-center leading-loose"
+              variant="h5"
+              className="text-[#dec4a7] py-2 uppercase text-center leading-loose"
             >
               thanh toán hấp dẫn
             </Typography>
@@ -143,8 +143,8 @@ export default function EatonPark() {
           {/* Layout */}
           <section id="layout" className="my-5">
             <Typography
-              variant="h4"
-              className="text-[#dec4a7] uppercase text-center leading-loose"
+              variant="h5"
+              className="text-[#dec4a7] py-2 uppercase text-center leading-loose"
             >
               thiết kế căn hộ
             </Typography>

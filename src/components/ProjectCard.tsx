@@ -1,57 +1,113 @@
-// "use client";
+"use client";
 
-// import * as React from "react";
-// import Card from "@mui/material/Card";
-// import CardHeader from "@mui/material/CardHeader";
-// import CardContent from "@mui/material/CardContent";
-// import CardActions from "@mui/material/CardActions";
-// import Avatar from "@mui/material/Avatar";
-// import Typography from "@mui/material/Typography";
+import * as React from "react";
+import Card from "@mui/material/Card";
+import CardHeader from "@mui/material/CardHeader";
+import CardContent from "@mui/material/CardContent";
+import CardActions from "@mui/material/CardActions";
+import Avatar from "@mui/material/Avatar";
+import Typography from "@mui/material/Typography";
 
-// import FavoriteIcon from "@mui/icons-material/Favorite";
-// import ShareIcon from "@mui/icons-material/Share";
-// import { projects } from "@/app/libs/data";
-// import { IconButton, Container } from "@mui/material";
-// import Image from "next/image";
+import ShareIcon from "@mui/icons-material/Share";
+import ReadMoreIcon from "@mui/icons-material/ReadMore";
+import { projects } from "@/shared/libs/data";
+import { Box, IconButton, Tooltip } from "@mui/material";
+import Image from "next/image";
+import { Project } from "@/app/interfaces";
+import TheHeaderComponent from "@/components/TheHeader";
+import no_image from "../shared/assets/images/no_image.jpg";
+import Link from "next/link";
 
-// export default function ProjectCard() {
-//   return (
-//     <Container>
-//       {projects.length > 0 &&
-//         projects.map((project) => {
-//           return (
-//             <Card key={project.id}>
-//               <CardHeader
-//                 avatar={
-//                   <Avatar className="bg-red-500 uppercase">
-//                     {project.name.slice(0, 1).toUpperCase()}
-//                   </Avatar>
-//                 }
-//                 title={project.name.toUpperCase()}
-//                 subheader={project.location ? project.location : ""}
-//                 className="text-red-800"
-//               />
+export default function ProjectCard() {
+  const [filteredProjects, setFilteredProjects] = React.useState(projects);
 
-//               {/* <CardContent>
-//                 <Image
-//                   src={project.images[0].url}
-//                   alt={project.images[0].alt}
-//                 /> */}
-//                 <Typography variant="body2" sx={{ color: "text.secondary" }}>
-//                   {project.description}
-//                 </Typography>
-//               </CardContent>
-//               <CardActions disableSpacing>
-//                 <IconButton aria-label="add to favorites">
-//                   <FavoriteIcon />
-//                 </IconButton>
-//                 <IconButton aria-label="share" href={project.url}>
-//                   <ShareIcon />
-//                 </IconButton>
-//               </CardActions>
-//             </Card>
-//           );
-//         })}
-//     </Container>
-//   );
-// }
+  const handleSearch = (result: Project[]) => {
+    setFilteredProjects(result);
+  };
+
+  const handleShare = (url: string) => {
+    const zaloShareUrl = `https://zalo.me/share?link=${encodeURIComponent(
+      url
+    )}`;
+    window.open(zaloShareUrl, "_blank");
+  };
+  return (
+    <Box>
+      <TheHeaderComponent onSearch={handleSearch} />
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+        {filteredProjects.length > 0 ? (
+          filteredProjects.map((project) => {
+            return (
+              <Card key={project.id} className="hover:scale-105">
+                <CardHeader
+                  avatar={
+                    <Avatar className="bg-red-500 uppercase">
+                      {project.name.slice(0, 1).toUpperCase()}
+                    </Avatar>
+                  }
+                  title={project.name.toUpperCase()}
+                  subheader={project.location ? project.location : ""}
+                  className="text-red-800 title shadow-sm"
+                />
+
+                <CardContent className="grid grid-cols-1">
+                  <Link href={project.projectUrl}>
+                    <Image
+                      src={
+                        project.images.length > 0
+                          ? project.images[0].src
+                          : no_image
+                      }
+                      alt={project.images[0].alt}
+                      width={500}
+                      height={300}
+                      title="Press to explore more information."
+                      className="pb-3 max-h-[180px] md:max-h-[130px]"
+                    />
+                  </Link>
+                  <Tooltip title={project.description}>
+                    <Typography
+                      variant="body2"
+                      className="text-slate-500 text-wrap line-clamp-4 text-justify text-[14px]"
+                    >
+                      {project.description ? (
+                        project.description
+                      ) : (
+                        <Typography variant="body2" className="md:mb-14">
+                          Đang cập nhật
+                        </Typography>
+                      )}
+                    </Typography>
+                  </Tooltip>
+                </CardContent>
+                <CardActions disableSpacing>
+                  <IconButton
+                    title="Share"
+                    aria-label="share"
+                    onClick={() => handleShare(project.projectUrl)}
+                  >
+                    <ShareIcon fontSize="medium" color="info" />
+                  </IconButton>
+                  <IconButton
+                    aria-label="read more"
+                    title="Read more"
+                    href={project.projectUrl}
+                  >
+                    <ReadMoreIcon fontSize="medium" color="info" />
+                  </IconButton>
+                </CardActions>
+              </Card>
+            );
+          })
+        ) : (
+          <div className="grid grid-cols-1">
+            <Typography variant="body2" className="uppercase text-red-500">
+              không tìm thấy kết quả phù hợp
+            </Typography>
+          </div>
+        )}
+      </div>
+    </Box>
+  );
+}
