@@ -3,7 +3,7 @@ import PreviousStep from "@/shared/assets/icons/PreviousStep";
 import NextStep from "@/shared/assets/icons/SkipNext";
 import Image from "next/image";
 import haus_dalat from "../shared/assets/images/haus_dalat/haus_dalat.png";
-import eaton_park from "../shared/assets/images/eaton_park/banner.jpg";
+import eaton_park from "../shared/assets/images/eaton_park/eaton_park.webp";
 import ecoretreat_longan from "../shared/assets/images/eco_retreat/Ecoretreat_Longan_Landscape.jpg";
 
 const images = [
@@ -29,10 +29,10 @@ export default function CarouselImages() {
     <>
       <div
         id="default-carousel"
-        className="relative w-full md:mb-6"
+        className="relative w-full hidden md:block"
         data-carousel="slide"
       >
-        <div className="relative h-56 md:h-[600px] overflow-hidden rounded-lg md:max-h-[600px]">
+        <div className="relative md:min-h-[600px] overflow-hidden rounded-lg">
           {images.map((image, index) => (
             <div
               key={index}
