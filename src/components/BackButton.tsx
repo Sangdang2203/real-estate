@@ -24,10 +24,13 @@ export default function BackButton() {
     requestAnimationFrame(scrollStep);
   }
   return (
-    <>
-      <IconButton onClick={() => scrollToTop(200)}>
+    <div>
+      <IconButton
+        onClick={() => scrollToTop(200)}
+        className="bg-yellow-100 flex justify-center items-center"
+      >
         <UpIcon />
       </IconButton>
-    </>
+    </div>
   );
 }

@@ -1,12 +1,12 @@
 "use client";
 
+import Link from "next/link";
 import { projects } from "@/shared/libs/data";
 import { Typography } from "@mui/material";
-import Link from "next/link";
-import ContactForm from "./ContactForm";
 import ZaloIcon from "@/shared/assets/icons/ZaloIcon";
 import EmailIcon from "@/shared/assets/icons/EmailIcon";
 import LinkedIn from "@/shared/assets/icons/LinkedIn";
+import PopupComponent from "./Popup";
 
 export default function TheFooterComponent() {
   const icons = [
@@ -27,9 +27,9 @@ export default function TheFooterComponent() {
 
         <div className="md:flex flex-col justify-start items-center">
           <div className="hidden md:flex">
-            <ContactForm />
+            <PopupComponent />
           </div>
-          <div className="flex justify-center items-center mt-2">
+          <div className="flex justify-center items-center mt-4">
             {icons.length > 0 &&
               icons.map((item) => {
                 return (
@@ -38,13 +38,6 @@ export default function TheFooterComponent() {
                   </div>
                 );
               })}
-            {/* <div className="mx-2">
-              <LinkedIn />
-            </div>
-
-            <div className="mx-2">
-              <EmailIcon />
-            </div> */}
           </div>
         </div>
 

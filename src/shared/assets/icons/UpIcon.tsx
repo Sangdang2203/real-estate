@@ -3,10 +3,9 @@ export default function UpIcon() {
     <>
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="1em"
-        height="1em"
+        width="32"
+        height="32"
         viewBox="0 0 16 16"
-        className="text-black w-8 h-8 hover:text-yellow-500"
       >
         <path
           fill="currentColor"

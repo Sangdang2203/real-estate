@@ -86,7 +86,7 @@ export default function PopupComponent() {
             className="form"
             onSubmit={() => {
               handleSubmit(CreateContact);
-              // reset();
+              reset();
             }}
           >
             <p className="text-red-700 -mt-5">(*) Bắt buộc nhập thông tin</p>
@@ -105,7 +105,7 @@ export default function PopupComponent() {
                 })}
                 placeholder="(*) Họ và tên khách hàng | Doanh nghiệp"
                 type="text"
-                className="min-w-[280px] md:w-full"
+                className="min-w-[400px] md:w-full"
               />
             </label>
             <span className="text-red-700">{errors.name?.message}</span>
@@ -121,7 +121,7 @@ export default function PopupComponent() {
                 })}
                 placeholder="(*) Email"
                 type="email"
-                className="min-w-[280px] md:w-full"
+                className="min-w-[400px] md:w-full"
               />
             </label>
             <span className="text-red-700">{errors.email?.message}</span>
@@ -135,7 +135,7 @@ export default function PopupComponent() {
                     message: "Vui lòng nhập đủ 10 số.",
                   },
                 })}
-                className="min-w-[280px] md:w-full"
+                className="min-w-[400px] md:w-full"
                 placeholder="(*) Số điện thoại"
               />
             </label>
@@ -147,7 +147,7 @@ export default function PopupComponent() {
                 labelId="multiple-project-label"
                 id="multiple-project"
                 multiple
-                className="min-w-[280px] md:w-full"
+                className="min-w-[400px] md:w-full"
                 displayEmpty
                 value={project}
                 defaultValue={[""]}
@@ -178,13 +178,13 @@ export default function PopupComponent() {
             <label>
               <TextField
                 {...register("message")}
-                className="min-w-[280px] md:w-full mt-3"
+                className="min-w-[400px] md:w-full mt-3"
                 rows={5}
                 placeholder="Chúng tôi có thể giúp gì cho bạn ?"
               />
             </label>
 
-            <button className="submit w-[280px] min-w-[280px] md:w-full my-5 uppercase">
+            <button className="submit w-[280px] min-w-[400px] md:w-full my-5 uppercase">
               đăng ký
             </button>
           </form>

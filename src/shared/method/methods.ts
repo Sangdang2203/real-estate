@@ -7,6 +7,10 @@ export async function CreateContact(contact: CustomerMessage) {
       `https://sheets.googleapis.com/v4/spreadsheets/${sheetId}/values/Sheet1:append?valueInputOption=RAW&key=${apiKey}`,
       {
         method: "POST",
+        mode: "no-cors",
+        headers: {
+          "Content-Type": "application/json",
+        },
         body: JSON.stringify(contact),
       }
     );
