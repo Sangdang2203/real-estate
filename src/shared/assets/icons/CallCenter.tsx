@@ -5,7 +5,7 @@ export default function CallCenter() {
       width={30}
       height={30}
       viewBox="0 0 24 24"
-      className="text-white"
+      className="text-green-700"
     >
       <path
         fill="currentColor"
