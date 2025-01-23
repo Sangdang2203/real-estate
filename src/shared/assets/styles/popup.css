@@ -22,19 +22,6 @@
   font-size: 13px;
 }
 
-/* .fancy::before {
-  content: " ";
-  width: 1.5625rem;
-  height: 2px;
-  background: #fff;
-  top: 50%;
-  left: 1.5em;
-  position: absolute;
-  transform: translateY(-50%);
-  transform-origin: center;
-  transition: background 0.3s linear, width 0.3s linear;
-} */
-
 .fancy .text {
   font-size: 1.125em;
   line-height: 1.33333em;
@@ -124,7 +111,21 @@
   justify-content: center;
 }
 
-.message{
+
+
+.title::before {
+  width: 18px;
+  height: 18px;
+  background-color: royalblue;
+}
+
+.title::after {
+  width: 18px;
+  height: 18px;
+  animation: pulse 1s linear infinite;
+}
+
+.message {
   color: rgba(88, 87, 87, 0.822);
   font-size: 14px;
   text-align: center;
