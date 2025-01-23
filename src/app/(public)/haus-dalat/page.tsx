@@ -2,7 +2,7 @@
 
 import SideBar from "@/components/SideBar";
 import { projects } from "@/shared/libs/data";
-import { Container, Typography } from "@mui/material";
+import { Typography } from "@mui/material";
 import HausDalatProject from "./HausDalat";
 
 export default function Page() {
@@ -11,7 +11,7 @@ export default function Page() {
   );
 
   return (
-    <Container>
+    <>
       {project !== null ? (
         <div className="mb-14">
           <div className="flex justify-end">
@@ -26,6 +26,6 @@ export default function Page() {
           </Typography>
         </div>
       )}
-    </Container>
+    </>
   );
 }

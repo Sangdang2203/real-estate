@@ -40,7 +40,7 @@ export default function RootLayout({
           <TheHeaderComponent onSearch={() => {}} />
         </header>
 
-        <div className="mt-[12vh] py-4 h-auto mx-2 z-50 min-h-screen">
+        <div className="mt-[12vh] py-4 h-auto mx-6 z-50 min-h-screen">
           {children}
         </div>
 
