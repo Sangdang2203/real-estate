@@ -180,13 +180,12 @@ export default function PopupComponent() {
                 {...register("message")}
                 className="max-w-[400px] md:w-full mt-3"
                 rows={5}
+                fullWidth
                 placeholder="Chúng tôi có thể giúp gì cho bạn ?"
               />
             </label>
 
-            <button className="submit w-[280px] max-w-[400px] md:w-full my-5 uppercase">
-              đăng ký
-            </button>
+            <button className="submit w-full my-5 uppercase">đăng ký</button>
           </form>
         </DialogContent>
       </Dialog>
