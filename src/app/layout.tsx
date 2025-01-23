@@ -51,11 +51,11 @@ export default function RootLayout({
             </Tooltip>
           </div>
 
-          <div className="fixed right-2 bottom-2 md:hidden ">
+          <div className="fixed right-2 bottom-2 md:hidden">
             <Tooltip title="Liên hệ tư vấn">
               <IconButton
                 href="tel:0909751772"
-                className="my-4 flex justify-end blinking-text md:hidden"
+                className="my-4 bg-green-700 p-3 flex justify-end blinking-text md:hidden"
                 color="success"
               >
                 <CallCenter />
