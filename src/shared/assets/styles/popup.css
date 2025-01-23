@@ -105,7 +105,7 @@
 .form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  row-gap: 10px;
   background-color: #fff;
   position: relative;
 }
