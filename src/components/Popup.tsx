@@ -178,7 +178,7 @@ export default function PopupComponent() {
             <label>
               <TextField
                 {...register("message")}
-                className="max-w-[400px] md:w-full mt-3"
+                className="mt-3"
                 rows={5}
                 fullWidth
                 placeholder="Chúng tôi có thể giúp gì cho bạn ?"
