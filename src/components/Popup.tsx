@@ -105,7 +105,7 @@ export default function PopupComponent() {
                 })}
                 placeholder="(*) Họ và tên khách hàng | Doanh nghiệp"
                 type="text"
-                className="max-w-[400px] md:w-full"
+                fullWidth
               />
             </label>
             <span className="text-red-700">{errors.name?.message}</span>
@@ -121,7 +121,7 @@ export default function PopupComponent() {
                 })}
                 placeholder="(*) Email"
                 type="email"
-                className="max-w-[400px] md:w-full"
+                fullWidth
               />
             </label>
             <span className="text-red-700">{errors.email?.message}</span>
@@ -135,7 +135,7 @@ export default function PopupComponent() {
                     message: "Vui lòng nhập đủ 10 số.",
                   },
                 })}
-                className="max-w-[400px] md:w-full"
+                fullWidth
                 placeholder="(*) Số điện thoại"
               />
             </label>
@@ -147,7 +147,7 @@ export default function PopupComponent() {
                 labelId="multiple-project-label"
                 id="multiple-project"
                 multiple
-                className="max-w-[400px] md:w-full"
+                fullWidth
                 displayEmpty
                 value={project}
                 defaultValue={[""]}
