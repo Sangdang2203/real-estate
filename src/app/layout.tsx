@@ -7,7 +7,8 @@ import BackButton from "@/components/BackButton";
 import TheFooterComponent from "@/components/TheFooter";
 import React from "react";
 import "./globals.css";
-import "../shared/assets/styles/button.css";
+import "@/shared/assets/styles/popup.css";
+import "@/shared/assets/styles/button.css";
 import CallCenter from "@/shared/assets/icons/CallCenter";
 
 const geistSans = Geist({

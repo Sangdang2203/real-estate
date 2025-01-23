@@ -4,8 +4,16 @@ import { projects } from "@/shared/libs/data";
 import { Typography } from "@mui/material";
 import Link from "next/link";
 import ContactForm from "./ContactForm";
+import ZaloIcon from "@/shared/assets/icons/ZaloIcon";
+import EmailIcon from "@/shared/assets/icons/EmailIcon";
+import LinkedIn from "@/shared/assets/icons/LinkedIn";
 
 export default function TheFooterComponent() {
+  const icons = [
+    { id: 1, icon: <ZaloIcon /> },
+    { id: 2, icon: <LinkedIn /> },
+    { id: 3, icon: <EmailIcon /> },
+  ];
   return (
     <div className="p-4 h-auto w-full text-white bg-slate-900">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-6">
@@ -17,8 +25,27 @@ export default function TheFooterComponent() {
           lợi cũng như là an cư lập nghiệp. &quot;
         </Typography>
 
-        <div className="hidden lg:block">
-          <ContactForm />
+        <div className="md:flex flex-col justify-start items-center">
+          <div className="hidden md:flex">
+            <ContactForm />
+          </div>
+          <div className="flex justify-center items-center mt-2">
+            {icons.length > 0 &&
+              icons.map((item) => {
+                return (
+                  <div key={item.id} className="mx-2">
+                    {item.icon}
+                  </div>
+                );
+              })}
+            {/* <div className="mx-2">
+              <LinkedIn />
+            </div>
+
+            <div className="mx-2">
+              <EmailIcon />
+            </div> */}
+          </div>
         </div>
 
         <div className="hidden lg:grid lg:grid-cols-2 lg:gap-3">

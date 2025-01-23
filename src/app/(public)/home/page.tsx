@@ -57,7 +57,7 @@ export default function HomePage() {
           </Typography>
           <Divider className="md:w-1/3 text-[#dec4a7]" />
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
           {filteredProjects.length > 0 ? (
             filteredProjects.slice(0, 5).map((project) => (
               <Card key={project.id} className="hover:scale-105">
@@ -71,7 +71,7 @@ export default function HomePage() {
                   subheader={
                     project.location ? project.location : "Đang cập nhật"
                   }
-                  className="text-red-800 title shadow-sm bg-slate-200"
+                  className="text-red-800 shadow-sm bg-slate-200"
                 />
 
                 <CardContent className="grid grid-cols-1">

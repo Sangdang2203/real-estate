@@ -35,7 +35,7 @@ export default function ProjectCard() {
     <Box>
       <TheHeaderComponent onSearch={handleSearch} />
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
         {filteredProjects.length > 0 ? (
           filteredProjects.map((project) => {
             return (
@@ -48,7 +48,7 @@ export default function ProjectCard() {
                   }
                   title={project.name.toUpperCase()}
                   subheader={project.location ? project.location : ""}
-                  className="text-red-800 title shadow-sm"
+                  className="text-red-800 shadow-sm bg-slate-200"
                 />
 
                 <CardContent className="grid grid-cols-1">
