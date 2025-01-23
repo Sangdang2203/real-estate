@@ -105,8 +105,11 @@
 .form {
   display: flex;
   flex-direction: column;
-  row-gap: 10px;
+  gap: 10px;
+  min-width: 500px;
   background-color: #fff;
+  padding: 20px;
+  border-radius: 20px;
   position: relative;
 }
 
