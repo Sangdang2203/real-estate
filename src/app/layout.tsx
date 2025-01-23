@@ -55,7 +55,7 @@ export default function RootLayout({
             <Tooltip title="Liên hệ tư vấn">
               <IconButton
                 href="tel:0909751772"
-                className="my-4 bg-green-700 p-3 flex justify-end blinking-text md:hidden"
+                className="my-4 bg-slate-100 p-3 flex justify-end blinking-text md:hidden"
                 color="success"
               >
                 <CallCenter />

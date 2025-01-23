@@ -185,7 +185,7 @@ export default function PopupComponent() {
               />
             </label>
 
-            <button className="submit w-full my-5 uppercase">đăng ký</button>
+            <button className="submit my-5 uppercase">đăng ký</button>
           </form>
         </DialogContent>
       </Dialog>
