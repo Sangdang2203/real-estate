@@ -45,10 +45,8 @@ export default function RootLayout({
         </div>
 
         <footer className="w-full z-50">
-          <div className="hidden md:block fixed bottom-[6rem] right-3">
-            <Tooltip title="Back to top">
-              <BackButton />
-            </Tooltip>
+          <div className="fixed bottom-[1rem] left-3">
+            <BackButton />
           </div>
 
           <div className="fixed right-2 bottom-2 md:hidden">

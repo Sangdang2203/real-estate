@@ -1,6 +1,6 @@
 "use client";
 import UpIcon from "@/shared/assets/icons/UpIcon";
-import { IconButton } from "@mui/material";
+import { IconButton, Tooltip } from "@mui/material";
 import React from "react";
 
 export default function BackButton() {
@@ -25,12 +25,14 @@ export default function BackButton() {
   }
   return (
     <div>
-      <IconButton
-        onClick={() => scrollToTop(200)}
-        className="bg-yellow-100 flex justify-center items-center"
-      >
-        <UpIcon />
-      </IconButton>
+      <Tooltip title="Back to top">
+        <IconButton
+          onClick={() => scrollToTop(200)}
+          className="flex justify-center items-center"
+        >
+          <UpIcon />
+        </IconButton>
+      </Tooltip>
     </div>
   );
 }
