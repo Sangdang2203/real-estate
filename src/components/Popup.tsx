@@ -75,7 +75,9 @@ export default function PopupComponent() {
           />
         </Tooltip>
         <DialogTitle className="" id="alert-dialog-title">
-          <Typography className="title">Liên hệ với chúng tôi</Typography>
+          <Typography className="title text-[2rem]">
+            Liên hệ với chúng tôi
+          </Typography>
           <Typography className="message">
             Đăng ký nhận thông tin, thanh toán, chính sách giá tốt nhất.
           </Typography>

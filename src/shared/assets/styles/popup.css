@@ -93,15 +93,13 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  /* min-width: 500px; */
   background-color: #fff;
-  /* padding: 20px; */
   border-radius: 20px;
   position: relative;
 }
 
 .title {
-  font-size: 28px;
+  font-size: 2rem;
   color: royalblue;
   font-weight: 600;
   letter-spacing: -1px;
@@ -109,18 +107,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.title::before {
-  width: 2rem;
-  height: 2rem;
-  background-color: royalblue;
-}
-
-.title::after {
-  width: 2rem;
-  height: 2rem;
-  animation: pulse 1s linear infinite;
 }
 
 .message {
