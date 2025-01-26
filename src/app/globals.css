@@ -72,6 +72,8 @@ ul {
   cursor: pointer;
   color: rgb(84, 202, 84);
 }
+
+
 .footer:hover {
   color: goldenrod;
   padding-left: 4px;

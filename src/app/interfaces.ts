@@ -20,6 +20,7 @@ export interface CustomerMessage {
 export interface Project {
   id: number;
   name: string;
+  developer: string;
   type: string;
   description: string;
   location: string;

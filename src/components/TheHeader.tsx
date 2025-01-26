@@ -36,21 +36,20 @@ const TheHeaderComponent: React.FC<InputSearchProps> = ({ onSearch }) => {
   };
 
   return (
-    <header className="w-full fixed top-0 left-0 z-30 bg-white shadow-lg">
-      <nav className="h-[10vh] flex justify-between items-center px-4 py-10 ">
-        <div className="font-bold text-3xl text-amber-400 hover:text-amber-200">
-          <Link href="/">
-            <Image
-              src={logo}
-              className="hidden w-24 md:h-24 md:block text-amber-500"
-              title="Trang chủ"
-              alt="logo"
-            />
-          </Link>
-        </div>
-
+    <header className="w-full fixed flex justify-between items-center top-0 left-0 z-30 bg-white shadow-lg">
+      <div className="mx-2">
+        <Link href="/">
+          <Image
+            src={logo}
+            className="hidden w-24 md:h-24 md:block text-amber-500"
+            title="Trang chủ"
+            alt="logo"
+          />
+        </Link>
+      </div>
+      <nav className="h-[10vh] flex justify-end items-center mx-2 py-10 ">
         {/* navbar for PC */}
-        <div className="hidden text-[1rem] md:flex justify-between items-center">
+        <div className="hidden text-[1rem] md:flex items-center">
           <div>
             <Button
               href="/"
@@ -107,12 +106,6 @@ const TheHeaderComponent: React.FC<InputSearchProps> = ({ onSearch }) => {
               })}
             </Menu>
 
-            <Button href="/tin-tuc" color="success">
-              <Typography variant="body1" className="font-semibold">
-                tin tức
-              </Typography>
-            </Button>
-
             <Button
               href="/lien-he"
               color="success"
@@ -123,8 +116,7 @@ const TheHeaderComponent: React.FC<InputSearchProps> = ({ onSearch }) => {
               </Typography>
             </Button>
           </div>
-
-          <div className="hidden mx-4 lg:block">
+          <div className="hidden mx-4 lg:flex justify-end">
             <InputSearch onSearch={onSearch} />
           </div>
         </div>
@@ -153,8 +145,8 @@ const TheHeaderComponent: React.FC<InputSearchProps> = ({ onSearch }) => {
         <div
           className={
             navigation
-              ? "lg:hidden absolute top-[10vh] right-0 left-0 bottom-0 bg-slate-200 w-full h-screen ease-in duration-300"
-              : "lg:hidden absolute top-[10vh] right-0 left-[-100%] bottom-0 bg-slate-200 w-full h-screen ease-in duration-300"
+              ? "md:hidden absolute top-[10vh] right-0 left-0 bottom-0 bg-slate-200 w-full h-screen ease-in duration-300"
+              : "md:hidden absolute top-[10vh] right-0 left-[-100%] bottom-0 bg-slate-200 w-full h-screen ease-in duration-300"
           }
         >
           {/* navbar links */}

@@ -30,8 +30,7 @@ const EcoRetreatLongAnProject = () => {
           ></iframe>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 my-5">
-          <Image className="rounded-lg" src={ecopark} alt="ecopark" priority />
+        <div className="grid grid-cols-1 xl:grid-cols-2 gap-3 my-5">
           <Typography className="text-[13px] md:text-[16px]">
             Năm 2003, một nhóm nhà đầu tư, bằng tâm huyết và kinh nghiệm thành
             công trên nhiều lĩnh vực kinh doanh đã quyết định thành lập Công ty
@@ -50,6 +49,13 @@ const EcoRetreatLongAnProject = () => {
             xu hướng Bất động sản Xanh, mở rộng phát triển mô hình đô thị
             Ecopark trên địa bàn cả nước.
           </Typography>
+
+          <Image
+            className="rounded-lg w-full"
+            src={ecopark}
+            alt="ecopark"
+            priority
+          />
         </div>
 
         <div>

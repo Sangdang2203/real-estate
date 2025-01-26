@@ -18,11 +18,10 @@ export default function TheFooterComponent() {
     <div className="p-4 h-auto w-full text-white bg-slate-900">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-6">
         <Typography className="text-justify italic text-[14px] md:text-[16px] leading-loose">
-          &quot; Với 10 năm kinh nghiệm trong lĩnh vực bất động sản, chúng tôi
-          chuyên cung cấp sản phẩm từ các Chủ Đầu Tư uy tín như Keppel Land,
-          Capitaland, GamudaLand, Eco Group, Khang Điền, Nam Long,... Khách hàng
-          có thể an tâm tìm chọn cho mình những sản phẩm phù hợp để đầu tư sinh
-          lợi cũng như là an cư lập nghiệp. &quot;
+          &quot; Chúng tôi chuyên cung cấp sản phẩm từ các Chủ Đầu Tư uy tín như
+          Keppel Land, CapitaLand, Gamuda Land, Ecopark Group, Khang Điền, Nam
+          Long,... Khách hàng hoàn toàn an tâm tìm chọn cho mình những sản phẩm
+          phù hợp để đầu tư sinh lợi cũng như an cư lập nghiệp. &quot;
         </Typography>
 
         <div className="md:flex flex-col justify-start items-center">
@@ -50,7 +49,7 @@ export default function TheFooterComponent() {
                     <Link
                       href={project.projectUrl}
                       key={project.id}
-                      className="capitalize"
+                      className="capitalize leading-loose"
                     >
                       <Typography className="text-[14px] md:text-[16px]">
                         {project.name}
@@ -68,7 +67,7 @@ export default function TheFooterComponent() {
                     <Link
                       href={project.projectUrl}
                       key={project.id}
-                      className="capitalize"
+                      className="capitalize leading-loose"
                     >
                       <Typography className="text-[14px] md:text-[16px]">
                         {project.name}

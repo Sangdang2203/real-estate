@@ -1,7 +1,21 @@
-"use client";
-
 import { projects } from "@/shared/libs/data";
-import { Container, Typography } from "@mui/material";
+import { Typography } from "@mui/material";
+import { Metadata } from "next";
+import CelestaRiseProject from "./CelestaRise";
+import SideBar from "@/components/SideBar";
+
+export const metadata: Metadata = {
+  title: "Celesta Rise by Keppel Land",
+  keywords: [
+    "Celesta Rise",
+    "Keppel Land",
+    "Celesta city",
+    "Celesta",
+    "can ho celesta",
+    "căn hộ celesta",
+  ],
+  description: "Celesta Rise by Keppel Land",
+};
 
 export default function CelestaRise() {
   const project = projects.find(
@@ -9,9 +23,14 @@ export default function CelestaRise() {
   );
 
   return (
-    <Container>
+    <>
       {project !== null ? (
-        <h1 className="capitalize">{project!.name}</h1>
+        <div className="mb-14">
+          <div className="flex justify-end">
+            <SideBar />
+          </div>
+          <CelestaRiseProject />
+        </div>
       ) : (
         <div className="flex justify-center items-center">
           <Typography variant="body2" className="capitalize">
@@ -19,6 +38,6 @@ export default function CelestaRise() {
           </Typography>
         </div>
       )}
-    </Container>
+    </>
   );
 }

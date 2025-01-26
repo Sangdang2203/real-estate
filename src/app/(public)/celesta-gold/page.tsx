@@ -1,23 +1,44 @@
-"use client";
 import { projects } from "@/shared/libs/data";
-import { Container, Typography } from "@mui/material";
+import { Typography } from "@mui/material";
+import CelestaGoldProject from "./CelestaGold";
+import SideBar from "@/components/SideBar";
+import { Metadata } from "next";
 
-export default function CelestaGold() {
+export const metadata: Metadata = {
+  title: "Celesta Gold by Keppel Land",
+  keywords: [
+    "Celesta Gold",
+    "Keppel Land",
+    "Celesta city",
+    "Celesta",
+    "can ho celesta",
+    "căn hộ celesta",
+  ],
+  description: "Celesta Gold by Keppel Land",
+};
+
+export default function Page() {
   const project = projects.find(
     (project) => project.projectUrl === "/celesta-gold"
   );
 
   return (
-    <Container>
+    <>
       {project !== null ? (
-        <h1 className="capitalize">{project!.name}</h1>
+        <div className="mb-14">
+          <div className="flex justify-end">
+            <SideBar />
+          </div>
+
+          <CelestaGoldProject />
+        </div>
       ) : (
         <div className="flex justify-center items-center">
           <Typography variant="body2" className="capitalize">
-            đang cập nhật ... aaa
+            đang cập nhật ...
           </Typography>
         </div>
       )}
-    </Container>
+    </>
   );
 }

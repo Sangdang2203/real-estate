@@ -40,7 +40,7 @@ export default function HomePage() {
       <TheHeaderComponent onSearch={handleSearch} />
 
       {/* Carousel section */}
-      <section id="slideshow" className="">
+      <section id="slideshow" className="my-2">
         <CarouselImages />
       </section>
 
@@ -107,7 +107,7 @@ export default function HomePage() {
                   <IconButton
                     title="Share"
                     aria-label="share"
-                    onClick={() => handleShare(project.projectUrl)}
+                    onClick={() => handleShare(`${project.projectUrl}`)}
                   >
                     <ShareIcon fontSize="small" color="info" />
                   </IconButton>

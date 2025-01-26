@@ -13,7 +13,7 @@ import ContactPhoneIcon from "@mui/icons-material/ContactPhone";
 import PaymentIcon from "@mui/icons-material/Payment";
 import { Drawer, IconButton, Tooltip } from "@mui/material";
 import Link from "next/link";
-import MenuOpenIcon from "@mui/icons-material/MenuOpen";
+import SectionIcon from "@/shared/assets/icons/Section";
 
 export default function SideBar() {
   const [open, setOpen] = React.useState(false);
@@ -76,11 +76,12 @@ export default function SideBar() {
 
   return (
     <div>
-      <IconButton onClick={toggleDrawer(true)}>
-        <Tooltip title="Menu">
-          <MenuOpenIcon fontSize="medium" color="primary" />
-        </Tooltip>
-      </IconButton>
+      <Tooltip title="Menu">
+        <IconButton onClick={toggleDrawer(true)}>
+          <SectionIcon />
+        </IconButton>
+      </Tooltip>
+
       <Drawer open={open} onClose={toggleDrawer(false)}>
         {DrawerList}
       </Drawer>

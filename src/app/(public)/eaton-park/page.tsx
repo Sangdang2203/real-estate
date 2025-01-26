@@ -1,4 +1,3 @@
-import React from "react";
 import { projects } from "@/shared/libs/data";
 import { Typography } from "@mui/material";
 import SideBar from "@/components/SideBar";
