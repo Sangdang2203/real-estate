@@ -1,15 +1,13 @@
 "use client";
 
 import { Geist, Geist_Mono } from "next/font/google";
-import TheHeaderComponent from "@/components/TheHeader";
-import { IconButton, Tooltip } from "@mui/material";
-import BackButton from "@/components/BackButton";
-import TheFooterComponent from "@/components/TheFooter";
-import React from "react";
 import "./globals.css";
 import "@/shared/assets/styles/popup.css";
 import "@/shared/assets/styles/button.css";
-import CallCenter from "@/shared/assets/icons/CallCenter";
+import BackButton from "@/components/BackButton";
+import Hotline from "@/shared/assets/icons/Hotline";
+import TheHeaderComponent from "@/components/TheHeader";
+import TheFooterComponent from "@/components/TheFooter";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -45,15 +43,7 @@ export default function RootLayout({
           </div>
 
           <div className="fixed right-2 bottom-2 md:hidden">
-            <Tooltip title="Liên hệ tư vấn">
-              <IconButton
-                href="tel:0909751772"
-                className="my-4 bg-slate-100 p-3 flex justify-end blinking-text md:hidden"
-                color="success"
-              >
-                <CallCenter />
-              </IconButton>
-            </Tooltip>
+            <Hotline />
           </div>
 
           <div>

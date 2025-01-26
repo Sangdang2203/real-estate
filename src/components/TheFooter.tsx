@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { projects } from "@/shared/libs/data";
-import { Typography } from "@mui/material";
+import { IconButton, Typography } from "@mui/material";
 import ZaloIcon from "@/shared/assets/icons/ZaloIcon";
 import EmailIcon from "@/shared/assets/icons/EmailIcon";
 import LinkedIn from "@/shared/assets/icons/LinkedIn";
@@ -32,9 +32,9 @@ export default function TheFooterComponent() {
             {icons.length > 0 &&
               icons.map((item) => {
                 return (
-                  <div key={item.id} className="mx-2">
+                  <IconButton key={item.id} className="mx-2">
                     {item.icon}
-                  </div>
+                  </IconButton>
                 );
               })}
           </div>

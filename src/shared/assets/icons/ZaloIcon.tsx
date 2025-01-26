@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function ZaloIcon() {
   return (
     <>
-      <Link href="https://zalo.me/0907014116">
+      <Link href="https://zalo.me/0907014116" target="_blank">
         <Tooltip title="Zalo">
           <svg
             xmlns="http://www.w3.org/2000/svg"

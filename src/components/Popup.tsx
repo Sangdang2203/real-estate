@@ -102,7 +102,7 @@ export default function PopupComponent() {
                     message: "Điền tối đa 50 ký tự.",
                   },
                 })}
-                placeholder="(*) Họ và tên khách hàng | Doanh nghiệp"
+                placeholder="(*) Họ và tên khách hàng"
                 type="text"
                 fullWidth
               />
