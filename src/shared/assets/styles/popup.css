@@ -111,17 +111,15 @@
   justify-content: center;
 }
 
-
-
 .title::before {
-  width: 18px;
-  height: 18px;
+  width: 2rem;
+  height: 2rem;
   background-color: royalblue;
 }
 
 .title::after {
-  width: 18px;
-  height: 18px;
+  width: 2rem;
+  height: 2rem;
   animation: pulse 1s linear infinite;
 }
 
