@@ -48,8 +48,8 @@ const HausDalatProject = () => {
               priority
             />
           </div>
-          <div>
-            <Typography className="text-[13px] md:text-[16px]">
+          <div className="flex flex-col justify-between">
+            <Typography className="text-[13px] md:text-[16px] leading-8">
               Việc hợp tác IHG Hotels & Resorts đưa InterContinental về TP Đà
               Lạt được The One Destination đánh giá là mảnh ghép giúp hoàn thiện
               hệ sinh thái tại dự án Haus Da Lat. Resort được thiết kế bởi{" "}

@@ -128,18 +128,6 @@ const EcoRetreatLongAnProject = () => {
             alt="ecoretreat long an location"
             priority
           />
-
-          <Typography className="py-4 text-[13px] md:text-[16px]">
-            Nằm ngay mặt tiền đường Mai Chí Thọ, chỉ cách trung tâm quận 1 với
-            15 phút di chuyển, Eaton Park sở hữu vị thế đắc địa bậc nhất khu vực
-            phường An Phú, trung tâm của quận 2 cũ, nay là TP Thủ Đức. Đây là
-            nơi giao thoa giữa sự sôi động, phồn hoa của quận 1 và nhịp sống
-            hiện đại của khu vực mới phát triển với những tiện ích, cơ sở hạ
-            tầng tiêu chuẩn quốc tế. Theo Báo cáo của Savills, đây là khu vực có
-            tốc độ tăng trưởng giá trị căn hộ ở mức trên 10% theo năm và giá
-            thuê dẫn đầu thành phố với tỷ lệ lấp đầy đạt gần 100%, mang đến cơ
-            hội đầu tư hấp dẫn cho khách hàng.
-          </Typography>
         </div>
       </section>
 

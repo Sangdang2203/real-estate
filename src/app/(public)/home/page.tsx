@@ -20,7 +20,6 @@ import ReadMoreIcon from "@mui/icons-material/ReadMore";
 import CarouselImages from "@/components/Carousel";
 import TheHeaderComponent from "@/components/TheHeader";
 import { Project } from "@/app/interfaces";
-
 import no_image from "../../../shared/assets/images/no_image.jpg";
 
 export default function HomePage() {

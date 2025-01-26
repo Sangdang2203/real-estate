@@ -20,16 +20,11 @@ import { InputSearchProps } from "@/app/interfaces";
 
 const TheHeaderComponent: React.FC<InputSearchProps> = ({ onSearch }) => {
   const [navigation, setNavigation] = React.useState(false);
-  const [seletcted, setSeletcted] = React.useState(null);
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const openSubLinks = Boolean(anchorEl);
 
   const handleNavigation = () => {
     setNavigation(!navigation);
-  };
-
-  const handleSelected = () => {
-    setSeletcted(seletcted);
   };
 
   const handleOpenSubLinks = (event: React.MouseEvent<HTMLButtonElement>) => {
@@ -61,7 +56,6 @@ const TheHeaderComponent: React.FC<InputSearchProps> = ({ onSearch }) => {
               href="/"
               color="success"
               className="navLink px-[1rem] hover:ease-linear hover:duration-500"
-              onClick={handleSelected}
             >
               <Typography variant="body1" className="font-semibold">
                 trang chủ
@@ -103,7 +97,6 @@ const TheHeaderComponent: React.FC<InputSearchProps> = ({ onSearch }) => {
                     onClick={() => {
                       handleCloseSubLinks();
                       handleNavigation();
-                      handleSelected();
                     }}
                   >
                     <Link href={project.projectUrl} className="subLink">
@@ -114,12 +107,7 @@ const TheHeaderComponent: React.FC<InputSearchProps> = ({ onSearch }) => {
               })}
             </Menu>
 
-            <Button
-              href="/tin-tuc"
-              color="success"
-              className={seletcted ? `text-red-600` : `navLink px-[1rem]`}
-              onClick={handleSelected}
-            >
+            <Button href="/tin-tuc" color="success">
               <Typography variant="body1" className="font-semibold">
                 tin tức
               </Typography>
@@ -129,7 +117,6 @@ const TheHeaderComponent: React.FC<InputSearchProps> = ({ onSearch }) => {
               href="/lien-he"
               color="success"
               className="navLink px-[1rem]"
-              onClick={handleSelected}
             >
               <Typography variant="body1" className="font-semibold">
                 liên hệ

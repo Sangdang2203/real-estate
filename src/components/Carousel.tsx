@@ -42,7 +42,6 @@ export default function CarouselImages() {
               data-carousel-item
             >
               <Image
-                layout="responsive"
                 src={image.src}
                 className="absolute block w-full min-h-[400px] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-md"
                 alt={image.alt}

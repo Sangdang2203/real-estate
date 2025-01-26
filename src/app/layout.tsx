@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 "use client";
 
 import { Geist, Geist_Mono } from "next/font/google";
@@ -11,7 +10,6 @@ import "./globals.css";
 import "@/shared/assets/styles/popup.css";
 import "@/shared/assets/styles/button.css";
 import CallCenter from "@/shared/assets/icons/CallCenter";
-import { metadata } from "../shared/libs/layoutMetadata";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",

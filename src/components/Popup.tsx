@@ -71,7 +71,6 @@ export default function PopupComponent() {
         <Tooltip title="Close">
           <CloseOutlined
             onClick={() => setOpen(false)}
-            color="error"
             className="text-white absolute top-1 right-1 bg-red-500 rounded hover:opacity-80 cursor-pointer"
           />
         </Tooltip>
