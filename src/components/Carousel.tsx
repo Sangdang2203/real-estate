@@ -29,7 +29,7 @@ export default function CarouselImages() {
     <>
       <div
         id="default-carousel"
-        className="relative w-full hidden md:block"
+        className="relative w-full h-auto hidden md:block"
         data-carousel="slide"
       >
         <div className="relative md:min-h-[600px] overflow-hidden rounded-lg">

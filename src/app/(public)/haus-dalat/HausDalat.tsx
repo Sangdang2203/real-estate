@@ -172,7 +172,7 @@ const HausDalatProject = () => {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              className="my-2 rounded-lg w-full min-h-[300px]"
+              className="my-2 rounded-lg w-full min-h-[400px]"
             ></iframe>
             <Typography className="text-white text-justify  leading-loose text-[13px] md:text-[16px]">
               Haus Da Lat không chỉ là một dự án bất động sản, mà còn là một nơi
@@ -187,12 +187,9 @@ const HausDalatProject = () => {
 
       {/* Tiện ích dự án */}
       <section id="facilities" className="my-5">
-        {/* <Typography
-          variant="h5"
-          className="text-[#dec4a7] py-2 uppercase text-center leading-loose"
-        >
-          chuỗi tiện ích đỉnh cao
-        </Typography> */}
+        {/* <video className="w-full rounded-lg" autoPlay controls>
+          <source src="/shared/assets/videos/haus_dalat.mp4" type="video/mp4" />
+        </video> */}
         <div className="w-full h-auto">
           <iframe
             width="100%"
@@ -201,7 +198,7 @@ const HausDalatProject = () => {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
             title="Haus Dalat Facilites"
-            className="rounded-lg"
+            className="rounded-lg min-h-[400px] md:min-h-[500px]"
           ></iframe>
         </div>
       </section>

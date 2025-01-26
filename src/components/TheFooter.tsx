@@ -32,7 +32,7 @@ export default function TheFooterComponent() {
             {icons.length > 0 &&
               icons.map((item) => {
                 return (
-                  <IconButton key={item.id} className="mx-2">
+                  <IconButton key={item.id} className="m-2">
                     {item.icon}
                   </IconButton>
                 );
