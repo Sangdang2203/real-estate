@@ -97,7 +97,7 @@ const EcoRetreatLongAnProject = () => {
           </div>
           <div>
             <Image
-              className="rounded-lg"
+              className="rounded-lg w-full"
               src={ecoretreat_longan}
               alt="ecoretreat_longan"
               priority
