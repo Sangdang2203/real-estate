@@ -11,7 +11,7 @@ import {
   ModelTrainingRounded,
   InfoRounded,
 } from "@mui/icons-material";
-import { Button, Menu, MenuItem, Typography } from "@mui/material";
+import { Button, IconButton, Menu, MenuItem, Typography } from "@mui/material";
 import { projects } from "@/shared/libs/data";
 import Image from "next/image";
 import logo from "../shared/assets/images/logo.png";
@@ -122,21 +122,25 @@ const TheHeaderComponent: React.FC<InputSearchProps> = ({ onSearch }) => {
         </div>
 
         {/* Smaller screen: IPAD, PHONE */}
-        <div className="flex justify-center items-center">
+        <div className="flex justify-between items-center">
           <div className="block mr-4 md:hidden">
             <InputSearch onSearch={onSearch} />
           </div>
-          <div className="flex md:hidden z-50" onClick={handleNavigation}>
+          <div className="mx-4 z-50 md:hidden " onClick={handleNavigation}>
             {navigation ? (
-              <Close
-                fontSize="medium"
-                className="text-[#002D62] hover:opacity-80 cursor-pointer z-50"
-              />
+              <IconButton>
+                <Close
+                  fontSize="medium"
+                  className="text-[#002D62] hover:opacity-80 cursor-pointer z-50"
+                />
+              </IconButton>
             ) : (
-              <MenuRounded
-                fontSize="medium"
-                className="text-[#002D62] hover:opacity-80 cursor-pointer z-50"
-              />
+              <IconButton>
+                <MenuRounded
+                  fontSize="medium"
+                  className="text-[#002D62] hover:opacity-80 cursor-pointer z-50"
+                />
+              </IconButton>
             )}
           </div>
         </div>

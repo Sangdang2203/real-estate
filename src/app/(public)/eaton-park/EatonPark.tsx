@@ -106,7 +106,7 @@ const EatonParkProject = () => {
         >
           thanh toán hấp dẫn
         </Typography>
-        <div className="blinking-text text-[#cd3545] text-center leading-loose">
+        <div className="uppercase text-[#cd3545] text-center leading-loose">
           <Typography className="text-[14px] md:text-[25px]">
             Trả trước 5% ký Hợp Đồng Mua Bán.
           </Typography>
@@ -114,7 +114,7 @@ const EatonParkProject = () => {
             Thanh toán chỉ 0.83% mỗi tháng
           </Typography>
           <Typography className="text-[14px] md:text-[25px]">
-            Ngân hàng hỗ trợ vay. Gamuda Land hỗ trợ lai vay cho khách hàng.
+            Ngân hàng hỗ trợ vay. Gamuda Land hỗ trợ lãi vay cho khách hàng.
           </Typography>
         </div>
       </section>
