@@ -171,7 +171,7 @@ export default function HomePage() {
             )}
           </div>
         </div>
-        <div id="carousel-btn" className="flex justify-end my-1">
+        <div id="carousel-btn" className="flex justify-start my-1">
           <IconButton
             title="Previous"
             onClick={prevSlide}
