@@ -38,7 +38,7 @@ export default function RootLayout({
         </div>
 
         <footer className="w-full z-50">
-          <div className="hidden md:block fixed bottom-[1rem] left-3">
+          <div className="fixed bottom-[1rem] left-3">
             <BackButton />
           </div>
 

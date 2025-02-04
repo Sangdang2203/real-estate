@@ -47,12 +47,12 @@ export default function PopupComponent() {
     setProject(typeof value === "string" ? value.split(",") : value);
   };
 
-  React.useEffect(() => {
-    const timer = setTimeout(() => {
-      setOpen(true);
-    }, 45000);
-    return () => clearTimeout(timer);
-  });
+  // React.useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     setOpen(true);
+  //   }, 45000);
+  //   return () => clearTimeout(timer);
+  // });
 
   return (
     <>
