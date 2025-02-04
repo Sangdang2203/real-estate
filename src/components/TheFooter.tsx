@@ -8,12 +8,12 @@ import EmailIcon from "@/shared/assets/icons/EmailIcon";
 import LinkedIn from "@/shared/assets/icons/LinkedIn";
 import PopupComponent from "./Popup";
 
+const social_media = [
+  { name: "zalo", href: "https://zalo.me/0907014116", icon: <ZaloIcon /> },
+  { name: "linkedin", href: "tel:0907014116", icon: <LinkedIn /> },
+  { name: "email", href: "tel:0907014116", icon: <EmailIcon /> },
+];
 export default function TheFooterComponent() {
-  const icons = [
-    { id: 1, icon: <ZaloIcon /> },
-    { id: 2, icon: <LinkedIn /> },
-    { id: 3, icon: <EmailIcon /> },
-  ];
   return (
     <div className="p-4 h-auto w-full text-white bg-slate-900">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-6">
@@ -29,10 +29,10 @@ export default function TheFooterComponent() {
             <PopupComponent />
           </div>
           <div className="flex justify-center items-center mt-4">
-            {icons.length > 0 &&
-              icons.map((item) => {
+            {social_media.length > 0 &&
+              social_media.map((item) => {
                 return (
-                  <IconButton key={item.id} className="m-2">
+                  <IconButton key={item.name} className="m-2">
                     {item.icon}
                   </IconButton>
                 );

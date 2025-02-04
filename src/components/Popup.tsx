@@ -55,10 +55,10 @@ export default function PopupComponent() {
   });
 
   return (
-    <React.Fragment>
+    <>
       <Button onClick={handleClickOpen} className="fancy hover:opacity-80">
         <span className="top-key"></span>
-        <span className="text">Liên hệ với chúng tôi</span>
+        <span className="text">Đăng ký nhận thông tin</span>
         <span className="bottom-key-1"></span>
         <span className="bottom-key-2"></span>
       </Button>
@@ -188,6 +188,6 @@ export default function PopupComponent() {
           </form>
         </DialogContent>
       </Dialog>
-    </React.Fragment>
+    </>
   );
 }

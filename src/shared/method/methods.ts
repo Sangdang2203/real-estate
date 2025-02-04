@@ -28,3 +28,8 @@ export async function CreateContact(contact: CustomerMessage) {
     console.log(error);
   }
 }
+
+export const handleShare = (url: string) => {
+  const zaloShareUrl = `https://zalo.me/share?link=${encodeURIComponent(url)}`;
+  window.open(zaloShareUrl, "_blank");
+};

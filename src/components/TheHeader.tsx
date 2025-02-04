@@ -2,223 +2,96 @@
 
 import React from "react";
 import Link from "next/link";
-import {
-  Close,
-  MenuRounded,
-  KeyboardArrowDownRounded,
-  HomeRounded,
-  ContactPhoneRounded,
-  ModelTrainingRounded,
-  InfoRounded,
-} from "@mui/icons-material";
-import { Button, IconButton, Menu, MenuItem, Typography } from "@mui/material";
-import { projects } from "@/shared/libs/data";
 import Image from "next/image";
-import logo from "../shared/assets/images/logo.png";
-import InputSearch from "./InputSearch";
+import { navLinks } from "@/libs/data";
+import { Typography } from "@mui/material";
 import { InputSearchProps } from "@/app/interfaces";
+import logo from "@/images/logo.png";
+import MenuIcon from "@/icons/MenuIcon";
+import CloseIcon from "@/icons/CLoseIcon";
+import PopupComponent from "@/components/Popup";
+import InputSearch from "@/components/InputSearch";
 
 const TheHeaderComponent: React.FC<InputSearchProps> = ({ onSearch }) => {
   const [navigation, setNavigation] = React.useState(false);
-  const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
-  const openSubLinks = Boolean(anchorEl);
 
   const handleNavigation = () => {
     setNavigation(!navigation);
   };
 
-  const handleOpenSubLinks = (event: React.MouseEvent<HTMLButtonElement>) => {
-    setAnchorEl(event.currentTarget);
-  };
-
-  const handleCloseSubLinks = () => {
-    setAnchorEl(null);
+  const closeNavigation = () => {
+    setNavigation(false);
   };
 
   return (
-    <header className="w-full fixed flex justify-between items-center top-0 left-0 z-30 bg-white shadow-lg">
-      <div className="mx-2">
+    <nav className="w-full h-[80px] px-3 md:px-[64px] fixed top-0 left-0 z-30 bg-white shadow-lg">
+      <div className="flex justify-between items-center">
         <Link href="/">
-          <Image
-            src={logo}
-            className="hidden w-24 md:h-24 md:block text-amber-500"
-            title="Trang chủ"
-            alt="logo"
-          />
+          <Image src={logo} alt="logo" className="max-w-[100px] max-h-[80px]" />
         </Link>
-      </div>
-      <nav className="h-[10vh] flex justify-end items-center mx-2 py-10 ">
-        {/* navbar for PC */}
-        <div className="hidden text-[1rem] md:flex items-center">
-          <div>
-            <Button
-              href="/"
-              color="success"
-              className="navLink px-[1rem] hover:ease-linear hover:duration-500"
-            >
-              <Typography variant="body1" className="font-semibold">
-                trang chủ
-              </Typography>
-            </Button>
 
-            <Button
-              href="/gioi-thieu"
-              color="success"
-              className="navLink px-[1rem]"
-            >
-              <Typography variant="body1" className="font-semibold">
-                giới thiệu
-              </Typography>
-            </Button>
-
-            <Button
-              color="success"
-              onClick={handleOpenSubLinks}
-              endIcon={<KeyboardArrowDownRounded />}
-              className="navLink px-[1rem]"
-            >
-              <Typography variant="body1" className="font-semibold">
-                dự án
-              </Typography>
-            </Button>
-
-            <Menu
-              id="projects"
-              anchorEl={anchorEl}
-              open={openSubLinks}
-              onClose={handleOpenSubLinks}
-              MenuListProps={{ "aria-labelledby": "basic-button" }}
-            >
-              {projects.map((project) => {
-                return (
-                  <MenuItem
-                    key={project.projectUrl}
-                    onClick={() => {
-                      handleCloseSubLinks();
-                      handleNavigation();
-                    }}
-                  >
-                    <Link href={project.projectUrl} className="subLink">
-                      {project.name}
-                    </Link>
-                  </MenuItem>
-                );
-              })}
-            </Menu>
-
-            <Button
-              href="/lien-he"
-              color="success"
-              className="navLink px-[1rem]"
-            >
-              <Typography variant="body1" className="font-semibold">
-                liên hệ
-              </Typography>
-            </Button>
-          </div>
-          <div className="hidden mx-4 lg:flex justify-end">
-            <InputSearch onSearch={onSearch} />
-          </div>
+        <div className="hidden md:block">
+          <InputSearch onSearch={onSearch} />
         </div>
 
-        {/* Smaller screen: IPAD, PHONE */}
-        <div className="flex justify-between items-center">
-          <div className="block mr-4 md:hidden">
-            <InputSearch onSearch={onSearch} />
-          </div>
-          <div className="mx-4 z-50 md:hidden " onClick={handleNavigation}>
-            {navigation ? (
-              <IconButton>
-                <Close
-                  fontSize="medium"
-                  className="text-[#002D62] hover:opacity-80 cursor-pointer z-50"
-                />
-              </IconButton>
-            ) : (
-              <IconButton>
-                <MenuRounded
-                  fontSize="medium"
-                  className="text-[#002D62] hover:opacity-80 cursor-pointer z-50"
-                />
-              </IconButton>
-            )}
-          </div>
-        </div>
-
-        {/* Handle the menu icon */}
         <div
-          className={
-            navigation
-              ? "md:hidden absolute top-[10vh] right-0 left-0 bottom-0 bg-slate-200 w-full h-screen ease-in duration-300"
-              : "md:hidden absolute top-[10vh] right-0 left-[-100%] bottom-0 bg-slate-200 w-full h-screen ease-in duration-300"
-          }
+          className="block z-50 md:flex items-center"
+          onClick={handleNavigation}
         >
-          {/* navbar links */}
-          <ul className="text-center text-[1rem] fond-bold mt-6">
-            <li className="text-[1rem] flex flex-col justify-center items-start w-full mx-[35%] md:mx-[40%] lg:mx-0">
-              <Button
-                startIcon={<HomeRounded fontSize="small" color="primary" />}
-                href="/home"
-                className="navLink "
-              >
-                trang chủ
-              </Button>
-              <Button
-                startIcon={<InfoRounded fontSize="small" color="primary" />}
-                href="/gioi-thieu"
-                className="navLink"
-              >
-                giới thiệu
-              </Button>
-
-              <Button
-                startIcon={
-                  <ModelTrainingRounded fontSize="small" color="primary" />
-                }
-                onClick={handleOpenSubLinks}
-                className="navLink"
-              >
-                dự án
-              </Button>
-              <Menu
-                id="projects"
-                anchorEl={anchorEl}
-                open={openSubLinks}
-                onClick={handleCloseSubLinks}
-                MenuListProps={{ "aria-labelledby": "basic-button" }}
-              >
-                {projects.map((project) => {
-                  return (
-                    <MenuItem
-                      key={project.projectUrl}
-                      onClick={() => {
-                        handleCloseSubLinks();
-                        handleNavigation();
-                      }}
-                    >
-                      <Link href={project.projectUrl} className="subLink">
-                        {project.name}
-                      </Link>
-                    </MenuItem>
-                  );
-                })}
-              </Menu>
-
-              <Button
-                startIcon={
-                  <ContactPhoneRounded fontSize="small" color="primary" />
-                }
-                href="/contact"
-                className="navLink"
-              >
-                liên hệ
-              </Button>
-            </li>
-          </ul>
+          <div className="block w-[35.36px] h-[85.71px] hover:opacity-80 cursor-pointer z-50 mr-4">
+            {navigation ? <CloseIcon /> : <MenuIcon />}
+          </div>
         </div>
-      </nav>
-    </header>
+      </div>
+
+      <div
+        className={`absolute top-[80px] right-0 left-0 bottom-0 bg-[#F4F4F4] w-full min-h-screen ease-in duration-300 ${
+          navigation ? "block" : "hidden"
+        }`}
+      >
+        <div className="grid grid-cols-2 md:grid-cols-5 max-w-[669px] h-[295px]">
+          <div className="flex flex-col px-[64px] py-[32px]">
+            {navLinks.length > 0 &&
+              navLinks.slice(0, 3).map((link) => (
+                <Link
+                  key={link.path}
+                  href={link.path}
+                  className="text-[#7D614B] w-[315px] h-[77px]"
+                  onClick={closeNavigation}
+                >
+                  <Typography
+                    variant="body1"
+                    className="uppercase font-semibold hover:pl-3 ease-linear duration-300"
+                  >
+                    {link.name}
+                  </Typography>
+                </Link>
+              ))}
+          </div>
+          <div className="flex flex-col px-[64px] py-[32px]">
+            {navLinks.length > 0 &&
+              navLinks.slice(3, 6).map((link) => (
+                <Link
+                  key={link.path}
+                  href={link.path}
+                  className="text-[#7D614B] w-[315px] h-[77px]"
+                  onClick={closeNavigation}
+                >
+                  <Typography
+                    variant="body1"
+                    className="uppercase font-semibold hover:pl-3 ease-linear duration-300"
+                  >
+                    {link.name}
+                  </Typography>
+                </Link>
+              ))}
+          </div>
+        </div>
+        <div className="w-full fixed flex justify-center items-center bottom-0 right-0 bg-white py-2 sm:hidden">
+          <PopupComponent />
+        </div>
+      </div>
+    </nav>
   );
 };
-
 export default TheHeaderComponent;

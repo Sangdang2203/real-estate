@@ -1,6 +1,6 @@
 import { useState } from "react";
 import PreviousStep from "@/shared/assets/icons/PreviousStep";
-import NextStep from "@/shared/assets/icons/SkipNext";
+import NextStep from "@/shared/assets/icons/NextStep";
 import Image from "next/image";
 import haus_dalat from "../shared/assets/images/haus_dalat/haus_dalat.png";
 import eaton_park from "../shared/assets/images/eaton_park/eaton_park.webp";
@@ -28,8 +28,8 @@ export default function CarouselImages() {
   return (
     <>
       <div
-        id="default-carousel"
-        className="relative w-full h-auto hidden md:block"
+        id="photos-carousel"
+        className="relative w-full h-auto block"
         data-carousel="slide"
       >
         <div className="relative md:min-h-[600px] overflow-hidden rounded-lg">

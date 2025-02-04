@@ -5,6 +5,25 @@ import celesta_rise from "../assets/images/celesta/celesta_rise.jpg";
 import celesta_heightd from "../assets/images/celesta/celesta_heights.webp";
 import celesta_gold from "../assets/images/celesta/celesta_rise.jpg";
 
+export const navLinks = [
+  {
+    name: "trang chủ",
+    path: "/",
+  },
+  {
+    name: "giới thiệu",
+    path: "/gioi-thieu",
+  },
+  {
+    name: "dự án",
+    path: "/projects",
+  },
+  {
+    name: "liên hệ",
+    path: "/contact",
+  },
+];
+
 export const projects = [
   {
     id: 1,

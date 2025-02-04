@@ -27,12 +27,7 @@ const InputSearch: React.FC<InputSearchProps> = ({ onSearch }) => {
   return (
     <Paper
       component="form"
-      sx={{
-        p: "2px 4px",
-        display: "flex",
-        alignItems: "center",
-        minWidth: 300,
-      }}
+      className="px-1 py-[2px] flex items-center md:min-w-[300px] lg:min-w-[400px]"
       onSubmit={handleSearch}
     >
       <Divider orientation="vertical" />
