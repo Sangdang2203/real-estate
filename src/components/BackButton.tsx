@@ -12,7 +12,6 @@ export default function BackButton() {
       const timeElapsed = currentTime - startTime;
       const progress = Math.min(timeElapsed / duration, 1);
 
-      // Calculating new scroll position
       const newScrollTop = start * (1 - progress);
       window.scrollTo(0, newScrollTop);
 
@@ -28,7 +27,7 @@ export default function BackButton() {
       <Tooltip title="Back to top">
         <IconButton
           onClick={() => scrollToTop(200)}
-          className="flex justify-center items-center"
+          className="flex justify-center items-center bg-white hover:bg-yellow-600"
         >
           <UpIcon />
         </IconButton>

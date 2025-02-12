@@ -16,32 +16,31 @@ const social_media = [
 export default function TheFooterComponent() {
   return (
     <div className="p-4 h-auto w-full text-white bg-slate-900">
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-6">
-        <Typography className="text-justify italic text-[14px] md:text-[16px] leading-loose">
+      <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-x-6">
+        <Typography className="w-[90%] mx-auto text-justify italic text-[14px] md:text-[16px] leading-loose">
           &quot; Chúng tôi chuyên cung cấp sản phẩm từ các Chủ Đầu Tư uy tín như
           Keppel Land, CapitaLand, Gamuda Land, Ecopark Group, Khang Điền, Nam
           Long,... Khách hàng hoàn toàn an tâm tìm chọn cho mình những sản phẩm
           phù hợp để đầu tư sinh lợi cũng như an cư lập nghiệp. &quot;
         </Typography>
-
-        <div className="md:flex flex-col justify-start items-center">
-          <div className="hidden md:flex">
-            <PopupComponent />
+        <div className="grid grid-cols-1 lg:grid-cols-2">
+          <div className="md:flex flex-col justify-start items-center">
+            <div className="hidden md:flex">
+              <PopupComponent />
+            </div>
+            <div className="flex justify-center items-center mt-4">
+              {social_media.length > 0 &&
+                social_media.map((item) => {
+                  return (
+                    <IconButton key={item.name} className="m-2">
+                      {item.icon}
+                    </IconButton>
+                  );
+                })}
+            </div>
           </div>
-          <div className="flex justify-center items-center mt-4">
-            {social_media.length > 0 &&
-              social_media.map((item) => {
-                return (
-                  <IconButton key={item.name} className="m-2">
-                    {item.icon}
-                  </IconButton>
-                );
-              })}
-          </div>
-        </div>
 
-        <div className="hidden lg:grid lg:grid-cols-2 lg:gap-3">
-          <div>
+          <div className="hidden w-[75%] mx-auto lg:block">
             {projects.length > 0 &&
               projects.slice(0, 5).map((project) => {
                 return (
@@ -49,27 +48,9 @@ export default function TheFooterComponent() {
                     <Link
                       href={project.projectUrl}
                       key={project.id}
-                      className="capitalize leading-loose"
+                      className="capitalize"
                     >
-                      <Typography className="text-[14px] md:text-[16px]">
-                        {project.name}
-                      </Typography>
-                    </Link>
-                  </div>
-                );
-              })}
-          </div>
-          <div>
-            {projects.length > 0 &&
-              projects.slice(0, 5).map((project) => {
-                return (
-                  <div key={project.id} className="footer">
-                    <Link
-                      href={project.projectUrl}
-                      key={project.id}
-                      className="capitalize leading-loose"
-                    >
-                      <Typography className="text-[14px] md:text-[16px]">
+                      <Typography className="text-[14px] md:text-[16px] leading-loose text-right">
                         {project.name}
                       </Typography>
                     </Link>

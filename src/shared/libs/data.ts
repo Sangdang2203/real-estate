@@ -20,7 +20,7 @@ export const navLinks = [
   },
   {
     name: "liên hệ",
-    path: "/contact",
+    path: "#contact",
   },
 ];
 

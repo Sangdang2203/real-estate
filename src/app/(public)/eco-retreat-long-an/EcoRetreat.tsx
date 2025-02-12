@@ -1,9 +1,10 @@
 import Image from "next/image";
-import ecopark from "../../../shared/assets/images/eco_retreat/Ecopark.jpg";
-import ecoretreat_longan from "../../../shared/assets/images/eco_retreat/Ecoretreat_Longan_Landscape.jpg";
-import location from "../../../shared/assets/images/eco_retreat/ecoretreat_longan_location.jpg";
-import facilities from "../../../shared/assets/images/eco_retreat/ecoretreat_longan_facilities.jpg";
 import { Typography } from "@mui/material";
+
+import ecopark from "@/images/eco_retreat/Ecopark.jpg";
+import ecoretreat_longan from "@/images/eco_retreat/Ecoretreat_Longan_Landscape.jpg";
+import location from "@/images/eco_retreat/ecoretreat_longan_location.jpg";
+import facilities from "@/images/eco_retreat/ecoretreat_longan_facilities.jpg";
 const EcoRetreatLongAnProject = () => {
   return (
     <>
@@ -18,15 +19,13 @@ const EcoRetreatLongAnProject = () => {
           nghiệp, theo xu hướng Bất động sản Xanh, mở rộng và phát triển mô hình
           đô thị Ecopark trên khắp cả nước.
         </Typography>
-        <div className="my-5 w-full h-auto">
+        <div className="my-5 w-full">
           <iframe
-            width="100%"
-            height="480"
             src="https://www.youtube.com/embed/f6BpEkVE_1M?start=10"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
             title="Ecopark Developer Documentation"
-            className="rounded-lg"
+            className="rounded-lg w-full min-h-[400px] md:min-h-[500px]"
           ></iframe>
         </div>
 

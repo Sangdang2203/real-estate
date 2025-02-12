@@ -46,7 +46,7 @@ export default function RootLayout({
             <Hotline />
           </div>
 
-          <div>
+          <div id="contact">
             <TheFooterComponent />
           </div>
         </footer>

@@ -13,6 +13,8 @@
     --foreground: #ffffff;
   }
 }
+@media (forced-colors: active){}
+@media (forced-colors: active) and (prefers-color-scheme: light) {}
 
 html {
   scroll-behavior: smooth;
