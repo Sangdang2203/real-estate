@@ -2,14 +2,20 @@ import { useState } from "react";
 import PreviousStep from "@/shared/assets/icons/PreviousStep";
 import NextStep from "@/shared/assets/icons/NextStep";
 import Image from "next/image";
-import haus_dalat from "../shared/assets/images/haus_dalat/haus_dalat.png";
-import eaton_park from "../shared/assets/images/eaton_park/eaton_park.webp";
-import ecoretreat_longan from "../shared/assets/images/eco_retreat/Ecoretreat_Longan_Landscape.jpg";
+import haus_dalat from "@/images/haus_dalat/haus_dalat.png";
+import eaton_park from "@/images/eaton_park/eaton_park.webp";
+import celesta_city from "@/images/celesta/celesta_heights.webp";
+import ecoretreat_longan from "@/images/eco_retreat/Ecoretreat_Longan_Landscape.jpg";
 
 const images = [
-  { src: haus_dalat, alt: "haus dalat" },
-  { src: ecoretreat_longan, alt: "eco retreat long na" },
-  { src: eaton_park, alt: "eaton park" },
+  { src: haus_dalat, alt: "haus dalat", title: "dự án haus dalat" },
+  {
+    src: ecoretreat_longan,
+    alt: "eco retreat long an",
+    title: "eco retreat long an",
+  },
+  { src: eaton_park, alt: "eaton park", title: "căn hộ eaton park" },
+  { src: celesta_city, alt: "celesta city", title: "căn hộ celesta" },
 ];
 
 export default function CarouselImages() {
@@ -32,7 +38,7 @@ export default function CarouselImages() {
         className="relative w-full h-auto block"
         data-carousel="slide"
       >
-        <div className="relative md:min-h-[600px] overflow-hidden rounded-lg">
+        <div className="relative min-h-[220px] md:min-h-[600px] overflow-hidden rounded-lg">
           {images.map((image, index) => (
             <div
               key={index}
@@ -45,6 +51,7 @@ export default function CarouselImages() {
                 src={image.src}
                 className="absolute block w-full min-h-[400px] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-md"
                 alt={image.alt}
+                title={image.title}
               />
             </div>
           ))}

@@ -3,7 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { navLinks } from "@/libs/data";
+import { NavLink, navLinks } from "@/libs/data";
 import { Typography } from "@mui/material";
 import { InputSearchProps } from "@/app/interfaces";
 import logo from "@/images/logo.png";
@@ -49,43 +49,36 @@ const TheHeaderComponent: React.FC<InputSearchProps> = ({ onSearch }) => {
           navigation ? "block" : "hidden"
         }`}
       >
-        <div className="grid grid-cols-2 md:grid-cols-5 max-w-[669px] h-[295px]">
-          <div className="flex flex-col px-[64px] py-[32px]">
-            {navLinks.length > 0 &&
-              navLinks.slice(0, 3).map((link) => (
-                <Link
-                  key={link.path}
-                  href={link.path}
-                  className="text-[#7D614B] w-[315px] h-[77px]"
-                  onClick={closeNavigation}
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-10 max-w-[669px] h-[295px]">
+          {navLinks.length > 0 &&
+            navLinks
+              .reduce<NavLink[][]>((acc, link, index) => {
+                if (index % 5 === 0) acc.push([]);
+                acc[acc.length - 1].push(link);
+                return acc;
+              }, [])
+              .map((group, groupIndex) => (
+                <div
+                  key={groupIndex}
+                  className="flex flex-col px-[64px] py-[32px]"
                 >
-                  <Typography
-                    variant="body1"
-                    className="uppercase font-semibold hover:pl-3 ease-linear duration-300"
-                  >
-                    {link.name}
-                  </Typography>
-                </Link>
+                  {group.map((link) => (
+                    <Link
+                      key={link.path}
+                      href={link.path}
+                      className="text-[#7D614B] w-[315px] h-[77px]"
+                      onClick={closeNavigation}
+                    >
+                      <Typography
+                        variant="body1"
+                        className="uppercase font-semibold hover:pl-3 ease-linear duration-300"
+                      >
+                        {link.name}
+                      </Typography>
+                    </Link>
+                  ))}
+                </div>
               ))}
-          </div>
-          <div className="flex flex-col px-[64px] py-[32px]">
-            {navLinks.length > 0 &&
-              navLinks.slice(3, 6).map((link) => (
-                <Link
-                  key={link.path}
-                  href={link.path}
-                  className="text-[#7D614B] w-[315px] h-[77px]"
-                  onClick={closeNavigation}
-                >
-                  <Typography
-                    variant="body1"
-                    className="uppercase font-semibold hover:pl-3 ease-linear duration-300"
-                  >
-                    {link.name}
-                  </Typography>
-                </Link>
-              ))}
-          </div>
         </div>
         <div className="w-full fixed flex justify-center items-center bottom-0 right-0 bg-white py-2 sm:hidden">
           <PopupComponent />

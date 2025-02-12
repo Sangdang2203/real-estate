@@ -5,7 +5,12 @@ import celesta_rise from "../assets/images/celesta/celesta_rise.jpg";
 import celesta_heightd from "../assets/images/celesta/celesta_heights.webp";
 import celesta_gold from "../assets/images/celesta/celesta_rise.jpg";
 
-export const navLinks = [
+export interface NavLink {
+  path: string;
+  name: string;
+}
+
+export const navLinks: NavLink[] = [
   {
     name: "trang chủ",
     path: "/",
@@ -21,6 +26,14 @@ export const navLinks = [
   {
     name: "liên hệ",
     path: "#contact",
+  },
+  {
+    name: "dự án",
+    path: "/projectsaa",
+  },
+  {
+    name: "liên hệ",
+    path: "#contactaaa",
   },
 ];
 
