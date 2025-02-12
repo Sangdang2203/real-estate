@@ -1,7 +1,7 @@
 import { useState } from "react";
-import PreviousStep from "@/shared/assets/icons/PreviousStep";
-import NextStep from "@/shared/assets/icons/NextStep";
 import Image from "next/image";
+import PreviousStep from "@/icons/PreviousStep";
+import NextStep from "@/icons/NextStep";
 import haus_dalat from "@/images/haus_dalat/haus_dalat.png";
 import eaton_park from "@/images/eaton_park/eaton_park.webp";
 import celesta_city from "@/images/celesta/celesta_heights.webp";

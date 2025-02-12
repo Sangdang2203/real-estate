@@ -1,11 +1,11 @@
 import Image from "next/image";
-import model_housing from "../../../shared/assets/images/eaton_park/model_housing.jpg";
-import banner from "../../../shared/assets/images/eaton_park/banner.jpg";
-import location from "../../../shared/assets/images/eaton_park/location.png";
-import master_layout from "../../../shared/assets/images/eaton_park/master_layout.jpg";
-import alpine_layout from "../../../shared/assets/images/eaton_park/alpine.png";
-import forest_layout from "../../../shared/assets/images/eaton_park/forest.png";
-import master_landscape from "../../../shared/assets/images/eaton_park/master_landscape.jpg";
+import model_housing from "@/images/eaton_park/model_housing.jpg";
+import banner from "@/images/eaton_park/banner.jpg";
+import location from "@/images/eaton_park/location.png";
+import master_layout from "@/images/eaton_park/master_layout.jpg";
+import alpine_layout from "@/images/eaton_park/alpine.png";
+import forest_layout from "@/images/eaton_park/forest.png";
+import master_landscape from "@/images/eaton_park/master_landscape.jpg";
 import { Typography } from "@mui/material";
 const EatonParkProject = () => {
   return (

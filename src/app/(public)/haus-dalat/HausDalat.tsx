@@ -1,10 +1,10 @@
 import React from "react";
 import Image from "next/image";
 import { Typography } from "@mui/material";
-import haus_continental from "@/shared/assets/images/haus_dalat/haus_continental.png";
-import interContinental from "@/shared/assets/images/haus_dalat/haus_interContinental.png";
-import interContinental_1 from "@/shared/assets/images/haus_dalat/haus_interContinental_1.png";
-import haus_dalat from "@/shared/assets/images/haus_dalat/haus_dalat.png";
+import haus_continental from "@/images/haus_dalat/haus_continental.png";
+import interContinental from "@/images/haus_dalat/haus_interContinental.png";
+import interContinental_1 from "@/images/haus_dalat/haus_interContinental_1.png";
+import haus_dalat from "@/images/haus_dalat/haus_dalat.png";
 
 const HausDalatProject = () => {
   const haus_brands = [

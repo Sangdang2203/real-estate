@@ -15,7 +15,7 @@ import {
   Divider,
 } from "@mui/material";
 import Image from "next/image";
-import ShareIcon from "@mui/icons-material/Share";
+import ShareIcon from "@/icons/ShareIcon";
 import ReadmoreIcon from "@/icons/ReadmoreIcon";
 import CarouselImages from "@/components/Carousel";
 import TheHeaderComponent from "@/components/TheHeader";
@@ -148,7 +148,7 @@ export default function HomePage() {
                       <IconButton
                         title="Share"
                         aria-label="share"
-                        onClick={() => handleShare(`${project.projectUrl}`)}
+                        onClick={() => handleShare(project.projectUrl)}
                       >
                         <ShareIcon />
                       </IconButton>
