@@ -20,12 +20,18 @@ export interface CustomerMessage {
 export interface Project {
   id: number;
   name: string;
+  projectUrl: string;
   developer: string;
   type: string;
   description: string;
   location: string;
+  productType: string;
+  area: string;
+  unitType: string;
+  handover: string;
+  owner: string;
+  status: string;
   images: { alt: string; src: StaticImageData }[];
-  projectUrl: string;
 }
 
 export interface InputSearchProps {
