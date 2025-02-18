@@ -12,7 +12,7 @@ const EatonParkProject = () => {
     <>
       {/* Giới thiệu dự án */}
       <section id="introdution" className="text-justify">
-        <Typography className="py-2 text-[14px] md:text-[16px]">
+        <Typography className="py-2 text-sm md:text-lg">
           <strong className="text-red-700 blinking-text">
             Dự án Eaton Park
           </strong>{" "}
@@ -23,7 +23,7 @@ const EatonParkProject = () => {
           địa chất, Eaton Park mang đến một biểu tượng kiến trúc sang trọng và
           đẳng cấp tại cửa ngõ phía Đông thành phố.
         </Typography>
-        <Typography className="text-[14px] md:text-[16px]">
+        <Typography className="text-sm md:text-lg">
           Eaton Park được Gamua Land định hướng phát triển nên dòng sản phẩm căn
           hộ cao cấp, tại đây sẽ được kiến tạo nên không gian sống tuyệt vời từ
           thiết kế chi tiết căn hộ đến hệ thống tiện ích vượt trội. Hơn cả một
@@ -46,7 +46,7 @@ const EatonParkProject = () => {
             >
               vị trí trung tâm
             </Typography>
-            <Typography className="text-white text-justify  leading-loose text-[12px] md:text-[16px]">
+            <Typography className="text-white text-justify  leading-loose text-[12px] md:text-lg">
               Vị trí hoàn hảo của dự án đến từ sự kết nối các trục đường huyết
               mạch và loạt dự án hạ tầng trọng điểm như Ga metro số 1 Bến Thành
               – Suối Tiên, cao tốc TPHCM – Long Thành – Dầu Giây, xa lộ Hà Nội,
@@ -68,7 +68,7 @@ const EatonParkProject = () => {
             alt="model housing"
             priority
           />
-          <Typography className="py-4 text-[14px] md:text-[16px]">
+          <Typography className="py-4 text-sm md:text-lg">
             Nằm ngay mặt tiền đường Mai Chí Thọ, chỉ cách trung tâm quận 1 với
             15 phút di chuyển, Eaton Park sở hữu vị thế đắc địa bậc nhất khu vực
             phường An Phú, trung tâm của quận 2 cũ, nay là TP Thủ Đức. Đây là
@@ -107,13 +107,13 @@ const EatonParkProject = () => {
           thanh toán hấp dẫn
         </Typography>
         <div className="uppercase text-[#cd3545] text-center leading-loose">
-          <Typography className="text-[14px] md:text-[25px]">
+          <Typography className="text-sm md:text-[25px]">
             Trả trước 5% ký Hợp Đồng Mua Bán.
           </Typography>
-          <Typography className="text-[14px] md:text-[25px]">
+          <Typography className="text-sm md:text-[25px]">
             Thanh toán chỉ 0.83% mỗi tháng
           </Typography>
-          <Typography className="text-[14px] md:text-[25px]">
+          <Typography className="text-sm md:text-[25px]">
             Ngân hàng hỗ trợ vay. Gamuda Land hỗ trợ lãi vay cho khách hàng.
           </Typography>
         </div>

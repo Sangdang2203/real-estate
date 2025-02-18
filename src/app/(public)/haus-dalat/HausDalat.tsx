@@ -20,7 +20,7 @@ const HausDalatProject = () => {
     <>
       {/* Giới thiệu dự án */}
       <section id="introdution" className="text-justify">
-        <Typography className="text-[13px] md:text-[16px]">
+        <Typography className="text-sm md:text-lg">
           The One Destination, chủ đầu tư{" "}
           <strong className="text-green-700">dự án Haus Da Lat</strong> hợp tác
           IHG Hotels & Resort đưa{" "}
@@ -49,7 +49,7 @@ const HausDalatProject = () => {
             />
           </div>
           <div className="flex flex-col justify-between">
-            <Typography className="text-[13px] md:text-[16px] leading-8">
+            <Typography className="text-sm md:text-lg leading-8">
               Việc hợp tác IHG Hotels & Resorts đưa InterContinental về TP Đà
               Lạt được The One Destination đánh giá là mảnh ghép giúp hoàn thiện
               hệ sinh thái tại dự án Haus Da Lat. Resort được thiết kế bởi{" "}
@@ -82,7 +82,7 @@ const HausDalatProject = () => {
         </div>
 
         <div>
-          <Typography className="text-[13px] md:text-[16px]">
+          <Typography className="text-sm md:text-lg">
             <strong>
               <a
                 href="https://baochinhphu.vn/du-an-bat-dong-san-esg-dau-tien-viet-nam-tai-da-lat-hut-truyen-thong-quoc-te-102241112112543785.htm"
@@ -114,29 +114,39 @@ const HausDalatProject = () => {
           </Typography>
           <div className="grid grid-cols-2 my-5 text-left">
             <div>
-              <Typography variant="body2">Nhà sáng lập:</Typography>
-              <Typography variant="body2">Vị trí:</Typography>
-              <Typography variant="body2">Quy mô</Typography>
-              <Typography variant="body2">Loại hình sản phẩm:</Typography>
-              <Typography variant="body2">Pháp lý:</Typography>
-              <Typography variant="body2">Thời gian triển khai:</Typography>
+              <Typography className="text-sm md:text-lg">
+                Nhà sáng lập:
+              </Typography>
+              <Typography className="text-sm md:text-lg">Vị trí:</Typography>
+              <Typography className="text-sm md:text-lg">Quy mô</Typography>
+              <Typography className="text-sm md:text-lg">
+                Loại hình sản phẩm:
+              </Typography>
+              <Typography className="text-sm md:text-lg">Pháp lý:</Typography>
+              <Typography className="text-sm md:text-lg">
+                Thời gian triển khai:
+              </Typography>
             </div>
             <div>
-              <Typography variant="body2">The One Destination</Typography>
-              <Typography variant="body2">
+              <Typography className="text-sm md:text-lg">
+                The One Destination
+              </Typography>
+              <Typography className="text-sm md:text-lg">
                 <strong>Thành phố Đà Lạt</strong>
               </Typography>
-              <Typography variant="body2">
+              <Typography className="text-sm md:text-lg">
                 <strong>5 Hecta</strong>
               </Typography>
-              <Typography variant="body2">
+              <Typography className="text-sm md:text-lg">
                 Căn hộ hạng sang{" "}
                 <strong className="hidden md:block">
                   (68 Sky Villas & Sky Mansions)
                 </strong>
               </Typography>
-              <Typography variant="body2">Sở hữu lâu dài</Typography>
-              <Typography variant="body2">Quý 1/2025</Typography>
+              <Typography className="text-sm md:text-lg">
+                Sở hữu lâu dài
+              </Typography>
+              <Typography className="text-sm md:text-lg">Quý 1/2025</Typography>
             </div>
           </div>
           <div>
@@ -154,7 +164,7 @@ const HausDalatProject = () => {
       <section id="location" className="my-5">
         <div className="flex-col justify-between">
           <div id="grad" className="p-4 rounded-lg opacity-95">
-            <Typography className="text-white text-justify  leading-loose text-[13px] md:text-[16px]">
+            <Typography className="text-white text-justify  leading-loose text-sm md:text-lg">
               Haus Da Lat tọa lạc trong khu vực trung tâm thành phố Đà Lạt, nổi
               tiếng với khí hậu mát mẻ, phong cảnh thiên nhiên tươi đẹp và nhiều
               điểm tham quan du lịch. Dự án nằm gần các tuyến đường chính, thuận
@@ -174,7 +184,7 @@ const HausDalatProject = () => {
               referrerPolicy="no-referrer-when-downgrade"
               className="my-2 rounded-lg w-full min-h-[400px]"
             ></iframe>
-            <Typography className="text-white text-justify  leading-loose text-[13px] md:text-[16px]">
+            <Typography className="text-white text-justify  leading-loose text-sm md:text-lg">
               Haus Da Lat không chỉ là một dự án bất động sản, mà còn là một nơi
               lý tưởng để sinh sống và tận hưởng cuộc sống. Vị trí đắc địa cùng
               với môi trường thiên nhiên tuyệt đẹp và các tiện ích xung quanh
@@ -187,18 +197,13 @@ const HausDalatProject = () => {
 
       {/* Tiện ích dự án */}
       <section id="facilities" className="my-5">
-        {/* <video className="w-full rounded-lg" autoPlay controls>
-          <source src="/shared/assets/videos/haus_dalat.mp4" type="video/mp4" />
-        </video> */}
         <div className="w-full h-auto">
           <iframe
-            width="100%"
-            height="480"
             src="https://www.youtube.com/embed/WeHCTwg79_E"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
             title="Haus Dalat Facilites"
-            className="rounded-lg min-h-[400px] md:min-h-[500px]"
+            className="rounded-lg w-full min-h-[200px] md:min-h-[550px]"
           ></iframe>
         </div>
       </section>

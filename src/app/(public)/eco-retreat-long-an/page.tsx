@@ -6,6 +6,13 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Eco Retreat Long An - Ecopark Group",
+  keywords: [
+    "Eco Retreat Long An",
+    "Ecopark Group",
+    "nha pho Ecopark",
+    "biet thu Ecopark",
+    "can ho Ecopark",
+  ],
   description:
     "Nằm trên bờ sông Vàm Cỏ Đông thơ mộng, Tổ hợp dự án Eco Retreat tỏa sáng như một viên ngọc bên dòng nước xanh mát. Chỉ cách trung tâm thành phố Hồ Chí Minh 18Km, Eco Treat là nơi trú ẩn lý tưởng cho những gia chủ kiếm tìm sự bình yên nơi thiên nhiên bên cạnh sự tiện lợi và phồn vinh nơi phố thị Eco Retreat lại càng đắc địa khi thuộc về Bến Lức – một trong những khu đô thị vệ tinh lớn nhất của Tp.HCM với cơ sở hạ tầng giao thông đồng bộ, thuận tiện. Từ đây, cư dân Eco Retreat có thể dễ dàng kết nối với mọi nơi và trải nghiệm cuộc sống đa sắc màu.",
 };

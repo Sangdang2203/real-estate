@@ -10,7 +10,7 @@ const EcoRetreatLongAnProject = () => {
     <>
       {/* Giới thiệu dự án */}
       <section id="introdution" className="text-justify">
-        <Typography className="text-[13px] md:text-[16px]">
+        <Typography className="text-sm md:text-lg">
           <strong className="text-green-700">Ecopark</strong> là một tập đoàn đa
           ngành, tập trung vào việc phát triển bền vững và đa dạng hóa đầu tư
           trong các lĩnh vực như giáo dục, y tế, nông nghiệp sạch, công nghệ
@@ -25,12 +25,12 @@ const EcoRetreatLongAnProject = () => {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
             title="Ecopark Developer Documentation"
-            className="rounded-lg w-full min-h-[400px] md:min-h-[500px]"
+            className="rounded-lg w-full min-h-[200px] md:min-h-[550px]"
           ></iframe>
         </div>
 
         <div className="grid grid-cols-1 xl:grid-cols-2 gap-3 my-5">
-          <Typography className="text-[13px] md:text-[16px]">
+          <Typography className="text-sm md:text-lg">
             Năm 2003, một nhóm nhà đầu tư, bằng tâm huyết và kinh nghiệm thành
             công trên nhiều lĩnh vực kinh doanh đã quyết định thành lập Công ty
             CP đầu tư và phát triển đô thị Việt Hưng (Vihajico). Sự ra đời của
@@ -58,7 +58,7 @@ const EcoRetreatLongAnProject = () => {
         </div>
 
         <div>
-          <Typography className="text-[13px] md:text-[16px]">
+          <Typography className="text-sm md:text-lg">
             <strong>
               Eco Retreat, nơi tâm hồn gia chủ tìm lại sự an nhiên giữa không
               gian thiên nhiên xanh mát, cùng hương vị khoáng nóng đẳng cấp
@@ -68,30 +68,46 @@ const EcoRetreatLongAnProject = () => {
           </Typography>
           <div className="grid grid-cols-2 my-5 text-left">
             <div>
-              <Typography variant="body2">Nhà sáng lập:</Typography>
-              <Typography variant="body2">Vị trí:</Typography>
-              <Typography variant="body2">Quy mô</Typography>
-              <Typography variant="body2">Mật độ xây dựng:</Typography>
-              <Typography variant="body2">Mật độ cây xanh:</Typography>
-              <Typography variant="body2">Loại hình sản phẩm:</Typography>
-              <Typography variant="body2">Pháp lý:</Typography>
-              <Typography variant="body2">Thời gian triển khai:</Typography>
+              <Typography className="text-sm md:text-lg">
+                Nhà sáng lập:
+              </Typography>
+              <Typography className="text-sm md:text-lg">Vị trí:</Typography>
+              <Typography className="text-sm md:text-lg">Quy mô</Typography>
+              <Typography className="text-sm md:text-lg">
+                Mật độ xây dựng:
+              </Typography>
+              <Typography className="text-sm md:text-lg">
+                Mật độ cây xanh:
+              </Typography>
+              <Typography className="text-sm md:text-lg">
+                Loại hình sản phẩm:
+              </Typography>
+              <Typography className="text-sm md:text-lg">Pháp lý:</Typography>
+              <Typography className="text-sm md:text-lg">
+                Thời gian triển khai:
+              </Typography>
             </div>
             <div>
-              <Typography variant="body2">Ecopark</Typography>
-              <Typography variant="body2">Bến Lức, Long An</Typography>
-              <Typography variant="body2">
+              <Typography className="text-sm md:text-lg">Ecopark</Typography>
+              <Typography className="text-sm md:text-lg">
+                Bến Lức, Long An
+              </Typography>
+              <Typography className="text-sm md:text-lg">
                 <strong>219 Hecta</strong>
               </Typography>
-              <Typography variant="body2">
+              <Typography className="text-sm md:text-lg">
                 <strong>21%</strong>
               </Typography>
-              <Typography variant="body2">
+              <Typography className="text-sm md:text-lg">
                 <strong>60%</strong>
               </Typography>
-              <Typography variant="body2">Nhà phố, Căn hộ, Biệt thự</Typography>
-              <Typography variant="body2">Sở hữu lâu dài</Typography>
-              <Typography variant="body2">Quý 1/2025</Typography>
+              <Typography className="text-sm md:text-lg">
+                Nhà phố, Căn hộ, Biệt thự
+              </Typography>
+              <Typography className="text-sm md:text-lg">
+                Sở hữu lâu dài
+              </Typography>
+              <Typography className="text-sm md:text-lg">Quý 1/2025</Typography>
             </div>
           </div>
           <div>
@@ -115,7 +131,7 @@ const EcoRetreatLongAnProject = () => {
             >
               vị trí giao lộ hoàn kim
             </Typography>
-            <Typography className="text-white text-justify  leading-loose text-[13px] md:text-[16px]">
+            <Typography className="text-white text-justify  leading-loose text-sm md:text-lg">
               Nằm trên bờ sông Vàm Cỏ Đông thơ mộng, Tổ hợp dự án Eco Retreat
               tỏa sáng như một viên ngọc bên dòng nước xanh mát. Chỉ cách trung
               tâm thành phố Hồ Chí Minh 18Km, Eco Treat là nơi trú ẩn lý tưởng
@@ -146,7 +162,7 @@ const EcoRetreatLongAnProject = () => {
         </Typography>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
           <div>
-            <Typography className="text-[13px] md:text-[16px]">
+            <Typography className="text-sm md:text-lg">
               Eco Retreat dưới sự quản lý và điều hành của một thương hiệu quản
               lý 5 sao quốc tế, không chỉ đơn thuần là một nơi ở. Eco Retreat
               mang đến cho quý cư dân không gian sống phong cách resort, cùng
@@ -154,7 +170,7 @@ const EcoRetreatLongAnProject = () => {
               Bố trí các tiện ích hoà cùng mảng sống xanh và không khí trong
               lành, tươi mới theo triết lý 5 chữ E gồm:
             </Typography>
-            <ul className="px-10 text-[15px] md:text-[16px] py-2">
+            <ul className="px-10 text-[15px] md:text-lg py-2">
               <li>Eco (Sinh thái)</li>
               <li>Emotion (Cảm xúc) </li>
               <li>Edu-entertainment (Giải trí – Giáo dục) </li>
