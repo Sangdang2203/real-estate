@@ -102,7 +102,7 @@ export default function HausDalatLayout() {
               <Image
                 src={image.src}
                 alt={image.alt}
-                className="w-full h-auto"
+                className="w-[90%] h-auto"
               />
             </CustomTabPanel>
           ))}
