@@ -17,7 +17,7 @@ export default function TheFooterComponent() {
   return (
     <div className="p-4 h-auto w-full text-white bg-slate-900">
       <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-x-6">
-        <Typography className="w-[90%] mx-auto text-justify italic text-[14px] md:text-[16px] leading-loose">
+        <Typography className="w-full mx-auto text-justify italic text-sm md:text-lg leading-loose">
           &quot; Chúng tôi chuyên cung cấp sản phẩm từ các Chủ Đầu Tư uy tín như
           Keppel Land, CapitaLand, Gamuda Land, Ecopark Group, Khang Điền, Nam
           Long,... Khách hàng hoàn toàn an tâm tìm chọn cho mình những sản phẩm
@@ -50,7 +50,7 @@ export default function TheFooterComponent() {
                       key={project.id}
                       className="capitalize"
                     >
-                      <Typography className="text-[14px] md:text-[16px] leading-loose text-right">
+                      <Typography className="text-sm md:text-lg leading-loose text-right">
                         {project.name}
                       </Typography>
                     </Link>
