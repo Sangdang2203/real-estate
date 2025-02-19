@@ -17,13 +17,13 @@ import {
 import Image from "next/image";
 import ShareIcon from "@/icons/ShareIcon";
 import ReadmoreIcon from "@/icons/ReadmoreIcon";
-import CarouselImages from "@/components/Carousel";
 import TheHeaderComponent from "@/components/TheHeader";
 import { Project } from "@/app/interfaces";
 import no_image from "@/images/no_image.jpg";
 import PreviousIcon from "@/icons/PreviousIcon";
 import NextIcon from "@/icons/NextIcon";
 import { handleShare } from "@/shared/method/methods";
+import CarouselPhotos from "./CarouselPhotos";
 
 export default function HomePage() {
   const [filteredProjects, setFilteredProjects] = React.useState(projects);
@@ -73,7 +73,7 @@ export default function HomePage() {
 
       {/* Carousel section */}
       <section id="slideshow">
-        <CarouselImages />
+        <CarouselPhotos />
       </section>
 
       {/* Projects section  */}

@@ -5,8 +5,10 @@ import haus_continental from "@/images/haus_dalat/haus_continental.png";
 import interContinental from "@/images/haus_dalat/haus_interContinental.png";
 import interContinental_1 from "@/images/haus_dalat/haus_interContinental_1.png";
 import haus_dalat from "@/images/haus_dalat/haus_dalat.png";
+import HausDalatLayout from "./HausDalatLayout";
+import HausDalatPhotos from "./HausDalatPhotos";
 
-const HausDalatProject = () => {
+export default function HausDalatProject() {
   const haus_brands = [
     { title: "Kengo Kuma", link: "https://en.wikipedia.org/wiki/Kengo_Kuma" },
     { title: "Isometrix", link: "https://www.isometrix.co.uk/" },
@@ -208,6 +210,20 @@ const HausDalatProject = () => {
         </div>
       </section>
 
+      {/* Layout */}
+      <section id="layout" className="my-5">
+        <Typography
+          variant="h5"
+          className="text-[#dec4a7] py-2 uppercase text-center leading-loose"
+        >
+          mặt bằng thiết kế
+        </Typography>
+        <HausDalatLayout />
+        <div className="my-5">
+          <HausDalatPhotos />
+        </div>
+      </section>
+
       {/* Thanh toán */}
       <section id="payment">
         <Typography
@@ -220,21 +236,6 @@ const HausDalatProject = () => {
           sẽ công bố trong quý 1 năm 2025
         </div>
       </section>
-
-      {/* Layout */}
-      <section id="layout" className="my-5">
-        <Typography
-          variant="h5"
-          className="text-[#dec4a7] py-2 uppercase text-center leading-loose"
-        >
-          mặt bằng thiết kế
-        </Typography>
-        <Typography variant="body1" className="uppercase text-center">
-          đang cập nhật ...
-        </Typography>
-      </section>
     </>
   );
-};
-
-export default HausDalatProject;
+}

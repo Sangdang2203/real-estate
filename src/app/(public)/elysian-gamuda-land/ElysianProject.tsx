@@ -4,8 +4,12 @@ import Image from "next/image";
 import { Typography } from "@mui/material";
 import elysian_map from "@/images/elysian/elysian_map.jpg";
 import elysian_location from "@/images/elysian/elysian_location.webp";
+import elysian_landscape from "@/images/elysian/elysian_landscape.jpg";
+import elysian_reasons from "@/images/elysian/elysian_reasons.webp";
 import elysian_banner from "@/images/elysian/elysian_banner.jpg";
-import ElysianTabPanel from "./ElysianTabPanel";
+
+import ElysianLayout from "./ElysianLayout";
+import ElysianPhotos from "./ElysianPhotos";
 
 export default function ElysianProject() {
   return (
@@ -29,7 +33,7 @@ export default function ElysianProject() {
               alt="căn hộ elysian by Gamuda Land"
               priority
             />
-            <div>
+            <div className="h-auto">
               <Typography className="text-sm md:text-lg">
                 <strong className="text-green-700 ">Elysian</strong> là một một
                 bộ sưu tập các ngôi nhà tinh tế nằm giữa khu rừng đô thị sinh
@@ -94,11 +98,15 @@ export default function ElysianProject() {
                 thiết kế xanh cho các dự án ra mắt sắp tới. Trong tương lai gần,
                 khách hàng sẽ thấy nhiều dự án mang phong cách Biophilic của
                 Gamuda Land, với sự quy hoạch tổng thể để tạo ra nhiều “rừng
-                trong phố” hơn và trồng cây nhiều hơn. Tất cả các sản phẩm của
-                Gamuda Land sẽ được thiết kế theo tiêu chuẩn xanh và đảm bảo
-                tiêu chí tiết kiệm năng lượng hơn so với các dự án khác trên thị
-                trường.
+                trong phố” hơn và trồng cây nhiều hơn.
               </Typography>
+              <Image
+                className="rounded-lg w-full h-auto mt-3"
+                src={elysian_landscape}
+                alt="Elysian by Gamuda Land"
+                title="Elysian by Gamuda Land"
+                priority
+              />
             </div>
           </div>
         </div>
@@ -127,7 +135,8 @@ export default function ElysianProject() {
           <Image
             src={elysian_location}
             className="w-full h-auto rounded-b-lg z-0"
-            alt="model housing"
+            alt="Elysian Location"
+            title="Elysian Location"
             priority
           />
 
@@ -153,6 +162,14 @@ export default function ElysianProject() {
                 <li>Trung tâm Quận 1: 15km</li>
                 <li>Sân bay Tân Sơn Nhất: 18km</li>
               </ul>
+              <Typography className="text-sm md:text-lg text-justify">
+                Trong bán kính 5 km từ tâm là dự án, cư dân của Elysian có thể
+                dễ dàng tiếp cận những tiện ích giáo dục, y tế, thương mại, dịch
+                vụ giải trí... hiện đại, quy mô đầu hoàn thiện ở khu vực này.
+                Động thuận tiện và nhanh chóng di chuyển về trung tâm thành phố
+                hoặc các tỉnh lân cận nhờ sự giao nhau của các mạng giao thông
+                liên vùng.
+              </Typography>
             </div>
           </div>
         </div>
@@ -164,8 +181,20 @@ export default function ElysianProject() {
           variant="h5"
           className="text-[#dec4a7] py-2 uppercase text-center leading-loose"
         >
-          sống đẳng cấp
+          sống trọn cảm hứng
         </Typography>
+        <Typography className="text-sm md:text-lg text-justify">
+          Về với Elysian, chúng ta tạm rời xa cuộc sống hối hả và ồn ào của đô
+          thị để hòa mình cùng thiên nhiên đậm chất cây rợp bóng, cùng thưởng
+          ngoạn cảnh sắc thiên nhiên yên bình, nơi ngồi thư giãn bên hồ bơi, hàn
+          huyên cùng gia đình và bạn bè và hưởng thụ những tiện ích nội khu đa
+          dạng và phong phú như: hồ bơi đạt tiêu chuẩn Olympic, vườn giữa tán
+          khổng lồ, khu tập golf mini, sân thể thao chức năng, khu sân chơi trẻ
+          em, “nông trại tại gia”, tổ hợp Shophouse, v.v...
+        </Typography>
+        <div className="my-5">
+          <ElysianPhotos />
+        </div>
       </section>
 
       {/* Layout */}
@@ -200,7 +229,7 @@ export default function ElysianProject() {
               thiên.
             </Typography>
           </div>
-          <ElysianTabPanel />
+          <ElysianLayout />
         </div>
       </section>
 
@@ -223,6 +252,13 @@ export default function ElysianProject() {
             Ngân hàng hỗ trợ vay. Gamuda Land hỗ trợ lãi vay cho khách hàng.
           </Typography>
         </div>
+        <Image
+          className="rounded-lg w-full h-auto mt-3"
+          src={elysian_reasons}
+          alt="Elysian by Gamuda Land"
+          title="Elysian by Gamuda Land"
+          priority
+        />
       </section>
     </>
   );
