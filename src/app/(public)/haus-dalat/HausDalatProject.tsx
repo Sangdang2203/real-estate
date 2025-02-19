@@ -225,7 +225,7 @@ export default function HausDalatProject() {
       </section>
 
       {/* Thanh toán */}
-      <section id="payment">
+      {/* <section id="payment">
         <Typography
           variant="h5"
           className="text-[#dec4a7] py-2 uppercase text-center leading-loose"
@@ -235,7 +235,7 @@ export default function HausDalatProject() {
         <div className="uppercase text-center leading-loose">
           sẽ công bố trong quý 1 năm 2025
         </div>
-      </section>
+      </section> */}
     </>
   );
 }

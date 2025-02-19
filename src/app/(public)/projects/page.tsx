@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description: "Danh sách bất động sản.",
   keywords: ["real estate", "bat dong san"],
 };
-export default function ProjectPage() {
+export default function Page() {
   return (
     <>
       <ProjectCard />

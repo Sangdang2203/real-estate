@@ -66,7 +66,7 @@ export default function HausDalatLayout() {
 
   return (
     <>
-      <Typography className="text-sm md:text-lg py-5">
+      <Typography className="text-sm md:text-lg text-justify py-5">
         Mỗi Sky Villa, Sky Mansion tại Haus Da Lat là một độc bản thiết kế cả về
         mặt ngoài lẫn nội thất bên trong, những tòa nhà được lấy hình tượng là
         quả thông - 1 phần của cây thông biểu tượng của Đà Lạt, mỗi ban công nhà
@@ -102,7 +102,7 @@ export default function HausDalatLayout() {
               <Image
                 src={image.src}
                 alt={image.alt}
-                className="w-[80%] h-auto"
+                className="w-full h-auto"
               />
             </CustomTabPanel>
           ))}
