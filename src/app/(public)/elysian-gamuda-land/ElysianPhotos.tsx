@@ -30,7 +30,7 @@ const images = [
   {
     src: elysian_facilities_01,
     alt: "Elysian facilities",
-    title: "căn hộ eaton park",
+    title: "Elysian facilities",
   },
   {
     src: elysian_facilities_04,

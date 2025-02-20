@@ -36,11 +36,9 @@ export default function ElysianLayout() {
   };
 
   return (
-    <Box sx={{ width: "100%" }}>
+    <div className="w-full h-auto">
       <Box
         sx={{
-          borderBottom: 1,
-          borderColor: "#fff",
           display: "flex",
           justifyContent: "center",
         }}
@@ -60,6 +58,6 @@ export default function ElysianLayout() {
           />
         </CustomTabPanel>
       ))}
-    </Box>
+    </div>
   );
 }

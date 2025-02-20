@@ -1,8 +1,8 @@
+import { Metadata } from "next";
 import { projects } from "@/shared/libs/data";
 import { Typography } from "@mui/material";
 import SideBar from "@/components/SideBar";
-import EcoRetreatLongAnProject from "./EcoRetreat";
-import { Metadata } from "next";
+import EcoRetreatProject from "./EcoRetreatProject";
 
 export const metadata: Metadata = {
   title: "Eco Retreat Long An - Ecopark Group",
@@ -28,7 +28,7 @@ export default function Page() {
           <div className="flex justify-end">
             <SideBar />
           </div>
-          <EcoRetreatLongAnProject />
+          <EcoRetreatProject />
         </div>
       ) : (
         <div className="flex justify-center items-center">

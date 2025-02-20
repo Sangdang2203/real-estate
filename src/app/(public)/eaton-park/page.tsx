@@ -1,7 +1,7 @@
 import { projects } from "@/shared/libs/data";
 import { Typography } from "@mui/material";
 import SideBar from "@/components/SideBar";
-import EatonParkProject from "./EatonPark";
+import EatonParkProject from "./EatonParkProject";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {

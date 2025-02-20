@@ -10,6 +10,7 @@ import elysian_banner from "@/images/elysian/elysian_banner.jpg";
 
 import ElysianLayout from "./ElysianLayout";
 import ElysianPhotos from "./ElysianPhotos";
+import ElysianHousingModel from "./ElysianHousingModel";
 
 export default function ElysianProject() {
   return (
@@ -203,10 +204,10 @@ export default function ElysianProject() {
           variant="h5"
           className="text-[#dec4a7] py-2 uppercase text-center leading-loose"
         >
-          thiết kế căn hộ
+          thiết kế căn hộ - nhà mẫu
         </Typography>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-          <div className="text-justify">
+          <div className="text-justify flex flex-col justify-center">
             <Typography className="text-sm md:text-lg">
               Lấy cảm hứng từ các tầng sinh học của rừng, Elysian không chỉ tập
               trung vào cây xanh ở tầng trệt và tầng thượng, dự án còn đưa thiên
@@ -222,15 +223,14 @@ export default function ElysianProject() {
               <li>Căn hộ 3 phòng ngủ: 3 căn/tầng</li>
             </ul>
             <Typography className="text-sm md:text-lg">
-              Lấy cảm hứng từ các tầng sinh học của rừng, Elysian không chỉ tập
-              trung vào cây xanh ở tầng trệt và tầng thượng, dự án còn đưa thiên
-              nhiên len lỏi vào ban công vào các tầng giữa, tạo nên một mặt tiền
-              xanh đột phá, dưa cuộc sống hằng ngày của cư dân chạm gần hơn với
-              thiên.
+              Elysian cung cấp nhiều loại hình căn hộ khác nhau, từ căn hộ
+              studio cho đến căn hộ 1 – 2 – 3 phòng ngủ và các căn Sky Villa có
+              diện tích hơn 300m2, phù hợp với nhu cầu đa dạng của người dân.
             </Typography>
           </div>
           <ElysianLayout />
         </div>
+        <ElysianHousingModel />
       </section>
 
       {/* Thanh toán */}

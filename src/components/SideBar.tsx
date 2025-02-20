@@ -6,7 +6,6 @@ import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
-import PersonIcon from "@mui/icons-material/Person";
 import InfoIcon from "@mui/icons-material/Info";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import ParkIcon from "@mui/icons-material/Park";
@@ -17,11 +16,6 @@ import { Drawer, IconButton, Tooltip } from "@mui/material";
 import SectionIcon from "@/shared/assets/icons/Section";
 
 const sideBarItems = [
-  {
-    title: "Chủ đầu tư",
-    url: "#developer",
-    icon: <PersonIcon color="primary" fontSize="small" />,
-  },
   {
     title: "Giới thiệu",
     url: "#introduction",
@@ -63,7 +57,9 @@ export default function SideBar() {
 
   const DrawerList = (
     <Box
-      sx={{ minWidth: 250 }}
+      sx={{
+        minWidth: 250,
+      }}
       role="presentation"
       onClick={toggleDrawer(false)}
     >

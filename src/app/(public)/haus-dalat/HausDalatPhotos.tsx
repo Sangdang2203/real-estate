@@ -134,8 +134,8 @@ const images = [
 
 export default function HausDalatPhotos() {
   return (
-    <>
+    <div className="my-5">
       <CustomCarousel images={images} />
-    </>
+    </div>
   );
 }

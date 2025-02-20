@@ -27,7 +27,7 @@ export default function BackButton() {
       <Tooltip title="Back to top">
         <IconButton
           onClick={() => scrollToTop(200)}
-          className="flex justify-center items-center bg-white hover:bg-yellow-600"
+          className="flex justify-center items-center"
         >
           <UpIcon />
         </IconButton>
