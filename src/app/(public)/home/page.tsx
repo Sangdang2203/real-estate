@@ -38,8 +38,7 @@ export default function HomePage() {
             </Typography>
             <Button
               variant="text"
-              className="readMore"
-              color="info"
+              className="readMore text-[#dec4a7]"
               href="/projects"
             >
               Xem tất cả
