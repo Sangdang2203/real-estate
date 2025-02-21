@@ -70,7 +70,10 @@ const images = [
 export default function EatonParkPhotos() {
   return (
     <div className="text-justify">
-      <Typography variant="h5" className="text-[#dec4a7] uppercase text-center">
+      <Typography
+        variant="h5"
+        className="text-[#dec4a7] font-semibold uppercase text-center"
+      >
         sống đẳng cấp
       </Typography>
       <Image

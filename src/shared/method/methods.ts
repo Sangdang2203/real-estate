@@ -33,3 +33,10 @@ export const handleShare = (url: string) => {
   const zaloShareUrl = `https://zalo.me/share?link=${encodeURIComponent(url)}`;
   window.open(zaloShareUrl, "_blank");
 };
+
+export const countVisitors = () => {
+  const min = 100;
+  const max = 10000;
+  // TODO:
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+};

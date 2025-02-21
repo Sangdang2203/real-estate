@@ -68,7 +68,7 @@ export default function HausDalatLayout() {
     <>
       <Typography
         variant="h5"
-        className="text-[#dec4a7] py-2 uppercase text-center leading-loose"
+        className="text-[#dec4a7] font-semibold py-2 uppercase text-center leading-loose"
       >
         mặt bằng thiết kế
       </Typography>
@@ -86,6 +86,8 @@ export default function HausDalatLayout() {
           sx={{
             flex: "0 0 200px",
             bgcolor: "background.paper",
+            display: "flex",
+            justifyContent: "center",
           }}
         >
           <Tabs

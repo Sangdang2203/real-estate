@@ -86,7 +86,7 @@ export default function ElysianProject() {
                     Sở hữu lâu dài
                   </Typography>
                   <Typography className="text-sm md:text-lg">
-                    Đang thi công phần thân
+                    Đã xây tới tầng 4
                   </Typography>
                 </div>
               </div>
@@ -119,7 +119,7 @@ export default function ElysianProject() {
           <div id="grad" className="p-4 rounded-t-lg opacity-95">
             <Typography
               variant="h5"
-              className="text-[#dec4a7] text-center py-2 uppercase leading-loose"
+              className="text-[#dec4a7] font-semibold text-center py-2 uppercase leading-loose"
             >
               VỊ TRÍ TRUNG TÂM THÀNH PHỐ THỦ ĐỨC
             </Typography>
@@ -180,7 +180,7 @@ export default function ElysianProject() {
       <section id="facilities" className="my-5">
         <Typography
           variant="h5"
-          className="text-[#dec4a7] py-2 uppercase text-center leading-loose"
+          className="text-[#dec4a7] font-semibold py-2 uppercase text-center leading-loose"
         >
           sống trọn cảm hứng
         </Typography>
@@ -202,7 +202,7 @@ export default function ElysianProject() {
       <section id="layout" className="my-5">
         <Typography
           variant="h5"
-          className="text-[#dec4a7] py-2 uppercase text-center leading-loose"
+          className="text-[#dec4a7] font-semibold py-2 uppercase text-center leading-loose"
         >
           thiết kế căn hộ - nhà mẫu
         </Typography>
@@ -237,19 +237,19 @@ export default function ElysianProject() {
       <section id="payment">
         <Typography
           variant="h5"
-          className="text-[#dec4a7] py-2 uppercase text-center leading-loose"
+          className="text-[#dec4a7] font-semibold py-2 uppercase text-center leading-loose"
         >
           thanh toán hấp dẫn
         </Typography>
-        <div className="uppercase text-[#cd3545] text-center leading-loose">
-          <Typography className="text-sm md:text-xl">
+        <div className="uppercase text-[#dec4a7] text-center leading-loose">
+          <Typography className="text-sm md:text-xl py-1">
             Trả trước 5% ký Hợp Đồng Mua Bán.
           </Typography>
-          <Typography className="text-sm md:text-xl">
-            Thanh toán chỉ 0.83% mỗi tháng
+          <Typography className="text-sm md:text-xl py-1">
+            Thanh toán tiến độ đến đủ 65% nhận nhà ở ngay | khai thác cho thuê
           </Typography>
-          <Typography className="text-sm md:text-xl">
-            Ngân hàng hỗ trợ vay. Gamuda Land hỗ trợ lãi vay cho khách hàng.
+          <Typography className="text-sm md:text-xl py-1">
+            35% cuối thanh toán tiến độ trong 12 tháng.
           </Typography>
         </div>
         <Image

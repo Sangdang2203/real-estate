@@ -8,6 +8,7 @@ import BackButton from "@/components/BackButton";
 import Hotline from "@/shared/assets/icons/Hotline";
 import TheHeaderComponent from "@/components/TheHeader";
 import TheFooterComponent from "@/components/TheFooter";
+import React from "react";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,6 +25,22 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const [showBackButton, setShowBackButton] = React.useState(false);
+
+  const handleScroll = () => {
+    const scrollY = window.scrollY;
+    const threshold = (2 / 3) * window.innerHeight; // 2/3 chiều cao màn hình
+    setShowBackButton(scrollY > threshold);
+  };
+
+  React.useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <html lang="en">
       <body
@@ -38,9 +55,11 @@ export default function RootLayout({
         </div>
 
         <footer className="w-full z-50">
-          <div className="fixed bottom-[1rem] left-3">
-            <BackButton />
-          </div>
+          {showBackButton && (
+            <div className="fixed bottom-[1rem] left-3">
+              <BackButton />
+            </div>
+          )}
 
           <div className="fixed right-2 bottom-2 md:hidden">
             <Hotline />

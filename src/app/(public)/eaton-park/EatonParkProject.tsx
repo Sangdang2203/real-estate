@@ -19,7 +19,7 @@ const EatonParkProject = () => {
           <div id="grad" className="p-4 rounded-t-lg opacity-95">
             <Typography
               variant="h5"
-              className="text-[#dec4a7] py-2 uppercase leading-loose"
+              className="text-[#dec4a7] font-semibold py-2 uppercase leading-loose"
             >
               vị trí trung tâm
             </Typography>
@@ -73,7 +73,7 @@ const EatonParkProject = () => {
       <section id="payment">
         <Typography
           variant="h5"
-          className="text-[#dec4a7] py-2 uppercase text-center leading-loose"
+          className="text-[#dec4a7] font-semibold py-2 uppercase text-center leading-loose"
         >
           thanh toán hấp dẫn
         </Typography>

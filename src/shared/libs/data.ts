@@ -159,7 +159,7 @@ export const projects = [
     status: "Đang thi công",
     type: "hot",
     description:
-      "Celesta Gold là dự án được phát triển sauu sự thành công của hàng loạt dự án mà Keppel Land đã triển khai như: Celesta Rise và Celesta Heights.",
+      "Celesta Gold liền kề khu đô thị quốc tế Phú Mỹ Hưng và Zeitgeist Nhà Bè, là dự án được phát triển sau sự thành công của hàng loạt dự án mà Keppel Land đã triển khai như: Celesta Rise và Celesta Heights.",
 
     images: [
       {

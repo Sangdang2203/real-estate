@@ -19,32 +19,32 @@ const sideBarItems = [
   {
     title: "Giới thiệu",
     url: "#introduction",
-    icon: <InfoIcon color="primary" fontSize="small" />,
+    icon: <InfoIcon className="text-[#dec4a7]" fontSize="small" />,
   },
   {
     title: "Vị trí",
     url: "#location",
-    icon: <LocationOnIcon color="primary" fontSize="small" />,
+    icon: <LocationOnIcon className="text-[#dec4a7]" fontSize="small" />,
   },
   {
     title: "Tiện ích",
     url: "#facilities",
-    icon: <ParkIcon color="primary" fontSize="small" />,
+    icon: <ParkIcon className="text-[#dec4a7]" fontSize="small" />,
   },
   {
     title: "Thanh toán",
     url: "#payment",
-    icon: <PaymentIcon color="primary" fontSize="small" />,
+    icon: <PaymentIcon className="text-[#dec4a7]" fontSize="small" />,
   },
   {
     title: "Mặt bằng & Thiết kế",
     url: "#layout",
-    icon: <ApartmentIcon color="primary" fontSize="small" />,
+    icon: <ApartmentIcon className="text-[#dec4a7]" fontSize="small" />,
   },
   {
     title: "Liên hệ",
     url: "tel:0909751772",
-    icon: <ContactPhoneIcon color="primary" fontSize="small" />,
+    icon: <ContactPhoneIcon className="text-[#dec4a7]" fontSize="small" />,
   },
 ];
 
@@ -68,7 +68,9 @@ export default function SideBar() {
           <ListItem key={item.title} disablePadding>
             <ListItemButton>
               <ListItemIcon>{item.icon}</ListItemIcon>
-              <Link href={item.url}>{item.title}</Link>
+              <Link href={item.url} className="text-[#dec4a7] uppercase">
+                {item.title}
+              </Link>
             </ListItemButton>
           </ListItem>
         ))}

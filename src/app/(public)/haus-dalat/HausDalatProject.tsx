@@ -71,7 +71,7 @@ export default function HausDalatProject() {
       <section id="payment">
         <Typography
           variant="h5"
-          className="text-[#dec4a7] py-2 uppercase text-center leading-loose"
+          className="text-[#dec4a7] font-semibold py-2 uppercase text-center leading-loose"
         >
           thanh toán hấp dẫn
         </Typography>

@@ -1,8 +1,8 @@
+import CustomCarousel from "@/components/CustomCarousel";
 import haus_dalat from "@/images/haus_dalat/haus_dalat.png";
 import eaton_park from "@/images/eaton_park/eaton_park.webp";
 import celesta_city from "@/images/celesta/celesta_heights.webp";
 import ecoretreat_longan from "@/images/eco_retreat/Ecoretreat_Longan_Landscape.jpg";
-import CustomCarousel from "@/components/CustomCarousel";
 
 const images = [
   { src: haus_dalat, alt: "haus dalat", title: "dự án haus dalat" },

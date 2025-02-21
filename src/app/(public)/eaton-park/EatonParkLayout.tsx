@@ -55,7 +55,7 @@ export default function EatonParkLayout() {
     <>
       <Typography
         variant="h5"
-        className="text-[#dec4a7] py-2 uppercase text-center leading-loose"
+        className="text-[#dec4a7] font-semibold py-2 uppercase text-center leading-loose"
       >
         thiết kế căn hộ
       </Typography>
@@ -82,7 +82,10 @@ export default function EatonParkLayout() {
           <Tabs
             value={value}
             onChange={handleChange}
-            aria-label="Elysian images"
+            aria-label="Eaton Park layout"
+            variant="scrollable"
+            scrollButtons="auto"
+            allowScrollButtonsMobile
           >
             {images.map((image, index) => (
               <Tab key={index} label={image.label} {...tabPanel(index)} />

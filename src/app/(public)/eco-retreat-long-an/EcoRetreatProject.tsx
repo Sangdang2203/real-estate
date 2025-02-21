@@ -19,7 +19,7 @@ export default function EcoRetreatProject() {
           <div id="grad" className="p-4 rounded-t-lg opacity-95">
             <Typography
               variant="h5"
-              className="text-[#dec4a7] py-2 uppercase leading-loose"
+              className="text-[#dec4a7] font-semibold py-2 uppercase leading-loose"
             >
               vị trí giao lộ hoàn kim
             </Typography>
@@ -48,7 +48,7 @@ export default function EcoRetreatProject() {
       <section id="facilities" className="my-5">
         <Typography
           variant="h5"
-          className="text-[#dec4a7] py-2 uppercase text-center leading-loose"
+          className="text-[#dec4a7] font-semibold py-2 uppercase text-center leading-loose"
         >
           chuỗi tiện ích đỉnh cao
         </Typography>
@@ -89,7 +89,7 @@ export default function EcoRetreatProject() {
       <section id="payment">
         <Typography
           variant="h5"
-          className="text-[#dec4a7] py-2 uppercase text-center leading-loose"
+          className="text-[#dec4a7] font-semibold py-2 uppercase text-center leading-loose"
         >
           thanh toán hấp dẫn
         </Typography>

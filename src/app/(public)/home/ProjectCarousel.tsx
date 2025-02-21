@@ -1,4 +1,3 @@
-// import { Project } from "@/app/interfaces";
 import NextIcon from "@/shared/assets/icons/NextIcon";
 import PreviousIcon from "@/shared/assets/icons/PreviousIcon";
 import ReadmoreIcon from "@/shared/assets/icons/ReadmoreIcon";
@@ -71,13 +70,16 @@ export default function ProjectCarousel() {
 
       <div className="my-6 flex justify-center items-center ">
         <Typography
-          className="text-[#dec4a7] text-center uppercase"
+          className="text-[#dec4a7] font-semibold text-center uppercase"
           variant="h5"
         >
           quan tâm nhiều nhất
         </Typography>
       </div>
-      <div id="project-carousel" className="flex justify-between items-center">
+      <div
+        id="project-carousel"
+        className="flex justify-between items-center slide-in-right"
+      >
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {filteredProjects.length > 0 ? (
             filteredProjects
@@ -149,34 +151,42 @@ export default function ProjectCarousel() {
                 </Card>
               ))
           ) : (
-            <div className="grid grid-cols-1">
+            <div className="w-full grid grid-cols-1">
               <Typography variant="body2" className="uppercase text-red-500">
-                không tìm thấy kết quả phù hợp
+                không tìm thấy kết quả phù hợp.
               </Typography>
             </div>
           )}
         </div>
       </div>
-      <div id="carousel-btn" className="flex justify-start my-1">
-        <IconButton
-          title="Previous"
-          onClick={prevSlide}
-          className={`${
-            isPrevDisabled ? "z-0 mx-[2px] cursor-not-allowed" : "z-0 mx-[2px]"
-          }`}
-        >
-          <PreviousIcon />
-        </IconButton>
-        <IconButton
-          title="Previous"
-          onClick={nextSlide}
-          className={`${
-            isNextDisabled ? "z-0 mx-[2px] cursor-not-allowed" : "z-0 mx-[2px]"
-          }`}
-        >
-          <NextIcon />
-        </IconButton>
-      </div>
+      {isMobile ? (
+        <div id="carousel-btn" className="flex justify-center my-3">
+          <IconButton
+            title="Previous"
+            onClick={prevSlide}
+            className={`${
+              isPrevDisabled
+                ? "z-0 mx-[2px] cursor-not-allowed"
+                : "z-0 mx-[2px]"
+            }`}
+          >
+            <PreviousIcon />
+          </IconButton>
+          <IconButton
+            title="Previous"
+            onClick={nextSlide}
+            className={`${
+              isNextDisabled
+                ? "z-0 mx-[2px] cursor-not-allowed"
+                : "z-0 mx-[2px]"
+            }`}
+          >
+            <NextIcon />
+          </IconButton>
+        </div>
+      ) : (
+        ""
+      )}
     </>
   );
 }

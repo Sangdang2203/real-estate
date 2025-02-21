@@ -130,7 +130,11 @@ export default function ProjectCard() {
       </div>
       {isMobile && filteredProjects.length > visibleProjects && (
         <div className="flex justify-center my-4">
-          <Button onClick={handleLoadMore} color="info" variant="outlined">
+          <Button
+            onClick={handleLoadMore}
+            className="text-[#dec4a7] border-[#dec4a7] border-[2px]"
+            variant="outlined"
+          >
             Xem thêm
           </Button>
         </div>

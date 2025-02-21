@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import React, { useState } from "react";
 import Image, { StaticImageData } from "next/image";
 import PreviousStep from "@/icons/PreviousStep";
 import NextStep from "@/icons/NextStep";
@@ -22,9 +22,13 @@ export default function CustomCarousel({ images }: CarouselProps) {
     );
   };
 
+  React.useEffect(() => {
+    setCurrentIndex(currentIndex);
+  }, [currentIndex]);
+
   return (
     <div className="relative w-full h-auto block" data-carousel="slide">
-      <div className="relative min-h-[200px] md:min-h-[680px] overflow-hidden rounded-lg">
+      <div className="relative min-h-[200px] md:min-h-[420px] lg:min-h-[680px] overflow-hidden rounded-lg">
         {images.map((image, index) => (
           <div
             key={index}
@@ -50,9 +54,9 @@ export default function CustomCarousel({ images }: CarouselProps) {
             key={index}
             type="button"
             className="w-3 h-3 rounded-full"
-            aria-current={index === currentIndex ? "true" : "false"}
+            aria-current={index === index ? "true" : "false"}
             aria-label={`Slide ${index + 1}`}
-            onClick={() => setCurrentIndex(index)}
+            onClick={() => setCurrentIndex(currentIndex)}
           ></button>
         ))}
       </div>
