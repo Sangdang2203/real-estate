@@ -38,6 +38,7 @@ export default function HomePage() {
             </Typography>
             <Button
               variant="text"
+              color="warning"
               className="readMore text-[#dec4a7]"
               href="/projects"
             >
