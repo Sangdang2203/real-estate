@@ -203,10 +203,6 @@ ul {
   }
 }
 
-.slide-down {
-  animation: slideToDown 1000ms ease-in-out; 
-}
-
 @keyframes slideToUp {
   0% {
     transform: translateY(100%); 
@@ -218,6 +214,22 @@ ul {
   }
 }
 
-.slide-up {
+.slide-down {
+  animation: slideToDown 1000ms ease-in-out; 
+}
+
+.slide-up-1 {
   animation: slideToUp 1000ms ease-in-out; 
+}
+.slide-up-2 {
+  animation: slideToUp 2000ms ease-in-out; 
+}
+.slide-up-3 {
+  animation: slideToUp 3000ms ease-in-out; 
+}
+.slide-up-4 {
+  animation: slideToUp 4000ms ease-in-out; 
+}
+.slide-up-5 {
+  animation: slideToUp 5000ms ease-in-out; 
 }
