@@ -1,4 +1,4 @@
-import { NavLink } from "../interfaces";
+import { NavLink, Project } from "../interfaces";
 import elysian from "@/images/elysian/elysian.jpg";
 import eaton_park from "@/images/eaton_park/model_housing.jpg";
 import haus_dalat from "@/images/haus_dalat/haus_dalat.png";
@@ -26,7 +26,7 @@ export const navLinks: NavLink[] = [
   },
 ];
 
-export const projects = [
+export const projects: Project[] = [
   {
     id: 1,
     name: "eaton park",
