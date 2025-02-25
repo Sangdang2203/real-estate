@@ -70,7 +70,7 @@ export default function ProjectCarousel() {
 
       <div className="my-6 flex justify-center items-center ">
         <Typography
-          className="text-[#dec4a7] font-semibold text-center uppercase"
+          className="text-[#dec4a7] font-semibold text-center uppercase slide-up"
           variant="h5"
         >
           quan tâm nhiều nhất
@@ -78,7 +78,7 @@ export default function ProjectCarousel() {
       </div>
       <div
         id="project-carousel"
-        className="flex justify-between items-center slide-in-right"
+        className="flex justify-between items-center slide-up"
       >
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {filteredProjects.length > 0 ? (

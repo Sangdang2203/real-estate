@@ -1,6 +1,11 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { StaticImageData } from "next/image";
 
+export interface NavLink {
+  path: string;
+  name: string;
+}
+
 export interface ApiResponse {
   ok: boolean;
   status: string;

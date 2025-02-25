@@ -24,7 +24,7 @@ export default function HomePage() {
       </section>
 
       <section>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-10 slide-in-left">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-10 slide-up">
           <Paper className="pt-4 text-center rounded-lg min-h-[230px]">
             <SupervisedUserCircleIcon
               fontSize="large"

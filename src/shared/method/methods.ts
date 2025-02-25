@@ -35,8 +35,7 @@ export const handleShare = (url: string) => {
 };
 
 export const countVisitors = () => {
-  const min = 100;
+  const min = 1000;
   const max = 10000;
-  // TODO:
   return Math.floor(Math.random() * (max - min + 1)) + min;
 };

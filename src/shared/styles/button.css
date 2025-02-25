@@ -1,0 +1,46 @@
+.readMore {
+  --color: #dec4a7;
+  font-family: inherit;
+  display: inline-block;
+  line-height: 2.5em;
+  margin: 4px;
+  padding: 0 12px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: color 0.5s;
+  z-index: 1;
+  font-size: 17px;
+  border-radius: 6px;
+  font-weight: 500;
+  color: var(--color);
+}
+
+.readMore:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: var(--color);
+  height: 150px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+.readMore:hover {
+  color: #fff;
+}
+
+.readMore:before {
+  top: 100%;
+  left: 100%;
+  transition: all 0.7s;
+}
+
+.readMore:hover:before {
+  top: -30px;
+  left: -30px;
+}
+
+.readMore:active:before {
+  background: #dec4a7;
+  transition: background 0s;
+}

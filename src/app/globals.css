@@ -192,32 +192,32 @@ ul {
 }
 
 
-@keyframes slideFromLeft {
+@keyframes slideToDown {
   0% {
-    transform: translateX(-100%); 
+    transform: translateY(-100%); 
     opacity: 0; 
   }
   100% {
-    transform: translateX(0); 
+    transform: translateY(0); 
     opacity: 1; 
   }
 }
 
-.slide-in-left {
-  animation: slideFromLeft 1000ms ease-in-out; 
+.slide-down {
+  animation: slideToDown 1000ms ease-in-out; 
 }
 
-@keyframes slideFromRight {
+@keyframes slideToUp {
   0% {
-    transform: translateX(100%); 
+    transform: translateY(100%); 
     opacity: 0; 
   }
   100% {
-    transform: translateX(0); 
+    transform: translateY(0); 
     opacity: 1;
   }
 }
 
-.slide-in-right {
-  animation: slideFromRight 1000ms ease-in-out; 
+.slide-up {
+  animation: slideToUp 1000ms ease-in-out; 
 }
