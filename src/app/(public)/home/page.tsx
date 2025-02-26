@@ -19,7 +19,7 @@ export default function HomePage() {
   return (
     <div className="">
       {/* Carousel section */}
-      <section id="slideshow">
+      <section id="slideshow" className="hidden md:block">
         <CarouselPhotos />
       </section>
 
