@@ -29,7 +29,7 @@ export default function RootLayout({
 
   const handleScroll = () => {
     const scrollY = window.scrollY;
-    const threshold = (2 / 3) * window.innerHeight; // 2/3 chiều cao màn hình
+    const threshold = (2 / 3) * window.innerHeight;
     setShowBackButton(scrollY > threshold);
   };
 

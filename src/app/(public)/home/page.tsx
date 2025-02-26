@@ -24,7 +24,7 @@ export default function HomePage() {
       </section>
 
       <section>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-10 slide-up-2">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-10">
           <Paper className="pt-4 text-center rounded-lg min-h-[230px]">
             <SupervisedUserCircleIcon
               fontSize="large"
@@ -64,17 +64,9 @@ export default function HomePage() {
       </section>
 
       {/* Projects section  */}
-      <section id="projects">
+      <section id="projects" className="my-10">
         <ProjectCarousel />
       </section>
-
-      <div className="flex justify-center my-10 z-0">
-        {/* <Link href="/projects" className="uppercase readMore text-center">
-          xem thêm...
-        </Link> */}
-      </div>
-
-      <section id="contact"></section>
     </div>
   );
 }
