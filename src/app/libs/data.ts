@@ -29,29 +29,6 @@ export const navLinks: NavLink[] = [
 export const projects: Project[] = [
   {
     id: 1,
-    name: "eaton park",
-    projectUrl: "/eaton-park",
-    developer: "gamuda land",
-    location: "Mai Chí Thọ, TP.HCM",
-    productType: "Căn hộ, Shophouse",
-    area: "3,7 hecta",
-    unitType: "50 - 116 m2",
-    handover: "Hoàn thiện nội thất",
-    owner: "Sở hữu lâu dài",
-    status: "Đang thi công phần thân",
-    type: "hot",
-    description:
-      "Eaton Park là một dự án căn hộ cao cấp tọa lạc tại vị trí đắc địa ngay mặt tiền đường Mai Chí Thọ, được phát triển bởi Gamuda Land – một trong những tập đoàn bất động sản hàng đầu Việt Nam, Eaton Park hứa hẹn mang lại một phong cách sống sang trọng, hiện đại và giao hòa với thiên nhiên.",
-
-    images: [
-      {
-        alt: "eaton park",
-        src: eaton_park,
-      },
-    ],
-  },
-  {
-    id: 2,
     name: "eco retreat long an",
     projectUrl: "/eco-retreat-long-an",
     developer: "ecopark group",
@@ -73,6 +50,30 @@ export const projects: Project[] = [
       },
     ],
   },
+  {
+    id: 2,
+    name: "eaton park",
+    projectUrl: "/eaton-park",
+    developer: "gamuda land",
+    location: "Mai Chí Thọ, TP.HCM",
+    productType: "Căn hộ, Shophouse",
+    area: "3,7 hecta",
+    unitType: "50 - 116 m2",
+    handover: "Hoàn thiện nội thất",
+    owner: "Sở hữu lâu dài",
+    status: "Đang thi công phần thân",
+    type: "hot",
+    description:
+      "Eaton Park là một dự án căn hộ cao cấp tọa lạc tại vị trí đắc địa ngay mặt tiền đường Mai Chí Thọ, được phát triển bởi Gamuda Land – một trong những tập đoàn bất động sản hàng đầu Việt Nam, Eaton Park hứa hẹn mang lại một phong cách sống sang trọng, hiện đại và giao hòa với thiên nhiên.",
+
+    images: [
+      {
+        alt: "eaton park",
+        src: eaton_park,
+      },
+    ],
+  },
+
   {
     id: 3,
     name: "haus da lat",
