@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Typography } from "@mui/material";
 
 import ecopark from "@/images/eco_retreat/Ecopark.jpg";
-import ecoretreat_longan from "@/images/eco_retreat/Ecoretreat_Longan_Landscape.jpg";
+import ecoretreat_longan from "@/images/eco_retreat/EcoRetreat_image_04.jpg";
 
 export default function EcoRetreatIntroduction() {
   return (

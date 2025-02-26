@@ -28,7 +28,7 @@ export default function CustomCarousel({ images }: CarouselProps) {
 
   return (
     <div className="relative w-full h-auto block" data-carousel="slide">
-      <div className="relative min-h-[200px] md:min-h-[420px] lg:min-h-[680px] overflow-hidden rounded-lg">
+      <div className="relative min-h-[200px] sm:min-h-[420px] lg:min-h-[700px] overflow-hidden rounded-lg">
         {images.map((image, index) => (
           <div
             key={index}

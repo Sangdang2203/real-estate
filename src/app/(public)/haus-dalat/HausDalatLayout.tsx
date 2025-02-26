@@ -22,19 +22,19 @@ const images = [
   {
     src: haus_2bedrooms_01,
     label: "2 BEDROOMS",
-    alt: "Haus Dalat 2 bedrooms",
+    alt: "Haus Dalat 2 bedrooms type 01",
     title: "Haus Dalat 2 bedrooms",
   },
   {
     src: haus_2bedrooms_02,
     label: "2 BEDROOMS",
-    alt: "Haus Dalat 2 bedrooms",
+    alt: "Haus Dalat 2 bedrooms type 02",
     title: "Haus Dalat 2 bedrooms",
   },
   {
     src: haus_2bedrooms_03,
     label: "2 BEDROOMS",
-    alt: "Haus Dalat 2 bedrooms",
+    alt: "Haus Dalat 2 bedrooms type 03",
     title: "Haus Dalat 2 bedrooms",
   },
   {
@@ -46,7 +46,7 @@ const images = [
   {
     src: haus_3bedrooms_conner,
     label: "3 BEDROOMS",
-    alt: "Haus Dalat 3 bedrooms",
+    alt: "Haus Dalat 3 bedrooms conner",
     title: "Haus Dalat 3 bedrooms",
   },
   {
@@ -98,6 +98,7 @@ export default function HausDalatLayout() {
             value={value}
             onChange={handleChange}
             aria-label="Haus Dalat images"
+            className="hidden md:block"
           >
             {images.map((image, index) => (
               <Tab key={index} label={image.label} {...tabPanel(index)} />
@@ -110,7 +111,7 @@ export default function HausDalatLayout() {
               <Image
                 src={image.src}
                 alt={image.alt}
-                className="w-[90%] h-auto"
+                className="w-[90%] mx-auto h-auto"
                 priority
                 loading="eager"
               />
@@ -118,6 +119,22 @@ export default function HausDalatLayout() {
           ))}
         </Box>
       </Box>
+      <div className="block md:hidden">
+        {images.length > 0 &&
+          images.map((image) => {
+            return (
+              <Image
+                key={image.alt}
+                src={image.src}
+                alt={image.alt}
+                title={image.title}
+                className="w-full h-auto"
+                priority
+                loading="eager"
+              />
+            );
+          })}
+      </div>
     </>
   );
 }

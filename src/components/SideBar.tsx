@@ -12,7 +12,7 @@ import ParkIcon from "@mui/icons-material/Park";
 import ApartmentIcon from "@mui/icons-material/Apartment";
 import ContactPhoneIcon from "@mui/icons-material/ContactPhone";
 import PaymentIcon from "@mui/icons-material/Payment";
-import { Drawer, IconButton, Tooltip } from "@mui/material";
+import { Button, Drawer, Tooltip } from "@mui/material";
 import SectionIcon from "@/shared/assets/icons/Section";
 
 const sideBarItems = [
@@ -81,9 +81,9 @@ export default function SideBar() {
   return (
     <div>
       <Tooltip title="Menu">
-        <IconButton onClick={toggleDrawer(true)}>
-          <SectionIcon />
-        </IconButton>
+        <Button onClick={toggleDrawer(true)} startIcon={<SectionIcon />}>
+          Section
+        </Button>
       </Tooltip>
 
       <Drawer open={open} onClose={toggleDrawer(false)}>
