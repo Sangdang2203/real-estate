@@ -21,6 +21,7 @@ export default function EatonParkIntroduction() {
         alt="Vị trí dự án Eaton Park"
         title="Vị trí dự án Eaton Park"
         priority
+        loading="eager"
       />
       <Typography className="text-sm md:text-lg">
         Eaton Park được Gamua Land định hướng phát triển nên dòng sản phẩm căn

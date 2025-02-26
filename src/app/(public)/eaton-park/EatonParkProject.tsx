@@ -38,12 +38,14 @@ const EatonParkProject = () => {
             className="w-full h-full z-0"
             alt="model housing"
             priority
+            loading="eager"
           />
           <Image
             src={model_housing}
             className="w-full h-auto rounded-b-lg z-0"
             alt="model housing"
             priority
+            loading="eager"
           />
           <Typography className="py-4 text-sm md:text-lg">
             Nằm ngay mặt tiền đường Mai Chí Thọ, chỉ cách trung tâm quận 1 với

@@ -40,6 +40,7 @@ export default function EcoRetreatProject() {
             className="w-full h-full z-0 rounded-b-lg"
             alt="ecoretreat long an location"
             priority
+            loading="eager"
           />
         </div>
       </section>
@@ -76,6 +77,7 @@ export default function EcoRetreatProject() {
             className="w-full h-auto rounded-md z-0"
             alt="eaton park banner"
             priority
+            loading="eager"
           />
         </div>
       </section>

@@ -43,6 +43,7 @@ export default function HausDalatIntroduction() {
             src={haus_continental}
             alt="haus_continental"
             priority
+            loading="eager"
           />
         </div>
         <div className="flex flex-col justify-between">
@@ -66,12 +67,14 @@ export default function HausDalatIntroduction() {
               src={interContinental}
               alt="haus_continental"
               priority
+              loading="eager"
             />
             <Image
               className="rounded-lg"
               src={interContinental_1}
               alt="haus_continental"
               priority
+              loading="eager"
             />
           </div>
         </div>
@@ -150,6 +153,7 @@ export default function HausDalatIntroduction() {
             src={haus_dalat}
             alt="haus dalat"
             priority
+            loading="eager"
           />
         </div>
       </div>

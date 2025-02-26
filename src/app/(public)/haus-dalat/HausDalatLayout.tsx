@@ -111,6 +111,8 @@ export default function HausDalatLayout() {
                 src={image.src}
                 alt={image.alt}
                 className="w-[90%] h-auto"
+                priority
+                loading="eager"
               />
             </CustomTabPanel>
           ))}

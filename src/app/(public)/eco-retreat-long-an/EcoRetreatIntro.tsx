@@ -50,6 +50,7 @@ export default function EcoRetreatIntroduction() {
           src={ecopark}
           alt="ecopark"
           priority
+          loading="eager"
         />
       </div>
 
@@ -113,6 +114,7 @@ export default function EcoRetreatIntroduction() {
             src={ecoretreat_longan}
             alt="ecoretreat_longan"
             priority
+            loading="eager"
           />
         </div>
       </div>

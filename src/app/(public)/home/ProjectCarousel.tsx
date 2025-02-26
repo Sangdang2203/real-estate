@@ -112,6 +112,8 @@ export default function ProjectCarousel() {
                         height={300}
                         title="Press to explore more information."
                         className="pb-3 max-h-[180px] md:max-h-[130px]"
+                        priority
+                        loading="eager"
                       />
                     </Link>
                     <Tooltip title={project.description}>

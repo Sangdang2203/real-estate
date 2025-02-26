@@ -81,6 +81,7 @@ export default function EatonParkPhotos() {
         className="w-full h-auto rounded-md z-0 my-2"
         alt="eaton park banner"
         priority
+        loading="eager"
       />
       <Typography className="text-sm md:text-lg py-1">
         <strong className="text-red-700">Eaton Park</strong> không chỉ nổi bật

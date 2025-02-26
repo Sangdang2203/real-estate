@@ -101,6 +101,7 @@ export default function ProjectCard() {
                           alt={project.images[0].alt}
                           width={500}
                           height={300}
+                          loading="eager"
                           title="Press to explore more information."
                           className="pb-3 max-h-[180px] md:max-h-[130px]"
                         />

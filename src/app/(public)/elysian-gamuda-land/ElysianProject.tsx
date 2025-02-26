@@ -33,6 +33,7 @@ export default function ElysianProject() {
               src={elysian_banner}
               alt="căn hộ elysian by Gamuda Land"
               priority
+              loading="eager"
             />
             <div className="h-auto">
               <Typography className="text-sm md:text-lg">
@@ -107,6 +108,7 @@ export default function ElysianProject() {
                 alt="Elysian by Gamuda Land"
                 title="Elysian by Gamuda Land"
                 priority
+                loading="eager"
               />
             </div>
           </div>
@@ -139,6 +141,7 @@ export default function ElysianProject() {
             alt="Elysian Location"
             title="Elysian Location"
             priority
+            loading="eager"
           />
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-4">
@@ -147,6 +150,7 @@ export default function ElysianProject() {
               className="w-full h-full z-0 rounded-lg"
               alt="model housing"
               priority
+              loading="eager"
             />
             <div>
               <Typography className="text-sm md:text-lg text-justify">
@@ -258,6 +262,7 @@ export default function ElysianProject() {
           alt="Elysian by Gamuda Land"
           title="Elysian by Gamuda Land"
           priority
+          loading="eager"
         />
       </section>
     </>

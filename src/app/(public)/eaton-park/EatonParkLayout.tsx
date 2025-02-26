@@ -65,11 +65,14 @@ export default function EatonParkLayout() {
           className="w-full h-auto rounded-t-lg"
           alt="eaton park layout"
           priority
+          loading="eager"
         />
         <Image
           src={master_layout}
           className="w-full h-auto rounded-b-lg"
           alt="master_layout"
+          priority
+          loading="eager"
         />
       </div>
       <div className="w-full h-auto">
@@ -98,6 +101,8 @@ export default function EatonParkLayout() {
               src={image.src}
               alt={image.alt}
               className="min-w-[300px] h-auto md:min-w-[500px] rounded-lg"
+              priority
+              loading="eager"
             />
           </CustomTabPanel>
         ))}

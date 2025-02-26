@@ -55,6 +55,8 @@ export default function ElysianLayout() {
             src={image.src}
             alt={image.alt}
             className="min-w-[300px] h-auto md:min-w-[500px]"
+            priority
+            loading="eager"
           />
         </CustomTabPanel>
       ))}
