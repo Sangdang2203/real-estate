@@ -5,7 +5,7 @@ export default function EcoRetreatLayout() {
     <>
       <Typography
         variant="h5"
-        className="text-[#dec4a7] font-semibold py-2 uppercase text-center leading-loose"
+        className="text-[#8b5a3e] font-semibold py-2 uppercase text-center leading-loose"
       >
         mặt bằng thiết kế
       </Typography>

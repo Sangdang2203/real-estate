@@ -55,7 +55,7 @@ export default function EatonParkLayout() {
     <>
       <Typography
         variant="h5"
-        className="text-[#dec4a7] font-semibold py-2 uppercase text-center leading-loose"
+        className="text-[#8b5a3e] font-semibold py-2 uppercase text-center leading-loose"
       >
         thiết kế căn hộ
       </Typography>

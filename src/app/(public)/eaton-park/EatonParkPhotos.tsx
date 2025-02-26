@@ -72,7 +72,7 @@ export default function EatonParkPhotos() {
     <div className="text-justify">
       <Typography
         variant="h5"
-        className="text-[#dec4a7] font-semibold uppercase text-center"
+        className="text-[#8b5a3e] font-semibold uppercase text-center"
       >
         sống đẳng cấp
       </Typography>

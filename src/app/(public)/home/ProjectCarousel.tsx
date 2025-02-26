@@ -70,7 +70,7 @@ export default function ProjectCarousel() {
 
       <div className="my-6 flex justify-center items-center">
         <Typography
-          className="text-[#dec4a7] font-semibold text-center uppercase"
+          className="text-[#8b5a3e] font-semibold text-center uppercase"
           variant="h5"
         >
           quan tâm nhiều nhất

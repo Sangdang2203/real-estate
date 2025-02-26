@@ -152,7 +152,7 @@ export default function ProjectCard() {
         <div className="flex justify-center my-4">
           <Button
             onClick={handleLoadMore}
-            className="text-[#dec4a7] border-[#dec4a7] border-[2px]"
+            className="text-[#8b5a3e] border-[#8b5a3e] border-[2px]"
             variant="outlined"
           >
             Xem thêm
