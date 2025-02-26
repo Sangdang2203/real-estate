@@ -44,14 +44,12 @@ export default function EcoRetreatIntroduction() {
       </Typography>
 
       <Image
-        className="rounded-lg w-full"
+        className="rounded-lg w-full mt-5"
         src={ecopark}
         alt="ecopark"
         priority
         loading="eager"
       />
-
-      <div className="grid grid-cols-1 xl:grid-cols-2 gap-6 my-5"></div>
 
       <div>
         <Typography className="text-sm md:text-lg">
