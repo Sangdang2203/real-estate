@@ -28,12 +28,12 @@ export default function HomePage() {
           <Paper className="pt-4 text-center rounded-lg min-h-[230px]">
             <SupervisedUserCircleIcon
               fontSize="large"
-              className="text-[#dec4a7]"
+              className="text-[#8b5a3e]"
             />
             <Typography variant="h5" className="py-1">
               Lượng khách hàng truy cập
             </Typography>
-            <Typography variant="h3" className="text-[#dec4a7]">
+            <Typography variant="h3" className="text-[#8b5a3e]">
               {visitorCount}
             </Typography>
             <Typography variant="body2">
@@ -41,11 +41,11 @@ export default function HomePage() {
             </Typography>
           </Paper>
           <Paper className="pt-4 text-center rounded-lg min-h-[230px]">
-            <ApartmentIcon fontSize="large" className="text-[#dec4a7]" />
+            <ApartmentIcon fontSize="large" className="text-[#8b5a3e]" />
             <Typography variant="h5" className="py-1">
               Dự án bất động sản
             </Typography>
-            <Typography variant="h3" className="text-[#dec4a7]">
+            <Typography variant="h3" className="text-[#8b5a3e]">
               {projects.length}
             </Typography>
             <Typography variant="body2">
@@ -53,8 +53,8 @@ export default function HomePage() {
             </Typography>
             <Button
               variant="text"
-              color="warning"
-              className="readMore text-[#dec4a7]"
+              style={{ color: "#8b5a3e" }}
+              className="readMore"
               href="/projects"
             >
               Xem tất cả
