@@ -16,7 +16,7 @@ export default function EcoRetreatIntroduction() {
         hướng Bất động sản Xanh, mở rộng và phát triển mô hình đô thị Ecopark
         trên khắp cả nước.
       </Typography>
-      <div className="my-5 w-full">
+      {/* <div className="my-5 w-full">
         <iframe
           src="https://www.youtube.com/embed/f6BpEkVE_1M?start=10"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -24,7 +24,7 @@ export default function EcoRetreatIntroduction() {
           title="Ecopark Developer Documentation"
           className="rounded-lg w-full min-h-[200px] md:min-h-[550px]"
         ></iframe>
-      </div>
+      </div> */}
 
       <div className="grid grid-cols-1 xl:grid-cols-2 gap-6 my-5">
         <Typography className="text-sm md:text-lg">
