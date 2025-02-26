@@ -187,48 +187,4 @@ export const projects: Project[] = [
       },
     ],
   },
-  {
-    id: 8,
-    name: "celesta rise",
-    projectUrl: "/celesta-rise",
-    developer: "keppel land",
-    productType: "Căn hộ, Shophouse",
-    area: "2,8 hecta",
-    unitType: "49 - 106 m2",
-    handover: "Thô | Hoàn thiện cơ bản",
-    owner: "Sở hữu lâu dài",
-    status: "Đã hoàn thiện",
-    type: "hot",
-    description:
-      "Celesta Rise là dự án thành phần với diện tích 2,8 hecta tọa lạc trong khu dự án căn hộ cao cấp CELESTA có tổng diện tích 6,2 hecta tại Nam Sài Gòn. Celesta Rise là giai đoạn đầu tiên, bao gồm 923 căn hộ cao cấp trải dài trong 5 tòa tháp với tiện ích đa dạng phù hợp cho mọi lứa tuổi.",
-    location: "Nguyễn Hữu Thọ, TP.HCM",
-    images: [
-      {
-        alt: "celesta rise",
-        src: celesta_rise,
-      },
-    ],
-  },
-  {
-    id: 9,
-    name: "celesta rise",
-    projectUrl: "/celesta-rise",
-    developer: "keppel land",
-    productType: "Căn hộ, Shophouse",
-    area: "2,8 hecta",
-    unitType: "49 - 106 m2",
-    handover: "Thô | Hoàn thiện cơ bản",
-    owner: "Sở hữu lâu dài",
-    status: "Đã hoàn thiện",
-    type: "hot",
-    description:
-      "Celesta Rise là dự án thành phần với diện tích 2,8 hecta tọa lạc trong khu dự án căn hộ cao cấp CELESTA có tổng diện tích 6,2 hecta tại Nam Sài Gòn. Celesta Rise là giai đoạn đầu tiên, bao gồm 923 căn hộ cao cấp trải dài trong 5 tòa tháp với tiện ích đa dạng phù hợp cho mọi lứa tuổi.",
-    location: "Nguyễn Hữu Thọ, TP.HCM",
-    images: [
-      {
-        alt: "celesta rise",
-        src: celesta_rise,
-      },
-    ],
-  },
 ];
