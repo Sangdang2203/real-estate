@@ -28,12 +28,12 @@ export default function EcoRetreatLocation() {
           height="auto"
           autoPlay
           className="rounded-b-lg"
+          title="Vị trí dự án Eco Retreat"
         >
           <source
             src="/videos/EcoRetreatLongAn_location.mp4"
             type="video/mp4"
           />
-          Video về dự án Haus Dalat
         </video>
       </div>
     </div>

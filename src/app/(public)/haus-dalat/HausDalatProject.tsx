@@ -56,6 +56,7 @@ export default function HausDalatProject() {
           height="auto"
           autoPlay
           className="rounded-lg"
+          title="Video về dự án Haus Dalat"
         >
           <source src="/videos/haus_dalat.mp4" type="video/mp4" />
           Video về dự án Haus Dalat

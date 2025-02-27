@@ -1,8 +1,6 @@
 import Image from "next/image";
 import { Typography } from "@mui/material";
-
 import ecopark from "@/images/eco_retreat/master_layout.png";
-import ecoretreat_longan from "@/images/eco_retreat/EcoRetreat_image_04.jpg";
 
 export default function EcoRetreatIntroduction() {
   return (
@@ -24,9 +22,10 @@ export default function EcoRetreatIntroduction() {
           height="auto"
           autoPlay
           className="rounded-lg"
+          title="Video về dự án Eco Retreat"
         >
           <source src="/videos/EcoRetreatLongAn_Present.mp4" type="video/mp4" />
-          Video về dự án Haus Dalat
+          Video về dự án Eco Retreat
         </video>
       </div>
 
@@ -110,14 +109,19 @@ export default function EcoRetreatIntroduction() {
             <Typography className="text-sm md:text-lg">Quý 1/2025</Typography>
           </div>
         </div>
-        <div>
-          <Image
-            className="rounded-lg w-full"
-            src={ecoretreat_longan}
-            alt="ecoretreat_longan"
-            priority
-            loading="eager"
-          />
+        <div className="w-full my-5">
+          <video
+            controls
+            width="100%"
+            height="auto"
+            autoPlay
+            playsInline
+            className="rounded-lg"
+            title="Video về dự án Eco Retreat"
+          >
+            <source src="/videos/EcoRetreatLongAn.mp4" type="video/mp4" />
+            Video về dự án Eco Retreat
+          </video>
         </div>
       </div>
     </>
