@@ -27,7 +27,7 @@ export default function EcoRetreatLocation() {
           width="100%"
           height="auto"
           autoPlay
-          className="rounded-b-lg"
+          className="rounded-b-lg object-cover"
           title="Vị trí dự án Eco Retreat"
           muted
         >

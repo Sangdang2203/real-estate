@@ -54,7 +54,7 @@ export default function ElysianLayout() {
           <Image
             src={image.src}
             alt={image.alt}
-            className="min-w-[300px] h-auto md:min-w-[500px]"
+            className="min-w-[300px] h-auto md:min-w-[500px] object-cover"
             priority
             loading="eager"
           />

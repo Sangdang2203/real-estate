@@ -33,7 +33,7 @@ export default function EcoRetreatFacilities() {
 
         <Image
           src={facilities}
-          className="w-full h-auto rounded-md z-0"
+          className="w-full h-auto object-cover rounded-md z-0"
           alt="eaton park banner"
           priority
           loading="eager"

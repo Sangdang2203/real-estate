@@ -78,7 +78,7 @@ export default function EatonParkPhotos() {
       </Typography>
       <Image
         src={banner}
-        className="w-full h-auto rounded-md z-0 my-2"
+        className="w-full object-cover h-auto rounded-md z-0 my-2"
         alt="eaton park banner"
         priority
         loading="eager"

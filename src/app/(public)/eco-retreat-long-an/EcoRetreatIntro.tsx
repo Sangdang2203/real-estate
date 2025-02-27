@@ -21,7 +21,7 @@ export default function EcoRetreatIntroduction() {
           width="100%"
           height="auto"
           autoPlay
-          className="rounded-lg"
+          className="rounded-lg object-cover"
           title="Video về dự án Eco Retreat"
           muted
         >
@@ -49,7 +49,7 @@ export default function EcoRetreatIntroduction() {
       </Typography>
 
       <Image
-        className="rounded-lg w-full my-5"
+        className="rounded-lg w-full object-cover my-5"
         src={ecopark}
         alt="ecopark"
         priority
@@ -117,7 +117,7 @@ export default function EcoRetreatIntroduction() {
             height="auto"
             autoPlay
             playsInline
-            className="rounded-lg"
+            className="rounded-lg object-cover"
             title="Video về dự án Eco Retreat"
             muted
           >

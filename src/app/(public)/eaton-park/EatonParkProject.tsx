@@ -35,14 +35,14 @@ const EatonParkProject = () => {
           </div>
           <Image
             src={location}
-            className="w-full h-full z-0"
+            className="w-full h-full z-0 object-cover"
             alt="model housing"
             priority
             loading="eager"
           />
           <Image
             src={model_housing}
-            className="w-full h-auto rounded-b-lg z-0"
+            className="w-full h-auto rounded-b-lg z-0 object-cover"
             alt="model housing"
             priority
             loading="eager"

@@ -17,7 +17,7 @@ export default function EatonParkIntroduction() {
       </Typography>
       <Image
         src={eaton_location}
-        className="w-full h-auto rounded-lg my-2"
+        className="w-full object-cover h-auto rounded-lg my-2"
         alt="Vị trí dự án Eaton Park"
         title="Vị trí dự án Eaton Park"
         priority

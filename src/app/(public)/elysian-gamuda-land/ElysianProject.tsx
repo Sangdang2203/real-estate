@@ -257,7 +257,7 @@ export default function ElysianProject() {
           </Typography>
         </div>
         <Image
-          className="rounded-lg w-full h-auto mt-3"
+          className="rounded-lg w-full h-auto object-cover mt-3"
           src={elysian_reasons}
           alt="Elysian by Gamuda Land"
           title="Elysian by Gamuda Land"

@@ -100,7 +100,7 @@ export default function EatonParkLayout() {
             <Image
               src={image.src}
               alt={image.alt}
-              className="min-w-[300px] h-auto md:min-w-[500px] rounded-lg"
+              className="object-cover min-w-[300px] h-auto md:min-w-[500px] rounded-lg"
               priority
               loading="eager"
             />

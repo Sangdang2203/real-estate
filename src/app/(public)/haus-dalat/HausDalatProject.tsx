@@ -54,7 +54,7 @@ export default function HausDalatProject() {
           width="100%"
           height="auto"
           autoPlay
-          className="rounded-lg"
+          className="rounded-lg object-cover"
           title="Video về dự án Haus Dalat"
           muted
         >
