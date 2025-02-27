@@ -11,6 +11,7 @@ import haus_2bedrooms_03 from "@/images/haus_dalat/haus_2bedrooms_03.jpg";
 import haus_3bedrooms from "@/images/haus_dalat/haus_3bedrooms.jpg";
 import haus_3bedrooms_conner from "@/images/haus_dalat/haus_3bedrooms_conner.jpg";
 import haus_4bedrooms from "@/images/haus_dalat/haus_4bedrooms.jpg";
+import HausDalatPhotos from "./HausDalatPhotos";
 
 const images = [
   {
@@ -135,6 +136,7 @@ export default function HausDalatLayout() {
             );
           })}
       </div>
+      <HausDalatPhotos />
     </>
   );
 }

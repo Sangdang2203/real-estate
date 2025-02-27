@@ -23,6 +23,7 @@ export default function EcoRetreatIntroduction() {
           autoPlay
           className="rounded-lg"
           title="Video về dự án Eco Retreat"
+          muted
         >
           <source src="/videos/EcoRetreatLongAn_Present.mp4" type="video/mp4" />
           Video về dự án Eco Retreat
@@ -118,6 +119,7 @@ export default function EcoRetreatIntroduction() {
             playsInline
             className="rounded-lg"
             title="Video về dự án Eco Retreat"
+            muted
           >
             <source src="/videos/EcoRetreatLongAn.mp4" type="video/mp4" />
             Video về dự án Eco Retreat

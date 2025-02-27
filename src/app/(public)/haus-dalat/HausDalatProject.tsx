@@ -2,7 +2,6 @@ import React from "react";
 import { Typography } from "@mui/material";
 
 import HausDalatLayout from "./HausDalatLayout";
-import HausDalatPhotos from "./HausDalatPhotos";
 import HausDalatIntroduction from "./HausDalatIntro";
 
 export default function HausDalatProject() {
@@ -57,6 +56,7 @@ export default function HausDalatProject() {
           autoPlay
           className="rounded-lg"
           title="Video về dự án Haus Dalat"
+          muted
         >
           <source src="/videos/haus_dalat.mp4" type="video/mp4" />
           Video về dự án Haus Dalat
@@ -66,7 +66,6 @@ export default function HausDalatProject() {
       {/* Layout */}
       <section id="layout" className="my-5">
         <HausDalatLayout />
-        <HausDalatPhotos />
       </section>
 
       {/* Thanh toán */}

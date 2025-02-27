@@ -29,6 +29,7 @@ export default function EcoRetreatLocation() {
           autoPlay
           className="rounded-b-lg"
           title="Vị trí dự án Eco Retreat"
+          muted
         >
           <source
             src="/videos/EcoRetreatLongAn_location.mp4"

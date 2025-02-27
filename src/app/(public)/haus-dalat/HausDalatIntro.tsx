@@ -148,6 +148,18 @@ export default function HausDalatIntroduction() {
           </div>
         </div>
         <div>
+          <video
+            controls
+            width="100%"
+            height="auto"
+            autoPlay
+            className="rounded-lg"
+            title="Video về dự án Haus Dalat"
+            muted
+          >
+            <source src="/videos/haus_dalat_esg.mp4" type="video/mp4" />
+            Video về dự án Haus Dalat
+          </video>
           <Image
             className="rounded-lg"
             src={haus_dalat}
