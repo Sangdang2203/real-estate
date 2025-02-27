@@ -17,6 +17,19 @@ export default function EcoRetreatIntroduction() {
         trên khắp cả nước.
       </Typography>
 
+      <div className="w-full my-5">
+        <video
+          controls
+          width="100%"
+          height="auto"
+          autoPlay
+          className="rounded-lg"
+        >
+          <source src="/videos/EcoRetreatLongAn_Present.mp4" type="video/mp4" />
+          Video về dự án Haus Dalat
+        </video>
+      </div>
+
       <Typography className="text-sm md:text-lg">
         Năm 2003, một nhóm nhà đầu tư, bằng tâm huyết và kinh nghiệm thành công
         trên nhiều lĩnh vực kinh doanh đã quyết định thành lập Công ty CP đầu tư
