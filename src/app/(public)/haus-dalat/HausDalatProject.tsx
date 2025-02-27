@@ -50,15 +50,16 @@ export default function HausDalatProject() {
 
       {/* Tiện ích dự án */}
       <section id="facilities" className="my-5">
-        <div className="w-full h-auto">
-          <iframe
-            src="https://www.youtube.com/embed/WeHCTwg79_E"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-            title="Haus Dalat Facilites"
-            className="rounded-lg w-full min-h-[200px] md:min-h-[550px]"
-          ></iframe>
-        </div>
+        <video
+          controls
+          width="100%"
+          height="auto"
+          autoPlay
+          className="rounded-lg"
+        >
+          <source src="/videos/haus_dalat.mp4" type="video/mp4" />
+          Video về dự án Haus Dalat
+        </video>
       </section>
 
       {/* Layout */}

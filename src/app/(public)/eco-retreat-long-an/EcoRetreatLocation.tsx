@@ -22,13 +22,19 @@ export default function EcoRetreatLocation() {
         </Typography>
       </div>
       <div className="w-full">
-        <iframe
-          src="https://www.youtube.com/embed/EJsV8ZzHV9E?start=1"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-          title="Ecopark Developer Documentation"
-          className="rounded-b-lg w-full min-h-[200px] md:min-h-[550px]"
-        ></iframe>
+        <video
+          controls
+          width="100%"
+          height="auto"
+          autoPlay
+          className="rounded-b-lg"
+        >
+          <source
+            src="/videos/EcoRetreatLongAn_location.mp4"
+            type="video/mp4"
+          />
+          Video về dự án Haus Dalat
+        </video>
       </div>
     </div>
   );
