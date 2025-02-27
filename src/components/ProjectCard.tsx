@@ -21,7 +21,8 @@ import ShareIcon from "@/icons/ShareIcon";
 import PagingComponent from "./Pagination";
 
 export default function ProjectCard() {
-  const [filteredProjects, setFilteredProjects] = React.useState(projects);
+  const [filteredProjects, setFilteredProjects] =
+    React.useState<Project[]>(projects);
   const [visibleProjects, setVisibleProjects] = React.useState(3);
   const [isMobile, setIsMobile] = React.useState(false);
   const [currentPage, setCurrentPage] = React.useState(1);
@@ -49,6 +50,10 @@ export default function ProjectCard() {
     indexOfFirstProject,
     indexOfLastProject
   );
+
+  React.useEffect(() => {
+    setFilteredProjects(projects);
+  }, []);
 
   React.useEffect(() => {
     const handleResize = () => {

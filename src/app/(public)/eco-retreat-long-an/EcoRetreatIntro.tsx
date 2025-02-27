@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Typography } from "@mui/material";
 
-import ecopark from "@/images/eco_retreat/Ecopark.jpg";
+import ecopark from "@/images/eco_retreat/master_layout.png";
 import ecoretreat_longan from "@/images/eco_retreat/EcoRetreat_image_04.jpg";
 
 export default function EcoRetreatIntroduction() {
@@ -16,15 +16,7 @@ export default function EcoRetreatIntroduction() {
         hướng Bất động sản Xanh, mở rộng và phát triển mô hình đô thị Ecopark
         trên khắp cả nước.
       </Typography>
-      {/* <div className="my-5 w-full">
-        <iframe
-          src="https://www.youtube.com/embed/f6BpEkVE_1M?start=10"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-          title="Ecopark Developer Documentation"
-          className="rounded-lg w-full min-h-[200px] md:min-h-[550px]"
-        ></iframe>
-      </div> */}
+
       <Typography className="text-sm md:text-lg">
         Năm 2003, một nhóm nhà đầu tư, bằng tâm huyết và kinh nghiệm thành công
         trên nhiều lĩnh vực kinh doanh đã quyết định thành lập Công ty CP đầu tư
@@ -44,7 +36,7 @@ export default function EcoRetreatIntroduction() {
       </Typography>
 
       <Image
-        className="rounded-lg w-full mt-5"
+        className="rounded-lg w-full my-5"
         src={ecopark}
         alt="ecopark"
         priority
