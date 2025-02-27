@@ -1,12 +1,15 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
-};
-
-module.exports = {
   images: {
-    domains: ["tinyurl.com"],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "your-image-host.com",
+        port: "",
+        pathname: "/path/to/images/**",
+      },
+    ],
   },
 };
 
