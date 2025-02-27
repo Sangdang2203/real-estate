@@ -10,7 +10,6 @@ import CardActions from "@mui/material/CardActions";
 import Avatar from "@mui/material/Avatar";
 import Typography from "@mui/material/Typography";
 
-import { projects } from "@/shared/libs/data";
 import { Button, IconButton, Tooltip } from "@mui/material";
 import { Project } from "@/app/interfaces";
 import { handleShare } from "@/shared/method/methods";
@@ -19,6 +18,7 @@ import no_image from "@/images/no_image.jpg";
 import ReadmoreIcon from "@/icons/ReadmoreIcon";
 import ShareIcon from "@/icons/ShareIcon";
 import PagingComponent from "./Pagination";
+import { projects } from "@/app/libs/data";
 
 export default function ProjectCard() {
   const [filteredProjects, setFilteredProjects] =

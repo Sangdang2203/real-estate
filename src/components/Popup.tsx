@@ -18,7 +18,7 @@ import {
 } from "@mui/material";
 import { CustomerMessage } from "@/app/interfaces";
 import { CreateContact } from "@/shared/method/methods";
-import { projects } from "@/shared/libs/data";
+import { projects } from "@/app/libs/data";
 
 export default function PopupComponent() {
   const [open, setOpen] = React.useState(false);

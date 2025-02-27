@@ -1,4 +1,4 @@
-import { projects } from "@/shared/libs/data";
+import { projects } from "@/app/libs/data";
 import { Typography } from "@mui/material";
 import { Metadata } from "next";
 import CelestaRiseProject from "./CelestaRise";

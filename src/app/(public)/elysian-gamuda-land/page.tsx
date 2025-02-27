@@ -1,7 +1,7 @@
 import SideBar from "@/components/SideBar";
 import ElysianProject from "./ElysianProject";
 import { Typography } from "@mui/material";
-import { projects } from "@/shared/libs/data";
+import { projects } from "@/app/libs/data";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {

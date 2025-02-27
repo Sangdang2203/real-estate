@@ -25,8 +25,7 @@
 			"@/styles/*": ["shared/assets/styles/*"],
 			"@/images/*": ["shared/assets/images/*"],
 			"@/components/*": ["components/*"],
-			"@/methods/*": ["shared/methods/*"],
-      "@/libs/*": ["shared/libs/*"],
+			"@/methods/*": ["shared/methods/*"],     
       "@/constants/*": ["shared/constants/*"],
     }
   },

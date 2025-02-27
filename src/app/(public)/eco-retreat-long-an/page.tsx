@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { projects } from "@/shared/libs/data";
+import { projects } from "@/app/libs/data";
 import { Typography } from "@mui/material";
 import SideBar from "@/components/SideBar";
 import EcoRetreatProject from "./EcoRetreatProject";

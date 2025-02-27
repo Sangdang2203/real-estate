@@ -1,5 +1,5 @@
 import SideBar from "@/components/SideBar";
-import { projects } from "@/shared/libs/data";
+import { projects } from "@/app/libs/data";
 import { Typography } from "@mui/material";
 import CelestaHeightsProject from "./CelestaHeights";
 import { Metadata } from "next";

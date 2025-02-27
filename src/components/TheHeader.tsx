@@ -3,14 +3,15 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { NavLink, navLinks } from "@/libs/data";
+
 import { Typography } from "@mui/material";
-import { InputSearchProps } from "@/app/interfaces";
+import { InputSearchProps, NavLink } from "@/app/interfaces";
 import logo from "@/images/logo.png";
 import MenuIcon from "@/icons/MenuIcon";
 import CloseIcon from "@/icons/CLoseIcon";
 import PopupComponent from "@/components/Popup";
 import InputSearch from "@/components/InputSearch";
+import { navLinks } from "@/app/libs/data";
 
 const TheHeaderComponent: React.FC<InputSearchProps> = ({ onSearch }) => {
   const [navigation, setNavigation] = React.useState(false);

@@ -1,4 +1,4 @@
-import { projects } from "@/shared/libs/data";
+import { projects } from "@/app/libs/data";
 import { Typography } from "@mui/material";
 import CelestaGoldProject from "./CelestaGold";
 import SideBar from "@/components/SideBar";

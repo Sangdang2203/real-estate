@@ -4,7 +4,7 @@ import InputBase from "@mui/material/InputBase";
 import Divider from "@mui/material/Divider";
 import IconButton from "@mui/material/IconButton";
 import SearchIcon from "@mui/icons-material/Search";
-import { projects } from "@/shared/libs/data";
+import { projects } from "@/app/libs/data";
 import { InputSearchProps } from "@/app/interfaces";
 
 const InputSearch: React.FC<InputSearchProps> = ({ onSearch }) => {

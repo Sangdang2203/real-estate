@@ -1,14 +1,14 @@
 "use client";
 
-// import Link from "next/link";
+import React from "react";
 import CarouselPhotos from "./CarouselPhotos";
 import ProjectCarousel from "./ProjectCarousel";
 import { Button, Paper, Typography } from "@mui/material";
 import ApartmentIcon from "@mui/icons-material/Apartment";
 import SupervisedUserCircleIcon from "@mui/icons-material/SupervisedUserCircle";
-import { projects } from "@/shared/libs/data";
+
 import { countVisitors } from "@/shared/method/methods";
-import React from "react";
+import { projects } from "@/app/libs/data";
 
 export default function HomePage() {
   const [visitorCount, setVisitorCount] = React.useState(0);

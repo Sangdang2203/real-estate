@@ -2,7 +2,7 @@ import NextIcon from "@/shared/assets/icons/NextIcon";
 import PreviousIcon from "@/shared/assets/icons/PreviousIcon";
 import ReadmoreIcon from "@/shared/assets/icons/ReadmoreIcon";
 import ShareIcon from "@/shared/assets/icons/ShareIcon";
-import { projects } from "@/shared/libs/data";
+import { projects } from "@/app/libs/data";
 import { handleShare } from "@/shared/method/methods";
 import {
   Card,
