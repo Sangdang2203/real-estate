@@ -21,7 +21,7 @@ export default function EcoRetreatIntroduction() {
           width="100%"
           height="auto"
           autoPlay
-          className="rounded-lg object-cover"
+          className="rounded-lg"
           title="Video về dự án Eco Retreat"
           muted
         >
