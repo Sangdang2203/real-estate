@@ -1,8 +1,12 @@
 "use client";
 
 import * as React from "react";
+import "@/styles/popup.css";
 import { useForm } from "react-hook-form";
+import { projects } from "@/app/libs/data";
 import { CloseOutlined } from "@mui/icons-material";
+import { CustomerMessage } from "@/app/interfaces";
+import { CreateContact } from "@/shared/method/methods";
 import {
   Dialog,
   DialogContent,
@@ -16,9 +20,6 @@ import {
   MenuItem,
   ListItemText,
 } from "@mui/material";
-import { CustomerMessage } from "@/app/interfaces";
-import { CreateContact } from "@/shared/method/methods";
-import { projects } from "@/app/libs/data";
 
 export default function PopupComponent() {
   const [open, setOpen] = React.useState(false);

@@ -1,14 +1,13 @@
 "use client";
 
-import { Geist, Geist_Mono } from "next/font/google";
+import React from "react";
 import "./globals.css";
-import "@/shared/assets/styles/popup.css";
-import "@/shared/assets/styles/button.css";
+import "@/styles/button.css";
 import BackButton from "@/components/BackButton";
 import Hotline from "@/shared/assets/icons/Hotline";
 import TheHeaderComponent from "@/components/TheHeader";
 import TheFooterComponent from "@/components/TheFooter";
-import React from "react";
+import { Geist, Geist_Mono } from "next/font/google";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
