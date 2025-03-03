@@ -3,7 +3,7 @@ import UpIcon from "@/shared/assets/icons/UpIcon";
 import { IconButton, Tooltip } from "@mui/material";
 import React from "react";
 
-export default function BackButton() {
+export default function BackToTopButton() {
   function scrollToTop(duration: number) {
     const start = document.documentElement.scrollTop || document.body.scrollTop;
     const startTime = performance.now();
