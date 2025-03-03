@@ -3,10 +3,10 @@ export default function PreviousStep() {
     <>
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width={16}
-        height={16}
+        width={24}
+        height={24}
         viewBox="0 0 24 24"
-        className="text-black"
+        className="text-[#228B22]"
       >
         <path
           fill="currentColor"
