@@ -11,6 +11,7 @@ import elysian_banner from "@/images/elysian/elysian_banner.jpg";
 import ElysianLayout from "./ElysianLayout";
 import ElysianPhotos from "./ElysianPhotos";
 import ElysianHousingModel from "./ElysianHousingModel";
+import ReturnButton from "@/components/ReturnButton";
 
 export default function ElysianProject() {
   return (
@@ -238,7 +239,7 @@ export default function ElysianProject() {
       </section>
 
       {/* Thanh toán */}
-      <section id="payment">
+      <section id="payment" className="my-5">
         <Typography
           variant="h5"
           className="text-[#8b5a3e] font-semibold py-2 uppercase text-center leading-loose"
@@ -265,6 +266,8 @@ export default function ElysianProject() {
           loading="eager"
         />
       </section>
+
+      <ReturnButton />
     </>
   );
 }

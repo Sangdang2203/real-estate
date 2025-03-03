@@ -3,6 +3,7 @@ import EcoRetreatIntroduction from "./EcoRetreatIntro";
 import EcoRetreatLayout from "./EcoRetreatLayout";
 import EcoRetreatLocation from "./EcoRetreatLocation";
 import EcoRetreatFacilities from "./EcoRetreatFacilities";
+import ReturnButton from "@/components/ReturnButton";
 export default function EcoRetreatProject() {
   return (
     <>
@@ -27,7 +28,7 @@ export default function EcoRetreatProject() {
       </section>
 
       {/* Thanh toán */}
-      <section id="payment">
+      <section id="payment" className="my-5">
         <Typography
           variant="h5"
           className="text-[#8b5a3e] font-semibold uppercase text-center leading-loose"
@@ -38,6 +39,8 @@ export default function EcoRetreatProject() {
           sẽ công bố trong quý 1 năm 2025
         </div>
       </section>
+
+      <ReturnButton />
     </>
   );
 }

@@ -3,6 +3,7 @@ import { Typography } from "@mui/material";
 
 import HausDalatLayout from "./HausDalatLayout";
 import HausDalatIntroduction from "./HausDalatIntro";
+import ReturnButton from "@/components/ReturnButton";
 
 export default function HausDalatProject() {
   return (
@@ -69,7 +70,7 @@ export default function HausDalatProject() {
       </section>
 
       {/* Thanh toán */}
-      <section id="payment">
+      <section id="payment" className="my-5">
         <Typography
           variant="h5"
           className="text-[#8b5a3e] font-semibold py-2 uppercase text-center leading-loose"
@@ -80,6 +81,8 @@ export default function HausDalatProject() {
           sẽ công bố trong quý 1 năm 2025
         </div>
       </section>
+
+      <ReturnButton />
     </>
   );
 }

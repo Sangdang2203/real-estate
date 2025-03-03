@@ -3,11 +3,11 @@
 import React from "react";
 import "./globals.css";
 import "@/styles/button.css";
-import BackButton from "@/components/BackButton";
 import Hotline from "@/shared/assets/icons/Hotline";
+import { Geist, Geist_Mono } from "next/font/google";
 import TheHeaderComponent from "@/components/TheHeader";
 import TheFooterComponent from "@/components/TheFooter";
-import { Geist, Geist_Mono } from "next/font/google";
+import BackToTopButton from "@/components/BackToTopButton";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -56,7 +56,7 @@ export default function RootLayout({
         <footer className="w-full z-50">
           {showBackButton && (
             <div className="fixed bottom-[1rem] left-3">
-              <BackButton />
+              <BackToTopButton />
             </div>
           )}
 

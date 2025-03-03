@@ -5,6 +5,7 @@ import { Typography } from "@mui/material";
 import EatonParkIntroduction from "./EatonParkIntro";
 import EatonParkLayout from "./EatonParkLayout";
 import EatonParkPhotos from "./EatonParkPhotos";
+import ReturnButton from "@/components/ReturnButton";
 const EatonParkProject = () => {
   return (
     <>
@@ -72,7 +73,7 @@ const EatonParkProject = () => {
       </section>
 
       {/* Thanh toán */}
-      <section id="payment">
+      <section id="payment" className="my-5">
         <Typography
           variant="h5"
           className="text-[#8b5a3e] font-semibold py-2 uppercase text-center leading-loose"
@@ -91,6 +92,8 @@ const EatonParkProject = () => {
           </Typography>
         </div>
       </section>
+
+      <ReturnButton />
     </>
   );
 };
