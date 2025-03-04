@@ -49,7 +49,7 @@ export default function Page() {
       </Head>
       {project !== null ? (
         <div className="mb-14">
-          <div className="flex justify-between items-center">
+          <div className="flex justify-end items-center">
             <SideBar />
           </div>
           <EcoRetreatProject />
