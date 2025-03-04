@@ -34,7 +34,7 @@ export default function ElysianProject() {
 
       {/* Thanh toán */}
       <section id="payment" className="my-5">
-        <h2 className="text-[#8b5a3e] font-semibold py-2 uppercase text-center leading-loose">
+        <h2 className="md:text-2xl text-[#8b5a3e] font-semibold py-2 uppercase text-center leading-loose">
           thanh toán hấp dẫn
         </h2>
         <div className="uppercase text-[#8b5a3e] text-center leading-loose">

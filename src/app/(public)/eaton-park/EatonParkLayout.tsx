@@ -10,7 +10,7 @@ import eaton_2BR_conner from "@/images/eaton_park/eaton_2BR_conner.png";
 import eaton_3BR from "@/images/eaton_park/eaton_3BR.webp";
 import master_layout from "@/images/eaton_park/master_layout.jpg";
 import master_landscape from "@/images/eaton_park/master_landscape.jpg";
-import { Box, Tab, Tabs, Typography } from "@mui/material";
+import { Box, Tab, Tabs } from "@mui/material";
 import CustomTabPanel, { tabPanel } from "@/components/CustomTabPanel";
 
 const images = [
@@ -53,12 +53,9 @@ export default function EatonParkLayout() {
   };
   return (
     <>
-      <Typography
-        variant="h5"
-        className="text-[#8b5a3e] font-semibold py-2 uppercase text-center leading-loose"
-      >
+      <h2 className="text-[#8b5a3e] font-semibold py-2 uppercase text-center leading-loose md:text-2xl">
         thiết kế căn hộ
-      </Typography>
+      </h2>
       <div className="relative">
         <Image
           src={master_landscape}

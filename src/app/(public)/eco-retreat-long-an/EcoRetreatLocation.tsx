@@ -4,7 +4,7 @@ export default function EcoRetreatLocation() {
   return (
     <div className="flex-col justify-between">
       <div id="grad" className="p-4 rounded-t-lg opacity-95">
-        <h2 className="text-[#8b5a3e] font-semibold uppercase leading-loose">
+        <h2 className="text-[#8b5a3e] font-semibold uppercase leading-loose md:text-2xl">
           vị trí giao lộ hoàn kim
         </h2>
         <Typography className="text-white text-justify  leading-loose text-sm md:text-lg">

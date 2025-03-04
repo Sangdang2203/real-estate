@@ -67,7 +67,7 @@ export default function HausDalatLayout() {
 
   return (
     <>
-      <h2 className="text-[#8b5a3e] font-semibold py-2 uppercase text-center leading-loose">
+      <h2 className="text-[#8b5a3e] font-semibold py-2 uppercase text-center leading-loose md:text-2xl">
         mặt bằng thiết kế
       </h2>
       <Typography className="text-sm md:text-lg text-justify py-5">

@@ -1,14 +1,24 @@
 "use client";
-import CustomTabPanel, { tabPanel } from "@/components/CustomTabPanel";
-import { Box, Tabs, Tab, Typography } from "@mui/material";
+
 import React from "react";
 import Image from "next/image";
+import { Box, Tabs, Tab, Typography } from "@mui/material";
+
+import CustomCarousel from "@/components/CustomCarousel";
+import CustomTabPanel, { tabPanel } from "@/components/CustomTabPanel";
+
 import elysian_1bedroom from "@/images/elysian/elysian_1bedroom.webp";
 import elysian_2bedrooms from "@/images/elysian/elysian_2bedroom_2.webp";
 import elysian_3bedrooms from "@/images/elysian/elysian_3bedrooms.webp";
-import ElysianHousingModel from "./ElysianHousingModel";
 
-const images = [
+import housing_model_01 from "@/images/elysian/housing_model_01.jpg";
+import housing_model_02 from "@/images/elysian/housing_model_02.jpg";
+import housing_model_03 from "@/images/elysian/housing_model_03.jpg";
+import housing_model_04 from "@/images/elysian/housing_model_04.jpg";
+import housing_model_05 from "@/images/elysian/housing_model_05.jpg";
+import housing_model_06 from "@/images/elysian/housing_model_06.jpg";
+
+const unit_types = [
   {
     src: elysian_1bedroom,
     label: "1 BEDROOM",
@@ -29,6 +39,39 @@ const images = [
   },
 ];
 
+const images = [
+  {
+    src: housing_model_01,
+    alt: "Nhà mẫu Elysian",
+    title: "Nhà mẫu Elysian",
+  },
+  {
+    src: housing_model_02,
+    alt: "Nhà mẫu Elysian",
+    title: "Nhà mẫu Elysian",
+  },
+  {
+    src: housing_model_03,
+    alt: "Nhà mẫu Elysian",
+    title: "Nhà mẫu Elysian",
+  },
+  {
+    src: housing_model_04,
+    alt: "Nhà mẫu Elysian",
+    title: "Nhà mẫu Elysian",
+  },
+  {
+    src: housing_model_05,
+    alt: "Nhà mẫu Elysian",
+    title: "Nhà mẫu Elysian",
+  },
+  {
+    src: housing_model_06,
+    alt: "Nhà mẫu Elysian",
+    title: "Nhà mẫu Elysian",
+  },
+];
+
 export default function ElysianLayout() {
   const [value, setValue] = React.useState(0);
 
@@ -37,8 +80,8 @@ export default function ElysianLayout() {
   };
 
   return (
-    <div className="w-full h-auto">
-      <h2 className="text-[#8b5a3e] font-semibold py-2 uppercase text-center leading-loose">
+    <>
+      <h2 className="md:text-2xl text-[#8b5a3e] font-semibold py-2 uppercase text-center leading-loose">
         thiết kế căn hộ - nhà mẫu
       </h2>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -63,33 +106,39 @@ export default function ElysianLayout() {
             hơn 300m2, phù hợp với nhu cầu đa dạng của người dân.
           </Typography>
         </div>
-        <ElysianLayout />
-      </div>
-      <ElysianHousingModel />
-      <Box
-        sx={{
-          display: "flex",
-          justifyContent: "center",
-        }}
-      >
-        <Tabs value={value} onChange={handleChange} aria-label="Elysian images">
-          {images.map((image, index) => (
-            <Tab key={index} label={image.label} {...tabPanel(index)} />
+        <div className="w-full h-auto">
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+            }}
+          >
+            <Tabs
+              value={value}
+              onChange={handleChange}
+              aria-label="Elysian images"
+            >
+              {unit_types.map((item, index) => (
+                <Tab key={index} label={item.label} {...tabPanel(index)} />
+              ))}
+            </Tabs>
+          </Box>
+          {unit_types.map((item, index) => (
+            <CustomTabPanel key={index} value={value} index={index}>
+              <Image
+                src={item.src}
+                alt={item.alt}
+                title={item.title}
+                className="min-w-[300px] h-auto md:min-w-[500px] object-cover"
+                priority
+                loading="eager"
+              />
+            </CustomTabPanel>
           ))}
-        </Tabs>
-      </Box>
-      {images.map((image, index) => (
-        <CustomTabPanel key={index} value={value} index={index}>
-          <Image
-            src={image.src}
-            alt={image.alt}
-            title={image.title}
-            className="min-w-[300px] h-auto md:min-w-[500px] object-cover"
-            priority
-            loading="eager"
-          />
-        </CustomTabPanel>
-      ))}
-    </div>
+        </div>
+      </div>
+
+      <CustomCarousel images={images} />
+    </>
   );
 }

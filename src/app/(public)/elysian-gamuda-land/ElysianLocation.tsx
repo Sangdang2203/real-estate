@@ -8,7 +8,7 @@ export default function ElysianLocation() {
     <>
       <div className="flex-col justify-between">
         <div id="grad" className="p-4 rounded-t-lg opacity-95">
-          <h2 className="text-[#8b5a3e] font-semibold text-center py-2 uppercase leading-loose">
+          <h2 className="md:text-2xl text-[#8b5a3e] font-semibold text-center py-2 uppercase leading-loose">
             VỊ TRÍ TRUNG TÂM THÀNH PHỐ THỦ ĐỨC
           </h2>
           <Typography className="text-white text-justify leading-loose text-sm md:text-lg">

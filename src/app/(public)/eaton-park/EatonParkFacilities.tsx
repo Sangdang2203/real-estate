@@ -67,15 +67,12 @@ const images = [
   },
 ];
 
-export default function EatonParkPhotos() {
+export default function EatonParkFacilities() {
   return (
     <div className="text-justify">
-      <Typography
-        variant="h5"
-        className="text-[#8b5a3e] font-semibold uppercase text-center"
-      >
+      <h2 className="text-[#8b5a3e] font-semibold uppercase text-center md:text-2xl">
         sống đẳng cấp
-      </Typography>
+      </h2>
       <Image
         src={banner}
         className="w-full object-cover h-auto rounded-md z-0 my-2"
