@@ -6,11 +6,11 @@ import { projects } from "@/app/libs/data";
 import image from "@/images/elysian/elysian.jpg";
 
 export const metadata: Metadata = {
-  title: "Elysian by Gamuda Land - Dự án bất động sản xanh.",
+  title: "Elysian by Gamuda Land",
   authors: { name: "Gamuda Land" },
   robots: "index, follow",
   creator: "Gamuda Land",
-  publisher: "Elysian by Gamuda Land",
+  publisher: "Elysian",
   keywords: [
     "Elysian",
     "Gamuda Land",
