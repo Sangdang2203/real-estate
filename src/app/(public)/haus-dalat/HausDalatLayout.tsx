@@ -67,12 +67,9 @@ export default function HausDalatLayout() {
 
   return (
     <>
-      <Typography
-        variant="h5"
-        className="text-[#8b5a3e] font-semibold py-2 uppercase text-center leading-loose"
-      >
+      <h2 className="text-[#8b5a3e] font-semibold py-2 uppercase text-center leading-loose">
         mặt bằng thiết kế
-      </Typography>
+      </h2>
       <Typography className="text-sm md:text-lg text-justify py-5">
         Mỗi Sky Villa, Sky Mansion tại Haus Da Lat là một độc bản thiết kế cả về
         mặt ngoài lẫn nội thất bên trong, những tòa nhà được lấy hình tượng là

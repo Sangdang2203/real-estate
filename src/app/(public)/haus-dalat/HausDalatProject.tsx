@@ -9,7 +9,7 @@ export default function HausDalatProject() {
   return (
     <>
       {/* Giới thiệu dự án */}
-      <section id="introdution">
+      <section id="introdution" className="my-5">
         <HausDalatIntroduction />
       </section>
 
@@ -71,12 +71,9 @@ export default function HausDalatProject() {
 
       {/* Thanh toán */}
       <section id="payment" className="my-5">
-        <Typography
-          variant="h5"
-          className="text-[#8b5a3e] font-semibold py-2 uppercase text-center leading-loose"
-        >
+        <h2 className="text-[#8b5a3e] font-semibold py-2 uppercase text-center leading-loose">
           thanh toán hấp dẫn
-        </Typography>
+        </h2>
         <div className="uppercase text-center leading-loose">
           sẽ công bố trong quý 1 năm 2025
         </div>

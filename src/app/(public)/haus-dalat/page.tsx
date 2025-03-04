@@ -1,20 +1,40 @@
+import { Metadata } from "next";
 import SideBar from "@/components/SideBar";
 import { projects } from "@/app/libs/data";
 import { Typography } from "@mui/material";
 import HausDalatProject from "./HausDalatProject";
-import { Metadata } from "next";
+import image from "@/images/haus_dalat/haus_dalat_1.jpg";
 
 export const metadata: Metadata = {
-  title: "Haus Dalat",
+  title: "Haus Dalat - bất động sản tiêu chuẩn ESG đầu tiên tại Việt Nam",
+  authors: { name: "The One Destination" },
+  robots: "index, follow",
+  creator: "One ",
+  publisher: "Haus Dalat",
   keywords: [
     "hausdalat",
     "Haus Dalat",
     "the one destination",
     "hồ xuân hương",
     "Kengo Kuma",
+    "Isometrix",
+    "1508 London",
+    "Chiva-Som",
+    "mension villas",
+    "sky villas",
   ],
+  openGraph: {
+    images: [
+      {
+        url: image.src,
+        width: 1200,
+        height: 630,
+        alt: "Hình ảnh mô tả Eco Retreat",
+      },
+    ],
+  },
   description:
-    "The One Destination, chủ đầu tư dự án Haus Da Lat hợp tác IHG Hotels & Resort đưa thương hiệu InterContinental về TP Đà Lạt, đặt tại dự án trước mặt hồ Xuân Hương. Đại diện chủ đầu tư The One Destination cho biết, khách sạn InterContinental sẽ nằm trong dự án Haus Da Lat rộng 5ha đặt ở trung tâm thành phố, trước mặt hồ Xuân Hương. Resort 5 sao này dự kiến hoạt động vào năm 2027.",
+    "The One Destination, chủ đầu tư dự án Haus Da Lat hợp tác IHG Hotels & Resort đưa thương hiệu InterContinental về TP Đà Lạt.",
 };
 
 export default function Page() {

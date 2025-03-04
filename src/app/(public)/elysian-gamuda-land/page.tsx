@@ -1,14 +1,35 @@
+import { Metadata } from "next";
 import SideBar from "@/components/SideBar";
 import ElysianProject from "./ElysianProject";
 import { Typography } from "@mui/material";
 import { projects } from "@/app/libs/data";
-import { Metadata } from "next";
+import image from "@/images/elysian/elysian.jpg";
 
 export const metadata: Metadata = {
-  title: "Elysian by Gamuda Land",
-  keywords: ["Elysian", "Gamuda Land", "Elysian city", "can ho elysian"],
+  title: "Elysian by Gamuda Land - Dự án bất động sản xanh.",
+  authors: { name: "Gamuda Land" },
+  robots: "index, follow",
+  creator: "Gamuda Land",
+  publisher: "Elysian by Gamuda Land",
+  keywords: [
+    "Elysian",
+    "Gamuda Land",
+    "Elysian city",
+    "can ho elysian",
+    "căn hộ elysian",
+  ],
+  openGraph: {
+    images: [
+      {
+        url: image.src,
+        width: 1200,
+        height: 630,
+        alt: "Hình ảnh mô tả Eco Retreat",
+      },
+    ],
+  },
   description:
-    "Về với Elysian, chúng ta tạm rời xa cuộc sống hối hả và ồn ào của đô thị để hòa mình cùng thiên nhiên đậm chất cây rợp bóng, cùng thưởng ngoạn cảnh sắc thiên nhiên yên bình, nơi ngồi thư giãn bên hồ bơi, hàn huyên cùng gia đình và bạn bè và hưởng thụ những tiện ích nội khu đa dạng và phong phú như: hồ bơi đạt tiêu chuẩn Olympic, vườn giữa tán khổng lồ, khu tập golf mini, sân thể thao chức năng, khu sân chơi trẻ em, “nông trại tại gia”, tổ hợp Shophouse, v.v...",
+    "Về với Elysian, chúng ta tạm rời xa cuộc sống hối hả và ồn ào của đô thị để hòa mình, cùng thưởng ngoạn cảnh sắc thiên nhiên yên bình.",
 };
 
 export default function Page() {
