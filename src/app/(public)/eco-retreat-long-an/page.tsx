@@ -4,9 +4,14 @@ import { Typography } from "@mui/material";
 import image from "@/images/eco_retreat/EcoRetreat_image_21.jpg";
 import SideBar from "@/components/SideBar";
 import EcoRetreatProject from "./EcoRetreatProject";
+import Head from "next/head";
 
 export const metadata: Metadata = {
   title: "Eco Retreat Long An - Ecopark Group",
+  authors: { name: "Ecopark Group" },
+  robots: "index, follow",
+  creator: "Ecopark Group",
+  publisher: "Ecopark Retreat",
   keywords: [
     "Eco Retreat Long An",
     "Ecopark Group",
@@ -17,6 +22,7 @@ export const metadata: Metadata = {
     "shophouse eco retreat",
     "biệt thự eco retreat",
   ],
+
   openGraph: {
     images: [
       {
@@ -27,8 +33,9 @@ export const metadata: Metadata = {
       },
     ],
   },
+
   description:
-    "Nằm trên bờ sông Vàm Cỏ Đông thơ mộng, tổ hợp dự án Eco Retreat tỏa sáng như một viên ngọc bên dòng nước xanh mát. Chỉ cách trung tâm thành phố Hồ Chí Minh 18Km, Eco Treat là nơi trú ẩn lý tưởng cho những gia chủ kiếm tìm sự bình yên nơi thiên nhiên bên cạnh sự tiện lợi và phồn vinh nơi phố thị Eco Retreat lại càng đắc địa khi thuộc về Bến Lức – một trong những khu đô thị vệ tinh lớn nhất của Tp.HCM với cơ sở hạ tầng giao thông đồng bộ, thuận tiện. Từ đây, cư dân Eco Retreat có thể dễ dàng kết nối với mọi nơi và trải nghiệm cuộc sống đa sắc màu.",
+    "Cách trung tâm thành phố Hồ Chí Minh 18Km, Eco Treat là nơi trú ẩn lý tưởng cho những gia chủ kiếm tìm sự bình yên nơi thiên nhiên bên cạnh sự tiện lợi và phồn vinh nơi phố thị Eco Retreat lại càng đắc địa khi thuộc về Bến Lức – một trong những khu đô thị vệ tinh lớn nhất của Tp.HCM với cơ sở hạ tầng giao thông đồng bộ, thuận tiện. Từ đây, cư dân Eco Retreat có thể dễ dàng kết nối với mọi nơi và trải nghiệm cuộc sống đa sắc màu.",
 };
 export default function Page() {
   const project = projects.find(
@@ -37,9 +44,12 @@ export default function Page() {
 
   return (
     <>
+      <Head>
+        <link rel="canonical" href="/eco-retreat-long-an" />
+      </Head>
       {project !== null ? (
         <div className="mb-14">
-          <div className="flex justify-end">
+          <div className="flex justify-between items-center">
             <SideBar />
           </div>
           <EcoRetreatProject />

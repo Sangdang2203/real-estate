@@ -6,12 +6,9 @@ import EcoRetreatPhotos from "./EcoRetreatPhotos";
 export default function EcoRetreatFacilities() {
   return (
     <>
-      <Typography
-        variant="h5"
-        className="text-[#8b5a3e] font-semibold uppercase text-center leading-loose"
-      >
+      <h2 className="text-[#8b5a3e] font-semibold uppercase text-center leading-loose">
         chuỗi tiện ích đỉnh cao
-      </Typography>
+      </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
         <div>
           <Typography className="text-sm md:text-lg">

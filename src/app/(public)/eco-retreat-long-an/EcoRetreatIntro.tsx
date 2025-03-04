@@ -70,6 +70,7 @@ export default function EcoRetreatIntroduction() {
             <Typography className="text-sm md:text-lg">
               Nhà sáng lập:
             </Typography>
+            <Typography className="text-sm md:text-lg">Tên dự án:</Typography>
             <Typography className="text-sm md:text-lg">Vị trí:</Typography>
             <Typography className="text-sm md:text-lg">Quy mô</Typography>
             <Typography className="text-sm md:text-lg">
@@ -88,6 +89,9 @@ export default function EcoRetreatIntroduction() {
           </div>
           <div>
             <Typography className="text-sm md:text-lg">Ecopark</Typography>
+            <h1 className="text-sm md:text-lg text-green-700">
+              <strong>Eco Retreat</strong>
+            </h1>
             <Typography className="text-sm md:text-lg">
               Bến Lức, Long An
             </Typography>

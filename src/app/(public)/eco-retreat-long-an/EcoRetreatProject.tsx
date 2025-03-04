@@ -1,4 +1,3 @@
-import { Typography } from "@mui/material";
 import EcoRetreatIntroduction from "./EcoRetreatIntro";
 import EcoRetreatLayout from "./EcoRetreatLayout";
 import EcoRetreatLocation from "./EcoRetreatLocation";
@@ -29,12 +28,9 @@ export default function EcoRetreatProject() {
 
       {/* Thanh toán */}
       <section id="payment" className="my-5">
-        <Typography
-          variant="h5"
-          className="text-[#8b5a3e] font-semibold uppercase text-center leading-loose"
-        >
+        <h2 className="text-[#8b5a3e] font-semibold uppercase text-center leading-loose">
           thanh toán hấp dẫn
-        </Typography>
+        </h2>
         <div className="uppercase text-center leading-loose">
           sẽ công bố trong quý 1 năm 2025
         </div>

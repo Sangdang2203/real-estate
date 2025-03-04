@@ -1,5 +1,4 @@
 import CustomCarousel from "@/components/CustomCarousel";
-import { Typography } from "@mui/material";
 
 import EcoRetreat_Categories from "@/images/eco_retreat/EcoRetreat_Categories.jpg";
 
@@ -111,12 +110,9 @@ const images = [
 export default function EcoRetreatLayout() {
   return (
     <>
-      <Typography
-        variant="h5"
-        className="text-[#8b5a3e] font-semibold uppercase text-center leading-loose"
-      >
+      <h2 className="text-[#8b5a3e] font-semibold uppercase text-center leading-loose">
         mặt bằng thiết kế
-      </Typography>
+      </h2>
       <div className="hidden sm:block">
         <CustomCarousel images={images} />
       </div>

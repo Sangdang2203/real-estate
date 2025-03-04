@@ -27,7 +27,7 @@ const TheHeaderComponent: React.FC<InputSearchProps> = ({ onSearch }) => {
   return (
     <nav className="w-full h-[80px] px-3 md:px-[64px] fixed top-0 left-0 z-30 bg-white shadow-lg">
       <div className="flex justify-between items-center">
-        <Link href="/">
+        <Link rel="canonical" href="/">
           <Image src={logo} alt="logo" className="max-w-[80px] max-h-[80px]" />
         </Link>
 

@@ -4,12 +4,9 @@ export default function EcoRetreatLocation() {
   return (
     <div className="flex-col justify-between">
       <div id="grad" className="p-4 rounded-t-lg opacity-95">
-        <Typography
-          variant="h5"
-          className="text-[#8b5a3e] font-semibold uppercase leading-loose"
-        >
+        <h2 className="text-[#8b5a3e] font-semibold uppercase leading-loose">
           vị trí giao lộ hoàn kim
-        </Typography>
+        </h2>
         <Typography className="text-white text-justify  leading-loose text-sm md:text-lg">
           Nằm trên bờ sông Vàm Cỏ Đông thơ mộng, Tổ hợp dự án Eco Retreat tỏa
           sáng như một viên ngọc bên dòng nước xanh mát. Chỉ cách trung tâm
