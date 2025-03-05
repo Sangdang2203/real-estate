@@ -7,7 +7,7 @@ export default function EcoRetreatLocation() {
         <h2 className="text-[#8b5a3e] py-2 font-semibold uppercase leading-loose md:text-2xl">
           vị trí giao lộ hoàn kim
         </h2>
-        <Typography className="text-white text-justify  leading-loose text-sm md:text-lg">
+        <Typography className="text-white text-justify leading-loose text-sm md:text-lg">
           Nằm trên bờ sông Vàm Cỏ Đông thơ mộng, Tổ hợp dự án Eco Retreat tỏa
           sáng như một viên ngọc bên dòng nước xanh mát. Chỉ cách trung tâm
           thành phố Hồ Chí Minh 18Km, Eco Treat là nơi trú ẩn lý tưởng cho những
