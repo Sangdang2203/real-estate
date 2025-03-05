@@ -17,6 +17,9 @@ export const metadata: Metadata = {
     "Elysian city",
     "can ho elysian",
     "căn hộ elysian",
+    "dự án elysian",
+    "du an elysian",
+    "elysian gamuda land",
   ],
   openGraph: {
     images: [
@@ -24,7 +27,7 @@ export const metadata: Metadata = {
         url: image.src,
         width: 1200,
         height: 630,
-        alt: "Hình ảnh mô tả Eco Retreat",
+        alt: "Elysian by Gamuda Land",
       },
     ],
   },

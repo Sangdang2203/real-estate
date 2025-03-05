@@ -29,16 +29,13 @@ const EatonParkProject = () => {
 
       {/* Thanh toán */}
       <section id="payment" className="my-5">
-        <Typography
-          variant="h5"
-          className="text-[#8b5a3e] font-semibold py-2 uppercase text-center leading-loose md:text-2xl"
-        >
+        <h2 className="text-[#8b5a3e] font-semibold py-2 uppercase text-center leading-loose md:text-2xl">
           thanh toán hấp dẫn
-        </Typography>
-        <div className="uppercase text-[#cd3545] text-center leading-loose">
-          <Typography className="text-sm md:text-lg py-1">
+        </h2>
+        <div className="uppercase text-[#8b5a3e] text-center leading-loose">
+          <h1 className="text-sm md:text-2xl py-1">
             Trả trước 5% ký Hợp Đồng Mua Bán.
-          </Typography>
+          </h1>
           <Typography className="text-sm md:text-lg py-1">
             Thanh toán chỉ 0.83% mỗi tháng
           </Typography>

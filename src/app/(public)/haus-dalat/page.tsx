@@ -29,7 +29,7 @@ export const metadata: Metadata = {
         url: image.src,
         width: 1200,
         height: 630,
-        alt: "Hình ảnh mô tả Eco Retreat",
+        alt: "Haus Dalat",
       },
     ],
   },
