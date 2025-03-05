@@ -110,7 +110,7 @@ const images = [
 export default function EcoRetreatLayout() {
   return (
     <>
-      <h2 className="text-[#8b5a3e] font-semibold uppercase text-center leading-loose md:text-2xl">
+      <h2 className="text-[#8b5a3e] py-2 font-semibold uppercase text-center leading-loose md:text-2xl">
         mặt bằng thiết kế
       </h2>
       <div className="hidden sm:block">
