@@ -6,7 +6,7 @@ import SideBar from "@/components/SideBar";
 import EcoRetreatProject from "./EcoRetreatProject";
 
 export const metadata: Metadata = {
-  title: "Eco Retreat Long An - Ecopark Group",
+  title: "Eco Retreat Long An - Viên ngọc bên sông Vàm Cỏ",
   authors: { name: "Ecopark Group" },
   robots: "index, follow",
   creator: "Ecopark Group",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   },
 
   description:
-    "Cách trung tâm thành phố Hồ Chí Minh 18Km, Eco Retreat là nơi trú ẩn lý tưởng cho những gia chủ kiếm tìm sự bình yên nơi thiên nhiên bên cạnh sự tiện lợi và phồn vinh nơi phố thị Eco Retreat lại càng đắc địa khi thuộc về Bến Lức – một trong những khu đô thị vệ tinh lớn nhất của Tp.HCM với cơ sở hạ tầng giao thông đồng bộ, thuận tiện. Từ đây, cư dân Eco Retreat có thể dễ dàng kết nối với mọi nơi và trải nghiệm cuộc sống đa sắc màu.",
+    "Eco Retreat, viên ngọc bên sông Vàm Cỏ Đông thơ mộng, cách trung tâm TP.HCM 18km. Vị trí đắc địa tại Bến Lức, khu đô thị vệ tinh lớn, giao thông thuận tiện. Nơi an cư lý tưởng, kết nối dễ dàng, tận hưởng tiện nghi phố thị và thiên nhiên bình yên.",
 };
 export default function Page() {
   const project = projects.find(
