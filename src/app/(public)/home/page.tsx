@@ -33,9 +33,7 @@ export default function HomePage() {
             <Typography variant="h5" className="py-1">
               Lượng khách hàng truy cập
             </Typography>
-            <Typography variant="h3" className="text-[#8b5a3e]">
-              {visitorCount}
-            </Typography>
+            <h2 className="text-[#8b5a3e] text-[3rem]">{visitorCount}</h2>
             <Typography variant="body2">
               Theo dõi lượng khách hàng truy cập để tối ưu hóa trải nghiệm.
             </Typography>
@@ -45,9 +43,7 @@ export default function HomePage() {
             <Typography variant="h5" className="py-1">
               Dự án bất động sản
             </Typography>
-            <Typography variant="h3" className="text-[#8b5a3e]">
-              {projects.length}
-            </Typography>
+            <h2 className="text-[#8b5a3e] text-[3rem]">{projects.length}</h2>
             <Typography variant="body2">
               Danh sách dự án bất động sản đang triển khai.
             </Typography>

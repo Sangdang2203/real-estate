@@ -69,12 +69,9 @@ export default function ProjectCarousel() {
       </div>
 
       <div className="my-6 flex justify-center items-center">
-        <Typography
-          className="text-[#8b5a3e] font-semibold text-center uppercase"
-          variant="h5"
-        >
+        <h1 className="text-[#8b5a3e] font-semibold text-center uppercase text-2xl">
           quan tâm nhiều nhất
-        </Typography>
+        </h1>
       </div>
       <div id="project-carousel" className="flex justify-between items-center">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
