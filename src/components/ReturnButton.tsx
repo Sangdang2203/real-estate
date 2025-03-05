@@ -7,8 +7,8 @@ export default function ReturnButton() {
     <div className="flex justify-end items-center mt-10">
       <Button
         onClick={() => window.history.back()}
-        className="rounded-full px-5"
-        variant="outlined"
+        className="px-5"
+        variant="text"
         color="inherit"
       >
         <BackIcon /> <strong className="px-1">return</strong>
