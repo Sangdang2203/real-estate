@@ -43,11 +43,9 @@ const ProjectItem = ({ project }: Props) => {
           <Image
             src={project.images.length > 0 ? project.images[0].src : no_image}
             alt={project.images[0]?.alt}
-            width={500}
-            height={300}
             loading="eager"
             title="Press to explore more information."
-            className="pb-3 max-h-[180px] md:max-h-[130px]"
+            className="pb-3 w-full max-h-[180px] md:max-h-[160px]"
           />
         </Link>
         <Tooltip title={project.description}>
