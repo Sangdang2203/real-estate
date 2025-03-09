@@ -38,8 +38,8 @@ export const navLinks: NavLink[] = [
 export const projects: Project[] = [
   {
     id: 1,
-    name: "eco retreat long an",
-    projectUrl: "/eco-retreat-long-an",
+    name: "eco retreat",
+    projectUrl: "/eco-retreat",
     developer: "ecopark group",
     location: "Long An",
     productType: "Căn hộ, Nhà phố, Biệt thự",
