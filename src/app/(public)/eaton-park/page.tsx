@@ -6,7 +6,7 @@ import { Metadata } from "next";
 import image from "@/images/eaton_park/model_housing.jpg";
 
 export const metadata: Metadata = {
-  title: "Eaton Park by Gamuda Land - Khu phức hợp căn hộ hạng sang.can",
+  title: "Eaton Park by Gamuda Land - Khu phức hợp căn hộ hạng sang.",
   authors: { name: "Gamuda Land" },
   robots: "index, follow",
   creator: "Gamuda Land",
