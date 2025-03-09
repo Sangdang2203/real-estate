@@ -1,25 +1,11 @@
 import NextIcon from "@/shared/assets/icons/NextIcon";
 import PreviousIcon from "@/shared/assets/icons/PreviousIcon";
-import ReadmoreIcon from "@/shared/assets/icons/ReadmoreIcon";
-import ShareIcon from "@/shared/assets/icons/ShareIcon";
 import { projects } from "@/app/libs/data";
-import { handleShare } from "@/shared/method/methods";
-import {
-  Card,
-  CardHeader,
-  Avatar,
-  CardContent,
-  Tooltip,
-  Typography,
-  CardActions,
-  IconButton,
-} from "@mui/material";
-import Image from "next/image";
-import Link from "next/link";
+import { Typography, IconButton } from "@mui/material";
 import React from "react";
-import no_image from "@/images/no_image.jpg";
 import { Project } from "@/app/interfaces";
 import TheHeaderComponent from "@/components/TheHeader";
+import ProjectItem from "@/components/ProjectItem";
 
 export default function ProjectCarousel() {
   const [filteredProjects, setFilteredProjects] = React.useState(projects);
@@ -82,79 +68,7 @@ export default function ProjectCarousel() {
               })
               .slice(currentSlide, currentSlide + (isMobile ? 1 : 4))
               .map((project) => (
-                <Card
-                  key={project.id}
-                  className="hover:shadow-2xl cursor-pointer"
-                >
-                  <CardHeader
-                    avatar={
-                      <Avatar className="bg-red-500 uppercase">
-                        <Link href={project.projectUrl}>
-                          <Image
-                            src={project.favicon.src}
-                            alt={project.favicon.alt}
-                          />
-                        </Link>
-                      </Avatar>
-                    }
-                    title={
-                      <Link href={project.projectUrl}>
-                        {project.name.toUpperCase()}
-                      </Link>
-                    }
-                    subheader={project.location ? project.location : ""}
-                    className="text-red-800 shadow-sm bg-slate-200"
-                  />
-
-                  <CardContent className="grid grid-cols-1">
-                    <Link href={project.projectUrl}>
-                      <Image
-                        src={
-                          project.images.length > 0
-                            ? project.images[0].src
-                            : no_image
-                        }
-                        alt={project.images[0].alt}
-                        width={500}
-                        height={300}
-                        title="Press to explore more information."
-                        className="pb-3 max-h-[180px] md:max-h-[130px]"
-                        priority
-                        loading="eager"
-                      />
-                    </Link>
-                    <Tooltip title={project.description}>
-                      <Typography
-                        variant="body2"
-                        className="text-slate-500 text-wrap line-clamp-4 text-justify text-[14px]"
-                      >
-                        {project.description ? (
-                          project.description
-                        ) : (
-                          <Typography variant="body2" className="md:mb-14">
-                            Đang cập nhật
-                          </Typography>
-                        )}
-                      </Typography>
-                    </Tooltip>
-                  </CardContent>
-                  <CardActions disableSpacing>
-                    <IconButton
-                      title="Share"
-                      aria-label="share"
-                      onClick={() => handleShare(project.projectUrl)}
-                    >
-                      <ShareIcon />
-                    </IconButton>
-                    <IconButton
-                      aria-label="read more"
-                      title="Read more"
-                      href={project.projectUrl}
-                    >
-                      <ReadmoreIcon />
-                    </IconButton>
-                  </CardActions>
-                </Card>
+                <ProjectItem key={project.id} project={project} />
               ))
           ) : (
             <div className="w-full grid grid-cols-1">

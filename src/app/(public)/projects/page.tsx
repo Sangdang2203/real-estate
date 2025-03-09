@@ -1,7 +1,6 @@
 import * as React from "react";
 import { Metadata } from "next";
-import ProjectCard from "@/components/ProjectCard";
-import ReturnButton from "@/components/ReturnButton";
+import ProjectList from "./ProjectList";
 
 export const metadata: Metadata = {
   title: "Real Estate List",
@@ -11,8 +10,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <ProjectCard />
-      <ReturnButton />
+      <ProjectList />
     </>
   );
 }

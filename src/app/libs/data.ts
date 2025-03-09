@@ -10,7 +10,7 @@ import celestaHeight_favicon from "@/images/celesta/celesta_heights_favicon.jpeg
 import elysian from "@/images/elysian/elysian.jpg";
 import eaton_park from "@/images/eaton_park/model_housing.jpg";
 import haus_dalat from "@/images/haus_dalat/haus_dalat.png";
-import ecoretreat_longan from "@/images/eco_retreat/Ecoretreat_Longan_Landscape.jpg";
+import ecoretreat_longan from "@/images/eco_retreat/EcoRetreat_image_03.jpg";
 
 import celesta_rise from "@/images/celesta/celesta_rise.jpg";
 import celesta_heightd from "@/images/celesta/celesta_heights.webp";
@@ -54,7 +54,7 @@ export const projects: Project[] = [
 
     images: [
       {
-        alt: "haus dalat phoi canh 1",
+        alt: "eco retreat long an",
         src: ecoretreat_longan,
       },
     ],
@@ -109,7 +109,7 @@ export const projects: Project[] = [
 
     images: [
       {
-        alt: "haus-dalat",
+        alt: "dự án haus dalat",
         src: haus_dalat,
       },
     ],
