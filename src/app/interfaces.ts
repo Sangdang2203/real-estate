@@ -37,6 +37,7 @@ export interface Project {
   owner: string;
   status: string;
   images: { alt: string; src: StaticImageData }[];
+  favicon: { alt: string; src: StaticImageData };
 }
 
 export interface InputSearchProps {

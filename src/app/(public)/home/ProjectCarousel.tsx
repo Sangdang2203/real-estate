@@ -51,7 +51,7 @@ export default function ProjectCarousel() {
 
   React.useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 768);
+      setIsMobile(window.innerWidth < 767);
     };
 
     handleResize();
@@ -74,9 +74,12 @@ export default function ProjectCarousel() {
         </h1>
       </div>
       <div id="project-carousel" className="flex justify-between items-center">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6">
           {filteredProjects.length > 0 ? (
             filteredProjects
+              .filter((item) => {
+                return item.type === "hot";
+              })
               .slice(currentSlide, currentSlide + (isMobile ? 1 : 4))
               .map((project) => (
                 <Card
@@ -86,13 +89,20 @@ export default function ProjectCarousel() {
                   <CardHeader
                     avatar={
                       <Avatar className="bg-red-500 uppercase">
-                        {project.name.slice(0, 1).toUpperCase()}
+                        <Link href={project.projectUrl}>
+                          <Image
+                            src={project.favicon.src}
+                            alt={project.favicon.alt}
+                          />
+                        </Link>
                       </Avatar>
                     }
-                    title={project.name.toUpperCase()}
-                    subheader={
-                      project.location ? project.location : "Đang cập nhật"
+                    title={
+                      <Link href={project.projectUrl}>
+                        {project.name.toUpperCase()}
+                      </Link>
                     }
+                    subheader={project.location ? project.location : ""}
                     className="text-red-800 shadow-sm bg-slate-200"
                   />
 

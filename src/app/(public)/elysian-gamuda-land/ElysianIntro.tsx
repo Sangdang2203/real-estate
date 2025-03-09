@@ -16,7 +16,7 @@ export default function ElysianIntroduction() {
       </Typography>
 
       <div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           <Image
             className="rounded-lg w-full h-auto"
             src={elysian_banner}

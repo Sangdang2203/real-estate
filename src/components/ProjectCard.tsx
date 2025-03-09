@@ -74,7 +74,7 @@ export default function ProjectCard() {
       <TheHeaderComponent onSearch={handleSearch} />
 
       <div className="min-h-screen">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6">
           {currentProjects.length > 0 ? (
             currentProjects
               .slice(0, isMobile ? visibleProjects : currentProjects.length)
@@ -87,10 +87,19 @@ export default function ProjectCard() {
                     <CardHeader
                       avatar={
                         <Avatar className="bg-red-500 uppercase">
-                          {project.name.slice(0, 1).toUpperCase()}
+                          <Link href={project.projectUrl}>
+                            <Image
+                              src={project.favicon.src}
+                              alt={project.favicon.alt}
+                            />
+                          </Link>
                         </Avatar>
                       }
-                      title={project.name.toUpperCase()}
+                      title={
+                        <Link href={project.projectUrl}>
+                          {project.name.toUpperCase()}
+                        </Link>
+                      }
                       subheader={project.location ? project.location : ""}
                       className="text-red-800 shadow-sm bg-slate-200"
                     />

@@ -36,7 +36,7 @@ export default function HausDalatIntroduction() {
         Hương. Resort 5 sao này dự kiến hoạt động vào năm 2027.
       </Typography>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-3 my-5">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 my-5">
         <div>
           <Image
             className="rounded-lg h-full"
@@ -61,7 +61,7 @@ export default function HausDalatIntroduction() {
             </i>
             &quot;, đại diện chủ đầu tư nói.
           </Typography>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mt-1">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 mt-1">
             <Image
               className="rounded-lg"
               src={interContinental}

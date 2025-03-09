@@ -29,7 +29,7 @@ export default function ElysianLocation() {
           loading="eager"
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-4">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 my-4">
           <Image
             src={elysian_map}
             className="w-full h-full z-0 rounded-lg"

@@ -1,8 +1,17 @@
 import { NavLink, Project } from "../interfaces";
+
+import elysian_favicon from "@/images/elysian/favicon.png";
+import haus_favicon from "@/images/haus_dalat/favicon.jpeg";
+import eaton_favicon from "@/images/eaton_park/favicon.png";
+import ecoretreat_favicon from "@/images/eco_retreat/favicon.png";
+import celestaRise_favicon from "@/images/celesta/celesta_rise_favicon.png";
+import celestaHeight_favicon from "@/images/celesta/celesta_heights_favicon.jpeg";
+
 import elysian from "@/images/elysian/elysian.jpg";
 import eaton_park from "@/images/eaton_park/model_housing.jpg";
 import haus_dalat from "@/images/haus_dalat/haus_dalat.png";
 import ecoretreat_longan from "@/images/eco_retreat/Ecoretreat_Longan_Landscape.jpg";
+
 import celesta_rise from "@/images/celesta/celesta_rise.jpg";
 import celesta_heightd from "@/images/celesta/celesta_heights.webp";
 import celesta_gold from "@/images/celesta/celesta_rise.jpg";
@@ -49,6 +58,10 @@ export const projects: Project[] = [
         src: ecoretreat_longan,
       },
     ],
+    favicon: {
+      alt: "eco retreat long an",
+      src: ecoretreat_favicon,
+    },
   },
   {
     id: 2,
@@ -72,6 +85,10 @@ export const projects: Project[] = [
         src: eaton_park,
       },
     ],
+    favicon: {
+      alt: "Eaton Park Gamuda Land",
+      src: eaton_favicon,
+    },
   },
 
   {
@@ -96,6 +113,10 @@ export const projects: Project[] = [
         src: haus_dalat,
       },
     ],
+    favicon: {
+      alt: "Haus Dalat",
+      src: haus_favicon,
+    },
   },
   {
     id: 4,
@@ -118,6 +139,10 @@ export const projects: Project[] = [
         src: elysian,
       },
     ],
+    favicon: {
+      alt: "Elysian by Gamuda Land",
+      src: elysian_favicon,
+    },
   },
   {
     id: 5,
@@ -131,7 +156,7 @@ export const projects: Project[] = [
     handover: "Thô | Hoàn thiện cơ bản",
     owner: "Sở hữu lâu dài",
     status: "Đang thi công",
-    type: "hot",
+    type: "",
     description:
       "Celesta Heights sở hữu vị trí đắc địa bậc nhất Nam Sài Gòn. Celesta Heights nằm trên mặt tiền đường Nguyễn Hữu Thọ, liền kề khu đô thị quốc tế Phú Mỹ Hưng và Zeitgeist Nhà Bè. ",
 
@@ -141,6 +166,10 @@ export const projects: Project[] = [
         src: celesta_heightd,
       },
     ],
+    favicon: {
+      alt: "Celesta Heights",
+      src: celestaHeight_favicon,
+    },
   },
   {
     id: 6,
@@ -154,7 +183,7 @@ export const projects: Project[] = [
     handover: "Thô | Hoàn thiện cơ bản",
     owner: "Sở hữu lâu dài",
     status: "Đang thi công",
-    type: "hot",
+    type: "",
     description:
       "Celesta Gold liền kề khu đô thị quốc tế Phú Mỹ Hưng và Zeitgeist Nhà Bè, là dự án được phát triển sau sự thành công của hàng loạt dự án mà Keppel Land đã triển khai như: Celesta Rise và Celesta Heights.",
 
@@ -164,6 +193,10 @@ export const projects: Project[] = [
         src: celesta_gold,
       },
     ],
+    favicon: {
+      alt: "Celesta gold",
+      src: celestaRise_favicon,
+    },
   },
   {
     id: 7,
@@ -176,7 +209,7 @@ export const projects: Project[] = [
     handover: "Thô | Hoàn thiện cơ bản",
     owner: "Sở hữu lâu dài",
     status: "Đã hoàn thiện",
-    type: "hot",
+    type: "",
     description:
       "Celesta Rise là dự án thành phần với diện tích 2,8 hecta tọa lạc trong khu dự án căn hộ cao cấp CELESTA có tổng diện tích 6,2 hecta tại Nam Sài Gòn. Celesta Rise là giai đoạn đầu tiên, bao gồm 923 căn hộ cao cấp trải dài trong 5 tòa tháp với tiện ích đa dạng phù hợp cho mọi lứa tuổi.",
     location: "Nguyễn Hữu Thọ, TP.HCM",
@@ -186,5 +219,9 @@ export const projects: Project[] = [
         src: celesta_rise,
       },
     ],
+    favicon: {
+      alt: "Celesta rise",
+      src: celestaRise_favicon,
+    },
   },
 ];
