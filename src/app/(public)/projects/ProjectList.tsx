@@ -15,7 +15,7 @@ const ProjectList = () => {
   const [isMobile, setIsMobile] = React.useState(false);
   const [currentPage, setCurrentPage] = React.useState(1);
   const [desktopPerPage] = React.useState(8);
-  const [mobilePerPage] = React.useState(4);
+  const [mobilePerPage] = React.useState(5);
 
   const handleSearch = (result: Project[]) => {
     setFilteredProjects(result);

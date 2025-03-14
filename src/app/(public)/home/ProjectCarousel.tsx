@@ -3,14 +3,16 @@ import { projects } from "@/app/libs/data";
 import { Typography } from "@mui/material";
 import { Project } from "@/app/interfaces";
 import ProjectItem from "@/components/ProjectItem";
+import CarouselComponent from "@/components/Carousel";
 import TheHeaderComponent from "@/components/TheHeader";
-import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
 
 export default function ProjectCarousel() {
   const [filteredProjects, setFilteredProjects] = React.useState(projects);
   const [currentSlide, setCurrentSlide] = React.useState(0);
   const [isMobile, setIsMobile] = React.useState(false);
   const [startTouch, setStartTouch] = React.useState(0);
+
+  const visibleProjects = filteredProjects.filter((p) => p.type === "hot");
 
   const nextSlide = () => {
     const newIndex = currentSlide + 1;
@@ -99,21 +101,11 @@ export default function ProjectCarousel() {
       </div>
       {isMobile && (
         <div id="carousel-btn" className="flex justify-center my-3">
-          <div className="">
-            {filteredProjects
-              .filter((item) => item.type === "hot")
-              .map((_, index) => (
-                <FiberManualRecordIcon
-                  onClick={() => {
-                    setCurrentSlide(index);
-                  }}
-                  key={index}
-                  fontSize={currentSlide === index ? "large" : "small"}
-                  color={currentSlide === index ? "primary" : "disabled"}
-                  className="cursor-pointer"
-                />
-              ))}
-          </div>
+          <CarouselComponent
+            data={visibleProjects}
+            currentIndex={currentSlide}
+            setCurrentIndex={setCurrentSlide}
+          />
         </div>
       )}
     </>

@@ -26,7 +26,7 @@ const ProjectItem = ({ project }: Props) => {
     <Card key={project.id} className="hover:shadow-2xl cursor-pointer">
       <CardHeader
         avatar={
-          <Avatar className="bg-red-500 uppercase">
+          <Avatar className="bg-red-600 uppercase">
             <Link href={project.projectUrl}>
               <Image src={project.favicon.src} alt={project.favicon.alt} />
             </Link>
