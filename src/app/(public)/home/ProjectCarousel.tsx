@@ -1,21 +1,23 @@
-import NextIcon from "@/shared/assets/icons/NextIcon";
-import PreviousIcon from "@/shared/assets/icons/PreviousIcon";
-import { projects } from "@/app/libs/data";
-import { Typography, IconButton } from "@mui/material";
 import React from "react";
+import { projects } from "@/app/libs/data";
+import { Typography } from "@mui/material";
 import { Project } from "@/app/interfaces";
-import TheHeaderComponent from "@/components/TheHeader";
 import ProjectItem from "@/components/ProjectItem";
+import TheHeaderComponent from "@/components/TheHeader";
+import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
 
 export default function ProjectCarousel() {
   const [filteredProjects, setFilteredProjects] = React.useState(projects);
   const [currentSlide, setCurrentSlide] = React.useState(0);
   const [isMobile, setIsMobile] = React.useState(false);
+  const [startTouch, setStartTouch] = React.useState(0);
 
   const nextSlide = () => {
     const newIndex = currentSlide + (isMobile ? 1 : 4);
     if (newIndex < filteredProjects.length) {
       setCurrentSlide(newIndex);
+    } else {
+      setCurrentSlide(0);
     }
   };
 
@@ -26,9 +28,19 @@ export default function ProjectCarousel() {
     }
   };
 
-  const isNextDisabled =
-    currentSlide + (isMobile ? 1 : 4) >= filteredProjects.length;
-  const isPrevDisabled = currentSlide === 0;
+  const handleTouchStart = (e: React.TouchEvent) => {
+    setStartTouch(e.touches[0].clientX);
+  };
+
+  const handleTouchMove = (e: React.TouchEvent) => {
+    const currentTouch = e.touches[0].clientX;
+    if (startTouch - currentTouch > 50) {
+      console.log(startTouch - currentTouch);
+      nextSlide();
+    } else if (currentTouch - startTouch > 50) {
+      prevSlide();
+    }
+  };
 
   const handleSearch = (result: Project[]) => {
     setFilteredProjects(result);
@@ -41,13 +53,13 @@ export default function ProjectCarousel() {
     };
 
     handleResize();
-
     window.addEventListener("resize", handleResize);
 
     return () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
   return (
     <>
       <div>
@@ -59,16 +71,21 @@ export default function ProjectCarousel() {
           quan tâm nhiều nhất
         </h1>
       </div>
-      <div id="project-carousel" className="flex justify-between items-center">
+      <div
+        id="project-carousel"
+        className="flex justify-between items-center"
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
+      >
         <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6">
           {filteredProjects.length > 0 ? (
             filteredProjects
-              .filter((item) => {
-                return item.type === "hot";
-              })
+              .filter((item) => item.type === "hot")
               .slice(currentSlide, currentSlide + (isMobile ? 1 : 4))
               .map((project) => (
-                <ProjectItem key={project.id} project={project} />
+                <div key={project.id}>
+                  <ProjectItem project={project} />
+                </div>
               ))
           ) : (
             <div className="w-full grid grid-cols-1">
@@ -79,33 +96,24 @@ export default function ProjectCarousel() {
           )}
         </div>
       </div>
-      {isMobile ? (
+      {isMobile && (
         <div id="carousel-btn" className="flex justify-center my-3">
-          <IconButton
-            title="Previous"
-            onClick={prevSlide}
-            className={`${
-              isPrevDisabled
-                ? "z-0 mx-[2px] cursor-not-allowed"
-                : "z-0 mx-[2px]"
-            }`}
-          >
-            <PreviousIcon />
-          </IconButton>
-          <IconButton
-            title="Previous"
-            onClick={nextSlide}
-            className={`${
-              isNextDisabled
-                ? "z-0 mx-[2px] cursor-not-allowed"
-                : "z-0 mx-[2px]"
-            }`}
-          >
-            <NextIcon />
-          </IconButton>
+          <div className="">
+            {filteredProjects
+              .filter((item) => item.type === "hot")
+              .map((_, index) => (
+                <FiberManualRecordIcon
+                  onClick={() => {
+                    setCurrentSlide(index);
+                  }}
+                  key={index}
+                  fontSize={currentSlide === index ? "large" : "small"}
+                  color={currentSlide === index ? "primary" : "disabled"}
+                  className="cursor-pointer"
+                />
+              ))}
+          </div>
         </div>
-      ) : (
-        ""
       )}
     </>
   );
