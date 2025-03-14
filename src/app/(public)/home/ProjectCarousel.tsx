@@ -13,16 +13,17 @@ export default function ProjectCarousel() {
   const [startTouch, setStartTouch] = React.useState(0);
 
   const nextSlide = () => {
-    const newIndex = currentSlide + (isMobile ? 1 : 4);
-    if (newIndex < filteredProjects.length) {
+    const newIndex = currentSlide + 1;
+    const lastIndex = filteredProjects.filter(
+      (item) => item.type === "hot"
+    ).length;
+    if (newIndex < lastIndex) {
       setCurrentSlide(newIndex);
-    } else {
-      setCurrentSlide(0);
     }
   };
 
   const prevSlide = () => {
-    const newIndex = currentSlide - (isMobile ? 1 : 4);
+    const newIndex = currentSlide - 1;
     if (newIndex >= 0) {
       setCurrentSlide(newIndex);
     }
