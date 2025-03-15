@@ -11,7 +11,7 @@ import { projects } from "@/app/libs/data";
 const social_media = [
   { name: "zalo", href: "https://zalo.me/0907014116", icon: <ZaloIcon /> },
   { name: "linkedin", href: "tel:0907014116", icon: <LinkedIn /> },
-  { name: "email", href: "tel:0907014116", icon: <EmailIcon /> },
+  { name: "email", href: "pn.phuonguyen2405@gmail.com", icon: <EmailIcon /> },
 ];
 export default function TheFooterComponent() {
   return (
@@ -32,7 +32,11 @@ export default function TheFooterComponent() {
               {social_media.length > 0 &&
                 social_media.map((item) => {
                   return (
-                    <IconButton key={item.name} className="m-2">
+                    <IconButton
+                      key={item.name}
+                      href={item.href}
+                      className="m-2"
+                    >
                       {item.icon}
                     </IconButton>
                   );
