@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import HomePage from "./(public)/home/page";
 
 export const metadata: Metadata = {
-  title: "Luxury Real Estate | 0907 014 116",
+  title: "Luxury Real Estate | 0909 751 772",
   robots: "index, follow",
   creator: "Luxury Real Estate",
   publisher: "Luxury Real Estate",

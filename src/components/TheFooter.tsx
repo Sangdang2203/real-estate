@@ -11,7 +11,11 @@ import { projects } from "@/app/libs/data";
 export const social_media = [
   { name: "zalo", href: "https://zalo.me/0909751772", icon: <ZaloIcon /> },
   { name: "linkedin", href: "tel:0909751772", icon: <LinkedIn /> },
-  { name: "email", href: "sang.dangvan0501@gmail.com", icon: <EmailIcon /> },
+  {
+    name: "email",
+    href: "mailto:sang.dangvan0501@gmail.com",
+    icon: <EmailIcon />,
+  },
 ];
 const TheFooterComponent = () => {
   return (
