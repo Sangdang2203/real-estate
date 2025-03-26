@@ -25,7 +25,7 @@ export default function EcoRetreatIntroduction() {
           title="Video về dự án Eco Retreat"
           muted
         >
-          <source src="/videos/EcoRetreatLongAn_Present.mp4" type="video/mp4" />
+          <source src="/videos/EcoRetreat_Teaser.mp4" type="video/mp4" />
           Video về dự án Eco Retreat
         </video>
       </div>
