@@ -8,12 +8,12 @@ import LinkedIn from "@/shared/assets/icons/LinkedIn";
 import PopupComponent from "./Popup";
 import { projects } from "@/app/libs/data";
 
-const social_media = [
-  { name: "zalo", href: "https://zalo.me/0907014116", icon: <ZaloIcon /> },
-  { name: "linkedin", href: "tel:0907014116", icon: <LinkedIn /> },
-  { name: "email", href: "pn.phuonguyen2405@gmail.com", icon: <EmailIcon /> },
+export const social_media = [
+  { name: "zalo", href: "https://zalo.me/0909751772", icon: <ZaloIcon /> },
+  { name: "linkedin", href: "tel:0909751772", icon: <LinkedIn /> },
+  { name: "email", href: "sang.dangvan0501@gmail.com", icon: <EmailIcon /> },
 ];
-export default function TheFooterComponent() {
+const TheFooterComponent = () => {
   return (
     <div className="p-4 h-auto w-full text-white bg-slate-900">
       <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-x-6">
@@ -71,4 +71,6 @@ export default function TheFooterComponent() {
       </div>
     </div>
   );
-}
+};
+
+export default TheFooterComponent;
