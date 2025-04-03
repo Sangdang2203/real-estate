@@ -1,15 +1,16 @@
 "use client";
 
 import React, { useState } from "react";
-import Image, { StaticImageData } from "next/image";
-import PreviousStep from "@/icons/PreviousStep";
+import Image from "next/image";
 import NextStep from "@/icons/NextStep";
+import PreviousStep from "@/icons/PreviousStep";
+import { ImageProp } from "@/app/interfaces";
 
 interface CarouselProps {
-  images: { src: string | StaticImageData; alt: string; title: string }[];
+  images: ImageProp[];
 }
 
-export default function CustomCarousel({ images }: CarouselProps) {
+export default function CustomCarousel({ images = [] }: CarouselProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextSlide = () => {
@@ -28,7 +29,7 @@ export default function CustomCarousel({ images }: CarouselProps) {
 
   return (
     <div className="relative w-full h-auto block" data-carousel="slide">
-      <div className="relative min-h-[200px] sm:min-h-[420px] lg:min-h-[700px] overflow-hidden rounded-lg">
+      <div className="relative min-h-[220px] sm:min-h-[420px] lg:min-h-[580px] overflow-hidden rounded-lg">
         {images.map((image, index) => (
           <div
             key={index}
@@ -39,7 +40,7 @@ export default function CustomCarousel({ images }: CarouselProps) {
           >
             <Image
               src={image.src}
-              className="absolute object-cover block w-full min-h-[400px] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-lg"
+              className="absolute object-fill block w-full min-h-[400px] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-lg"
               alt={image.alt}
               title={image.title}
               loading="eager"

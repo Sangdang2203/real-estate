@@ -1,6 +1,12 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { StaticImageData } from "next/image";
 
+export interface ImageProp {
+  src: string | StaticImageData;
+  alt: string;
+  title: string;
+}
+
 export interface NavLink {
   path: string;
   name: string;
@@ -36,8 +42,8 @@ export interface Project {
   handover: string;
   owner: string;
   status: string;
-  images: { alt: string; src: StaticImageData }[];
-  favicon: { alt: string; src: StaticImageData };
+  images: ImageProp[];
+  favicon: ImageProp;
 }
 
 export interface InputSearchProps {

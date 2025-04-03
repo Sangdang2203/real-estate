@@ -51,7 +51,7 @@ const ProjectItem = ({ project }: Props) => {
         <Tooltip title={project.description}>
           <Typography
             variant="body2"
-            className="text-slate-500 text-wrap line-clamp-4 text-justify text-[14px]"
+            className="text-slate-500 text-wrap line-clamp-3 text-justify text-[14px]"
           >
             {project.description || (
               <Typography variant="body2">Đang cập nhật</Typography>

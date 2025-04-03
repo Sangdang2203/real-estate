@@ -3,8 +3,8 @@ import { projects } from "@/app/libs/data";
 import { Typography } from "@mui/material";
 import { Project } from "@/app/interfaces";
 import ProjectItem from "@/components/project-item";
-import CarouselComponent from "@/components/custom-carousel";
 import TheHeaderComponent from "@/components/the-header";
+import CarouselItems from "@/components/carousel-items";
 
 export default function ProjectCarousel() {
   const [filteredProjects, setFilteredProjects] = React.useState(projects);
@@ -12,7 +12,9 @@ export default function ProjectCarousel() {
   const [isMobile, setIsMobile] = React.useState(false);
   const [startTouch, setStartTouch] = React.useState(0);
 
-  const visibleProjects = filteredProjects.filter((p) => p.type === "hot");
+  const visibleProjects: Project[] = filteredProjects.filter(
+    (p) => p.type === "hot"
+  );
 
   const nextSlide = () => {
     const newIndex = currentSlide + 1;
@@ -101,7 +103,7 @@ export default function ProjectCarousel() {
       </div>
       {isMobile && (
         <div id="carousel-btn" className="flex justify-center my-3">
-          <CarouselComponent
+          <CarouselItems
             data={visibleProjects}
             currentIndex={currentSlide}
             setCurrentIndex={setCurrentSlide}

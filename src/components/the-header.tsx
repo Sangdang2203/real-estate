@@ -60,7 +60,7 @@ const TheHeader: React.FC<InputSearchProps> = ({ onSearch }) => {
           {navLinks.length > 0 &&
             navLinks
               .reduce<NavLink[][]>((acc, link, index) => {
-                if (index % 5 === 0) acc.push([]);
+                if (index % 2 === 0) acc.push([]);
                 acc[acc.length - 1].push(link);
                 return acc;
               }, [])
@@ -78,7 +78,7 @@ const TheHeader: React.FC<InputSearchProps> = ({ onSearch }) => {
                     >
                       <Typography
                         variant="body1"
-                        className="uppercase font-semibold hover:pl-3 ease-linear duration-300"
+                        className="uppercase font-semibold hover:pl-3 ease-linear duration-200"
                       >
                         {link.name}
                       </Typography>

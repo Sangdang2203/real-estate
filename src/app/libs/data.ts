@@ -12,8 +12,7 @@ import eaton_park from "@/images/eaton_park/model_housing.jpg";
 import haus_dalat from "@/images/haus_dalat/haus_dalat.png";
 import ecoretreat_longan from "@/images/eco_retreat/EcoRetreat_image_03.jpg";
 
-import celesta_rise from "@/images/celesta/celesta_rise.jpg";
-import celesta_heightd from "@/images/celesta/celesta_heights.webp";
+import celesta_height from "@/images/celesta/celesta_heights.webp";
 import celesta_gold from "@/images/celesta/celesta_rise.jpg";
 
 export const navLinks: NavLink[] = [
@@ -55,11 +54,13 @@ export const projects: Project[] = [
     images: [
       {
         alt: "eco retreat long an",
+        title: "eco retreat long an",
         src: ecoretreat_longan,
       },
     ],
     favicon: {
       alt: "eco retreat long an",
+      title: "eco retreat long an",
       src: ecoretreat_favicon,
     },
   },
@@ -82,11 +83,13 @@ export const projects: Project[] = [
     images: [
       {
         alt: "eaton park",
+        title: "eaton park",
         src: eaton_park,
       },
     ],
     favicon: {
       alt: "Eaton Park Gamuda Land",
+      title: "Eaton Park Gamuda Land",
       src: eaton_favicon,
     },
   },
@@ -110,11 +113,13 @@ export const projects: Project[] = [
     images: [
       {
         alt: "dự án haus dalat",
+        title: "Haus Dalat",
         src: haus_dalat,
       },
     ],
     favicon: {
       alt: "Haus Dalat",
+      title: "Haus Dalat",
       src: haus_favicon,
     },
   },
@@ -136,11 +141,13 @@ export const projects: Project[] = [
     images: [
       {
         alt: "can ho elysian",
+        title: "Elysian Gamuda Land",
         src: elysian,
       },
     ],
     favicon: {
       alt: "Elysian by Gamuda Land",
+      title: "Elysian Gamuda Land",
       src: elysian_favicon,
     },
   },
@@ -163,11 +170,13 @@ export const projects: Project[] = [
     images: [
       {
         alt: "celesta heights",
-        src: celesta_heightd,
+        title: "celesta heights",
+        src: celesta_height,
       },
     ],
     favicon: {
       alt: "Celesta Heights",
+      title: "celesta heights",
       src: celestaHeight_favicon,
     },
   },
@@ -190,37 +199,13 @@ export const projects: Project[] = [
     images: [
       {
         alt: "celesta gold",
+        title: "celesta gold",
         src: celesta_gold,
       },
     ],
     favicon: {
       alt: "Celesta gold",
-      src: celestaRise_favicon,
-    },
-  },
-  {
-    id: 7,
-    name: "celesta rise",
-    projectUrl: "/celesta-rise",
-    developer: "keppel land",
-    productType: "Căn hộ, Shophouse",
-    area: "2,8 hecta",
-    unitType: "49 - 106 m2",
-    handover: "Thô | Hoàn thiện cơ bản",
-    owner: "Sở hữu lâu dài",
-    status: "Đã hoàn thiện",
-    type: "",
-    description:
-      "Celesta Rise là dự án thành phần với diện tích 2,8 hecta tọa lạc trong khu dự án căn hộ cao cấp CELESTA có tổng diện tích 6,2 hecta tại Nam Sài Gòn. Celesta Rise là giai đoạn đầu tiên, bao gồm 923 căn hộ cao cấp trải dài trong 5 tòa tháp với tiện ích đa dạng phù hợp cho mọi lứa tuổi.",
-    location: "Nguyễn Hữu Thọ, TP.HCM",
-    images: [
-      {
-        alt: "celesta rise",
-        src: celesta_rise,
-      },
-    ],
-    favicon: {
-      alt: "Celesta rise",
+      title: "celesta gold",
       src: celestaRise_favicon,
     },
   },
