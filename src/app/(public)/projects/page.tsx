@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Metadata } from "next";
-import ProjectList from "./ProjectList";
+import ProjectList from "./project-list";
 
 export const metadata: Metadata = {
   title: "Real Estate List",

@@ -1,7 +1,7 @@
-import SideBar from "@/components/SideBar";
+import SideBar from "@/components/sidebar";
 import { projects } from "@/app/libs/data";
 import { Typography } from "@mui/material";
-import CelestaHeightsProject from "./CelestaHeights";
+import CelestaHeightsProject from "./celesta-heights-project";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {

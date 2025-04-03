@@ -1,8 +1,8 @@
 import { Metadata } from "next";
-import SideBar from "@/components/SideBar";
+import SideBar from "@/components/sidebar";
 import { projects } from "@/app/libs/data";
 import { Typography } from "@mui/material";
-import HausDalatProject from "./HausDalatProject";
+import HausDalatProject from "./hausdalat-project";
 import image from "@/images/haus_dalat/haus_dalat_1.jpg";
 
 export const metadata: Metadata = {

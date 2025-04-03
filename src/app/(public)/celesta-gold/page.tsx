@@ -1,7 +1,7 @@
 import { projects } from "@/app/libs/data";
 import { Typography } from "@mui/material";
-import CelestaGoldProject from "./CelestaGold";
-import SideBar from "@/components/SideBar";
+import CelestaGoldProject from "./celesta-gold-project";
+import SideBar from "@/components/sidebar";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {

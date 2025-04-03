@@ -1,7 +1,7 @@
 import facilities from "@/images/eco_retreat/ecoretreat_longan_facilities.jpg";
 import { Typography } from "@mui/material";
 import Image from "next/image";
-import EcoRetreatPhotos from "./EcoRetreatPhotos";
+import EcoRetreatPhotos from "./ecoretreat-photos";
 
 export default function EcoRetreatFacilities() {
   return (

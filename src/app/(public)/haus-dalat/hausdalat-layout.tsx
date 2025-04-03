@@ -1,9 +1,10 @@
 "use client";
 
-import CustomTabPanel, { tabPanel } from "@/components/CustomTabPanel";
-import { Box, Tabs, Tab, Typography } from "@mui/material";
 import React from "react";
 import Image from "next/image";
+import CustomTabPanel, { tabPanel } from "@/components/custom-tabpanel";
+import { Box, Tabs, Tab, Typography } from "@mui/material";
+
 import haus_1bedroom from "@/images/haus_dalat/haus_1bedroom.jpg";
 import haus_2bedrooms_01 from "@/images/haus_dalat/haus_2bedrooms_01.jpg";
 import haus_2bedrooms_02 from "@/images/haus_dalat/haus_2bedrooms_02.jpg";
@@ -11,7 +12,7 @@ import haus_2bedrooms_03 from "@/images/haus_dalat/haus_2bedrooms_03.jpg";
 import haus_3bedrooms from "@/images/haus_dalat/haus_3bedrooms.jpg";
 import haus_3bedrooms_conner from "@/images/haus_dalat/haus_3bedrooms_conner.jpg";
 import haus_4bedrooms from "@/images/haus_dalat/haus_4bedrooms.jpg";
-import HausDalatPhotos from "./HausDalatPhotos";
+import HausDalatPhotos from "./hausdalat-photo";
 
 const images = [
   {

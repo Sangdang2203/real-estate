@@ -1,8 +1,8 @@
 "use client";
 
 import React from "react";
-import CarouselPhotos from "./CarouselPhotos";
-import ProjectCarousel from "./ProjectCarousel";
+import CarouselPhotos from "./carosel-photos";
+import ProjectCarousel from "./project-carousel";
 import { Button, Paper, Typography } from "@mui/material";
 import ApartmentIcon from "@mui/icons-material/Apartment";
 import SupervisedUserCircleIcon from "@mui/icons-material/SupervisedUserCircle";
@@ -30,6 +30,7 @@ export default function HomePage() {
               fontSize="large"
               className="text-[#8b5a3e]"
             />
+
             <Typography variant="h5" className="py-1">
               Lượng khách hàng truy cập
             </Typography>

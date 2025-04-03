@@ -21,10 +21,11 @@
     "baseUrl": "./src/",
     "paths": {
       "@/*": ["*"],
+      "@/libs/*": ["app/libs/*"],
       "@/icons/*": ["shared/assets/icons/*"],
 			"@/styles/*": ["shared/assets/styles/*"],
 			"@/images/*": ["shared/assets/images/*"],
-			"@/components/*": ["components/*"],
+			"@/components/ui/*": ["components/ui/*"],
 			"@/methods/*": ["shared/methods/*"],     
       "@/constants/*": ["shared/constants/*"],
     }

@@ -9,11 +9,11 @@ import { InputSearchProps, NavLink } from "@/app/interfaces";
 import logo from "@/images/logo.png";
 import MenuIcon from "@/icons/MenuIcon";
 import CloseIcon from "@/icons/CLoseIcon";
-import PopupComponent from "@/components/Popup";
-import InputSearch from "@/components/InputSearch";
+import PopupComponent from "@/components/popup";
+import InputSearch from "@/components/input-search";
 import { navLinks } from "@/app/libs/data";
 
-const TheHeaderComponent: React.FC<InputSearchProps> = ({ onSearch }) => {
+const TheHeader: React.FC<InputSearchProps> = ({ onSearch }) => {
   const [navigation, setNavigation] = React.useState(false);
 
   const handleNavigation = () => {
@@ -94,4 +94,4 @@ const TheHeaderComponent: React.FC<InputSearchProps> = ({ onSearch }) => {
     </nav>
   );
 };
-export default TheHeaderComponent;
+export default TheHeader;

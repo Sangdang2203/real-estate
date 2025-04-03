@@ -8,7 +8,7 @@ interface Props {
   setCurrentIndex: (index: number) => void;
 }
 
-const CarouselComponent = ({ data, currentIndex, setCurrentIndex }: Props) => {
+const CarouselItems = ({ data, currentIndex, setCurrentIndex }: Props) => {
   return (
     <>
       <div className="flex justify-center items-center">
@@ -29,4 +29,4 @@ const CarouselComponent = ({ data, currentIndex, setCurrentIndex }: Props) => {
   );
 };
 
-export default CarouselComponent;
+export default CarouselItems;

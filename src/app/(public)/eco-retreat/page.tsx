@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import { projects } from "@/app/libs/data";
 import { Typography } from "@mui/material";
 import image from "@/images/eco_retreat/EcoRetreat_image_21.jpg";
-import SideBar from "@/components/SideBar";
-import EcoRetreatProject from "./EcoRetreatProject";
+import SideBar from "@/components/sidebar";
+import EcoRetreatProject from "./ecoretreat-project";
 
 export const metadata: Metadata = {
   title: "Eco Retreat Long An - Viên ngọc bên sông Vàm Cỏ",

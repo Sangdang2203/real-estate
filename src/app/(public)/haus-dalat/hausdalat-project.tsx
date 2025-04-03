@@ -1,9 +1,9 @@
 import React from "react";
 import { Typography } from "@mui/material";
 
-import HausDalatLayout from "./HausDalatLayout";
-import HausDalatIntroduction from "./HausDalatIntro";
-import ReturnButton from "@/components/ReturnButton";
+import HausDalatLayout from "./hausdalat-layout";
+import HausDalatIntroduction from "./hausdalat-intro";
+import ReturnButton from "@/components/return-button";
 
 export default function HausDalatProject() {
   return (

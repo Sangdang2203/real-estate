@@ -1,7 +1,7 @@
 import { projects } from "@/app/libs/data";
 import { Typography } from "@mui/material";
-import SideBar from "@/components/SideBar";
-import EatonParkProject from "./EatonParkProject";
+import SideBar from "@/components/sidebar";
+import EatonParkProject from "./eatonpark-project";
 import { Metadata } from "next";
 import image from "@/images/eaton_park/model_housing.jpg";
 

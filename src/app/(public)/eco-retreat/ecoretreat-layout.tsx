@@ -1,4 +1,4 @@
-import CustomCarousel from "@/components/CustomCarousel";
+import CustomCarousel from "@/components/custom-carousel";
 
 import EcoRetreat_Categories from "@/images/eco_retreat/EcoRetreat_Categories.jpg";
 

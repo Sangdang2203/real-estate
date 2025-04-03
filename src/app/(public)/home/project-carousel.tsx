@@ -2,9 +2,9 @@ import React from "react";
 import { projects } from "@/app/libs/data";
 import { Typography } from "@mui/material";
 import { Project } from "@/app/interfaces";
-import ProjectItem from "@/components/ProjectItem";
-import CarouselComponent from "@/components/Carousel";
-import TheHeaderComponent from "@/components/TheHeader";
+import ProjectItem from "@/components/project-item";
+import CarouselComponent from "@/components/custom-carousel";
+import TheHeaderComponent from "@/components/the-header";
 
 export default function ProjectCarousel() {
   const [filteredProjects, setFilteredProjects] = React.useState(projects);

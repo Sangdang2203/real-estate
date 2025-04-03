@@ -11,7 +11,7 @@ import eaton_3BR from "@/images/eaton_park/eaton_3BR.webp";
 import master_layout from "@/images/eaton_park/master_layout.jpg";
 import master_landscape from "@/images/eaton_park/master_landscape.jpg";
 import { Box, Tab, Tabs } from "@mui/material";
-import CustomTabPanel, { tabPanel } from "@/components/CustomTabPanel";
+import CustomTabPanel, { tabPanel } from "@/components/custom-tabpanel";
 
 const images = [
   {

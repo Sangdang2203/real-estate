@@ -5,9 +5,9 @@ import "./globals.css";
 import "@/styles/button.css";
 import Hotline from "@/shared/assets/icons/Hotline";
 import { Geist, Geist_Mono } from "next/font/google";
-import TheHeaderComponent from "@/components/TheHeader";
-import TheFooterComponent from "@/components/TheFooter";
-import BackToTopButton from "@/components/BackToTopButton";
+import TheHeader from "@/components/the-header";
+import TheFooter from "@/components/the-footer";
+import BackToTopButton from "@/components/back-to-top-button";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -46,7 +46,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <header>
-          <TheHeaderComponent onSearch={() => {}} />
+          <TheHeader onSearch={() => {}} />
         </header>
 
         <div className="mt-[12vh] py-4 h-auto mx-3 md:mx-[5%] z-50 min-h-screen">
@@ -65,7 +65,7 @@ export default function RootLayout({
           </div>
 
           <div id="contact">
-            <TheFooterComponent />
+            <TheFooter />
           </div>
         </footer>
       </body>

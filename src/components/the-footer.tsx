@@ -5,7 +5,7 @@ import { IconButton, Typography } from "@mui/material";
 import ZaloIcon from "@/shared/assets/icons/ZaloIcon";
 import EmailIcon from "@/shared/assets/icons/EmailIcon";
 import LinkedIn from "@/shared/assets/icons/LinkedIn";
-import PopupComponent from "./Popup";
+import PopupComponent from "./popup";
 import { projects } from "@/app/libs/data";
 
 export const social_media = [
@@ -17,7 +17,7 @@ export const social_media = [
     icon: <EmailIcon />,
   },
 ];
-const TheFooterComponent = () => {
+const TheFooter = () => {
   return (
     <div className="p-4 h-auto w-full text-white bg-slate-900">
       <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-x-6">
@@ -77,4 +77,4 @@ const TheFooterComponent = () => {
   );
 };
 
-export default TheFooterComponent;
+export default TheFooter;

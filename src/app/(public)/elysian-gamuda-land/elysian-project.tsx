@@ -3,11 +3,11 @@
 import Image from "next/image";
 import { Typography } from "@mui/material";
 import elysian_reasons from "@/images/elysian/elysian_reasons.webp";
-import ReturnButton from "@/components/ReturnButton";
-import ElysianIntroduction from "./ElysianIntro";
-import ElysianLocation from "./ElysianLocation";
-import ElysianFacilities from "./ElysianFacilities";
-import ElysianLayout from "./ElysianLayout";
+import ReturnButton from "@/components/return-button";
+import ElysianIntroduction from "./elysian-intro";
+import ElysianLocation from "./elysian-location";
+import ElysianFacilities from "./elysian-facilities";
+import ElysianLayout from "./elysian-layout";
 
 export default function ElysianProject() {
   return (
