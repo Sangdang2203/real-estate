@@ -28,6 +28,7 @@ export const navLinks: NavLink[] = [
     name: "dự án",
     path: "/projects",
   },
+  { name: "chuyển nhượng", path: "/resale" },
   {
     name: "liên hệ",
     path: "#contact",
