@@ -11,7 +11,7 @@ import MenuIcon from "@/icons/MenuIcon";
 import CloseIcon from "@/icons/CLoseIcon";
 import InputSearch from "@/components/input-search";
 import { navLinks } from "@/app/libs/data";
-import PopupComponent from "./popup";
+import PopupComponent from "@/components/popup";
 
 const TheHeader: React.FC<InputSearchProps> = ({ onSearch }) => {
   const [navigation, setNavigation] = React.useState(false);

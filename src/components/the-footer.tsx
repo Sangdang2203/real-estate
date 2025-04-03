@@ -5,8 +5,8 @@ import { IconButton, Typography } from "@mui/material";
 import ZaloIcon from "@/shared/assets/icons/ZaloIcon";
 import EmailIcon from "@/shared/assets/icons/EmailIcon";
 import LinkedIn from "@/shared/assets/icons/LinkedIn";
-import PopupComponent from "./popup";
 import { projects } from "@/app/libs/data";
+import PopupComponent from "@/components/popup";
 
 export const social_media = [
   { name: "zalo", href: "https://zalo.me/0909751772", icon: <ZaloIcon /> },
