@@ -9,9 +9,9 @@ import { InputSearchProps, NavLink } from "@/app/interfaces";
 import logo from "@/images/logo.png";
 import MenuIcon from "@/icons/MenuIcon";
 import CloseIcon from "@/icons/CLoseIcon";
-import PopupComponent from "@/components/popup";
 import InputSearch from "@/components/input-search";
 import { navLinks } from "@/app/libs/data";
+import PopupComponent from "./popup";
 
 const TheHeader: React.FC<InputSearchProps> = ({ onSearch }) => {
   const [navigation, setNavigation] = React.useState(false);

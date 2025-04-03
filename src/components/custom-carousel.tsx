@@ -40,7 +40,7 @@ export default function CustomCarousel({ images = [] }: CarouselProps) {
           >
             <Image
               src={image.src}
-              className="absolute object-fill block w-full min-h-[400px] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-lg"
+              className="absolute object-fill block w-full max-h-[600px] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-lg"
               alt={image.alt}
               title={image.title}
               loading="eager"

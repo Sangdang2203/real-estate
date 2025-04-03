@@ -1,8 +1,8 @@
-import SideBar from "@/components/sidebar";
 import { projects } from "@/app/libs/data";
 import { Typography } from "@mui/material";
 import CelestaHeightsProject from "./celesta-heights-project";
 import { Metadata } from "next";
+import SideBar from "@/components/sidebar";
 
 export const metadata: Metadata = {
   title: "Celesta Heights by Keppel Land",

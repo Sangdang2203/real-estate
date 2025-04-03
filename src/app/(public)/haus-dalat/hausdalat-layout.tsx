@@ -127,7 +127,7 @@ export default function HausDalatLayout() {
                 src={image.src}
                 alt={image.alt}
                 title={image.title}
-                className="w-full h-auto object-cover"
+                className="w-full h-auto object-fill"
                 priority
                 loading="eager"
               />
