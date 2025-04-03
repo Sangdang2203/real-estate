@@ -12,8 +12,8 @@ import ParkIcon from "@mui/icons-material/Park";
 import ApartmentIcon from "@mui/icons-material/Apartment";
 import ContactPhoneIcon from "@mui/icons-material/ContactPhone";
 import PaymentIcon from "@mui/icons-material/Payment";
-import { Button, Drawer, Tooltip } from "@mui/material";
 import SectionIcon from "@/shared/assets/icons/Section";
+import { Button, Drawer, Tooltip } from "@mui/material";
 
 const sideBarItems = [
   {

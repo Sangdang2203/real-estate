@@ -7,7 +7,7 @@ import { Typography } from "@mui/material";
 import ProjectItem from "@/components/project-item";
 import TheHeaderComponent from "@/components/the-header";
 import ReturnButton from "@/components/return-button";
-import PagingComponent from "@/components/pagination";
+import PagingComponent from "../../../components/pagination";
 
 const ProjectList = () => {
   const [filteredProjects, setFilteredProjects] =
