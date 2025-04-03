@@ -1,5 +1,5 @@
 const CelestaHeightsProject = () => {
-  return <></>;
+  return <>Updating</>;
 };
 
 export default CelestaHeightsProject;

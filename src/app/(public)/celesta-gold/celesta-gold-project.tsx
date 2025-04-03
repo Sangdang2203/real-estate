@@ -1,5 +1,5 @@
 const CelestaGoldProject = () => {
-  return <></>;
+  return <>Updating</>;
 };
 
 export default CelestaGoldProject;
