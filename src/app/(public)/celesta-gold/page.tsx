@@ -1,8 +1,8 @@
 import { projects } from "@/app/libs/data";
 import { Typography } from "@mui/material";
 import CelestaGoldProject from "./celesta-gold-project";
-import SideBar from "@/components/sidebar";
 import { Metadata } from "next";
+import SideBar from "@/components/sidebar";
 
 export const metadata: Metadata = {
   title: "Celesta Gold by Keppel Land",
