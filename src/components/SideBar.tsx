@@ -48,7 +48,7 @@ const sideBarItems = [
   },
 ];
 
-export default function SideBar() {
+const SideBar = () => {
   const [open, setOpen] = React.useState(false);
 
   const toggleDrawer = (newOpen: boolean) => () => {
@@ -91,4 +91,6 @@ export default function SideBar() {
       </Drawer>
     </div>
   );
-}
+};
+
+export default SideBar;

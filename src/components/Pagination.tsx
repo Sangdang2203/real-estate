@@ -8,12 +8,12 @@ interface PaginationProps {
   onPageChange: (event: React.ChangeEvent<unknown>, value: number) => void;
 }
 
-export default function PagingComponent({
+const PagingComponent = ({
   data,
   rowPerPage,
   page,
   onPageChange,
-}: PaginationProps) {
+}: PaginationProps) => {
   const count = Math.ceil(data.length / rowPerPage);
   const [dot] = React.useState<string>("...");
 
@@ -56,4 +56,6 @@ export default function PagingComponent({
       </Stack>
     </div>
   );
-}
+};
+
+export default PagingComponent;

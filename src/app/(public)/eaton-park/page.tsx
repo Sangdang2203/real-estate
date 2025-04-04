@@ -1,9 +1,9 @@
 import { projects } from "@/app/libs/data";
 import { Typography } from "@mui/material";
-import SideBar from "@/components/sidebar";
 import EatonParkProject from "./eatonpark-project";
 import { Metadata } from "next";
 import image from "@/images/eaton_park/model_housing.jpg";
+import SideBar from "@/components/sidebar";
 
 export const metadata: Metadata = {
   title: "Eaton Park by Gamuda Land - Khu phức hợp căn hộ hạng sang.",

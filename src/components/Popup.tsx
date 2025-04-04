@@ -21,7 +21,7 @@ import {
   ListItemText,
 } from "@mui/material";
 
-export default function Popup() {
+const Popup = () => {
   const [open, setOpen] = React.useState(false);
   const [project, setProject] = React.useState<string[]>([]);
 
@@ -191,4 +191,5 @@ export default function Popup() {
       </Dialog>
     </>
   );
-}
+};
+export default Popup;
