@@ -21,7 +21,7 @@ import {
   ListItemText,
 } from "@mui/material";
 
-const Popup = () => {
+const PopupForm = () => {
   const [open, setOpen] = React.useState(false);
   const [project, setProject] = React.useState<string[]>([]);
 
@@ -192,4 +192,4 @@ const Popup = () => {
     </>
   );
 };
-export default Popup;
+export default PopupForm;

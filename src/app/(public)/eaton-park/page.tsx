@@ -3,7 +3,7 @@ import { Typography } from "@mui/material";
 import EatonParkProject from "./eatonpark-project";
 import { Metadata } from "next";
 import image from "@/images/eaton_park/model_housing.jpg";
-import SideBar from "@/components/sidebar";
+import Sidebar from "@/components/sidebar";
 
 export const metadata: Metadata = {
   title: "Eaton Park by Gamuda Land - Khu phức hợp căn hộ hạng sang.",
@@ -43,7 +43,7 @@ export default function Page() {
       {project !== null ? (
         <div className="mb-14">
           <div className="flex justify-end">
-            <SideBar />
+            <Sidebar />
           </div>
 
           <EatonParkProject />

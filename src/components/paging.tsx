@@ -8,12 +8,7 @@ interface PaginationProps {
   onPageChange: (event: React.ChangeEvent<unknown>, value: number) => void;
 }
 
-const PagingComponent = ({
-  data,
-  rowPerPage,
-  page,
-  onPageChange,
-}: PaginationProps) => {
+const Paging = ({ data, rowPerPage, page, onPageChange }: PaginationProps) => {
   const count = Math.ceil(data.length / rowPerPage);
   const [dot] = React.useState<string>("...");
 
@@ -58,4 +53,4 @@ const PagingComponent = ({
   );
 };
 
-export default PagingComponent;
+export default Paging;

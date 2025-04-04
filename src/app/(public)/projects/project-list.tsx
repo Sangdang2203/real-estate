@@ -7,7 +7,7 @@ import { Typography } from "@mui/material";
 import ProjectItem from "@/components/project-item";
 import TheHeaderComponent from "@/components/the-header";
 import ReturnButton from "@/components/return-button";
-import PagingComponent from "@/components/pagination";
+import Paging from "@/components/paging";
 
 const ProjectList = () => {
   const [filteredProjects, setFilteredProjects] =
@@ -79,7 +79,7 @@ const ProjectList = () => {
         </div>
       </div>
       <div className="mt-10 flex justify-center">
-        <PagingComponent
+        <Paging
           data={filteredProjects}
           rowPerPage={isMobile ? mobilePerPage : desktopPerPage}
           page={currentPage}
