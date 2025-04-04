@@ -4,10 +4,10 @@ import * as React from "react";
 import { projects } from "@/app/libs/data";
 import { Project } from "@/app/interfaces";
 import { Typography } from "@mui/material";
-import ProjectItem from "@/components/project-item";
-import TheHeaderComponent from "@/components/the-header";
-import ReturnButton from "@/components/return-button";
-import Paging from "@/components/paging";
+import ProjectItem from "@/components/ProjectItem";
+import TheHeaderComponent from "@/components/TheHeader";
+import ReturnButton from "@/components/ReturnButton";
+import Paging from "@/components/Pagination";
 
 const ProjectList = () => {
   const [filteredProjects, setFilteredProjects] =

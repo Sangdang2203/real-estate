@@ -4,8 +4,8 @@ import React from "react";
 import Image from "next/image";
 import { Box, Tabs, Tab, Typography } from "@mui/material";
 
-import CustomCarousel from "@/components/custom-carousel";
-import CustomTabPanel, { tabPanel } from "@/components/custom-tabpanel";
+import CustomCarousel from "@/components/CustomCarousel";
+import CustomTabPanel, { tabPanel } from "@/components/CustomTabPanel";
 
 import elysian_1bedroom from "@/images/elysian/elysian_1bedroom.webp";
 import elysian_2bedrooms from "@/images/elysian/elysian_2bedroom_2.webp";

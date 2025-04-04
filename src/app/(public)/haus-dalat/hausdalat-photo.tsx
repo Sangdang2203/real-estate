@@ -1,4 +1,4 @@
-import CustomCarousel from "@/components/custom-carousel";
+import CustomCarousel from "@/components/CustomCarousel";
 
 import concept_1BR from "@/images/haus_dalat/concept_1BR.jpg";
 import concept_2BR from "@/images/haus_dalat/concept_2BR.jpg";

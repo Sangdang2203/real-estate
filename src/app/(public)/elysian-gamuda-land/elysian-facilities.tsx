@@ -1,5 +1,5 @@
 import { Typography } from "@mui/material";
-import CustomCarousel from "@/components/custom-carousel";
+import CustomCarousel from "@/components/CustomCarousel";
 
 import elysian_garden from "@/images/elysian/elysian_garden.jpg";
 import elysian_facilities from "@/images/elysian/elysian_facilities.jpg";

@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { Typography } from "@mui/material";
 import elysian_reasons from "@/images/elysian/elysian_reasons.webp";
-import ReturnButton from "@/components/return-button";
+import ReturnButton from "@/components/ReturnButton";
 import ElysianIntroduction from "./elysian-intro";
 import ElysianLocation from "./elysian-location";
 import ElysianFacilities from "./elysian-facilities";

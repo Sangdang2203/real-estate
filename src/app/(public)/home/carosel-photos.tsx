@@ -1,4 +1,4 @@
-import CustomCarousel from "@/components/custom-carousel";
+import CustomCarousel from "@/components/CustomCarousel";
 import haus_dalat from "@/images/haus_dalat/haus_dalat.png";
 import eaton_park from "@/images/eaton_park/eaton_park.webp";
 import celesta_city from "@/images/celesta/celesta_heights.webp";

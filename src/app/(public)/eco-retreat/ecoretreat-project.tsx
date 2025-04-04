@@ -2,7 +2,7 @@ import EcoRetreatIntroduction from "./ecoretreat-intro";
 import EcoRetreatLayout from "./ecoretreat-layout";
 import EcoRetreatLocation from "./ecoretreat-location";
 import EcoRetreatFacilities from "./ecoretreat-facilities";
-import ReturnButton from "@/components/return-button";
+import ReturnButton from "@/components/ReturnButton";
 export default function EcoRetreatProject() {
   return (
     <>

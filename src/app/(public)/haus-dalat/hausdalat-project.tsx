@@ -3,7 +3,7 @@ import { Typography } from "@mui/material";
 
 import HausDalatLayout from "./hausdalat-layout";
 import HausDalatIntroduction from "./hausdalat-intro";
-import ReturnButton from "@/components/return-button";
+import ReturnButton from "@/components/ReturnButton";
 
 export default function HausDalatProject() {
   return (

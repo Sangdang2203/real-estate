@@ -3,7 +3,7 @@ import { Typography } from "@mui/material";
 import EatonParkProject from "./eatonpark-project";
 import { Metadata } from "next";
 import image from "@/images/eaton_park/model_housing.jpg";
-import Sidebar from "@/components/sidebar";
+import Sidebar from "@/components/Sidebar";
 
 export const metadata: Metadata = {
   title: "Eaton Park by Gamuda Land - Khu phức hợp căn hộ hạng sang.",

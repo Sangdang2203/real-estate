@@ -2,7 +2,7 @@ import { Typography } from "@mui/material";
 import EatonParkIntroduction from "./eatonpark-intro";
 import EatonParkLayout from "./eatonpark-layout";
 import EatonParkLocation from "./eatonpark-location";
-import ReturnButton from "@/components/return-button";
+import ReturnButton from "@/components/ReturnButton";
 import EatonParkFacilities from "./eatonpark-facilities";
 const EatonParkProject = () => {
   return (

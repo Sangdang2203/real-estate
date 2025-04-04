@@ -5,9 +5,9 @@ import "./globals.css";
 import "@/styles/button.css";
 import Hotline from "@/shared/assets/icons/Hotline";
 import { Geist, Geist_Mono } from "next/font/google";
-import BackToTopButton from "@/components/back-to-top-button";
-import TheFooter from "@/components/the-footer";
-import TheHeader from "@/components/the-header";
+import BackToTopButton from "@/components/BackToTopButton";
+import TheFooter from "@/components/TheFooter";
+import TheHeader from "@/components/TheHeader";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",

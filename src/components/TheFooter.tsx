@@ -6,7 +6,7 @@ import ZaloIcon from "@/shared/assets/icons/ZaloIcon";
 import EmailIcon from "@/shared/assets/icons/EmailIcon";
 import LinkedIn from "@/shared/assets/icons/LinkedIn";
 import { projects } from "@/app/libs/data";
-import PopupForm from "@/components/popup-form";
+import PopupForm from "@/components/PopupForm";
 
 export const social_media = [
   { name: "zalo", href: "https://zalo.me/0909751772", icon: <ZaloIcon /> },

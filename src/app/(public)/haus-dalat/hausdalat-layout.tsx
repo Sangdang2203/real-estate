@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import CustomTabPanel, { tabPanel } from "@/components/custom-tabpanel";
+import CustomTabPanel, { tabPanel } from "@/components/CustomTabPanel";
 import { Box, Tabs, Tab, Typography } from "@mui/material";
 
 import haus_1bedroom from "@/images/haus_dalat/haus_1bedroom.jpg";

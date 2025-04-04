@@ -1,4 +1,4 @@
-import CustomCarousel from "@/components/custom-carousel";
+import CustomCarousel from "@/components/CustomCarousel";
 import banner from "@/images/eaton_park/banner.jpg";
 import { Typography } from "@mui/material";
 import Image from "next/image";

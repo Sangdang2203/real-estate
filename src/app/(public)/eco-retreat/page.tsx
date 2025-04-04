@@ -3,7 +3,7 @@ import { projects } from "@/app/libs/data";
 import { Typography } from "@mui/material";
 import image from "@/images/eco_retreat/EcoRetreat_image_21.jpg";
 import EcoRetreatProject from "./ecoretreat-project";
-import Sidebar from "@/components/sidebar";
+import Sidebar from "@/components/Sidebar";
 
 export const metadata: Metadata = {
   title: "Eco Retreat Long An - Viên ngọc bên sông Vàm Cỏ",
