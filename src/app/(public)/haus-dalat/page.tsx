@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import SideBar from "@/components/Sidebar";
+import SideBar from "@/components/SideBar";
 import { projects } from "@/app/libs/data";
 import { Typography } from "@mui/material";
 import HausDalatProject from "./hausdalat-project";

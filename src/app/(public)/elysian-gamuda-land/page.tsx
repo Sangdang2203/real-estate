@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import SideBar from "@/components/Sidebar";
+import SideBar from "@/components/SideBar";
 import ElysianProject from "./elysian-project";
 import { Typography } from "@mui/material";
 import { projects } from "@/app/libs/data";

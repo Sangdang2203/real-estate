@@ -3,7 +3,7 @@ import { projects } from "@/app/libs/data";
 import { Typography } from "@mui/material";
 import image from "@/images/eco_retreat/EcoRetreat_image_21.jpg";
 import EcoRetreatProject from "./ecoretreat-project";
-import Sidebar from "@/components/Sidebar";
+import SideBar from "@/components/SideBar";
 
 export const metadata: Metadata = {
   title: "Eco Retreat Long An - Viên ngọc bên sông Vàm Cỏ",
@@ -46,7 +46,7 @@ export default function Page() {
       {project !== null ? (
         <div className="mb-14">
           <div className="flex justify-end items-center">
-            <Sidebar />
+            <SideBar />
           </div>
           <EcoRetreatProject />
         </div>
