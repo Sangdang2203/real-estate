@@ -11,7 +11,7 @@ import MenuIcon from "@/icons/MenuIcon";
 import CloseIcon from "@/icons/CLoseIcon";
 import InputSearch from "@/components/input-search";
 import { navLinks } from "@/app/libs/data";
-import PopupComponent from "./popup";
+import Popup from "./popup";
 
 const TheHeader: React.FC<InputSearchProps> = ({ onSearch }) => {
   const [navigation, setNavigation] = React.useState(false);
@@ -88,7 +88,7 @@ const TheHeader: React.FC<InputSearchProps> = ({ onSearch }) => {
               ))}
         </div>
         <div className="w-full fixed flex justify-center items-center bottom-0 right-0 bg-white py-2 sm:hidden">
-          <PopupComponent />
+          <Popup />
         </div>
       </div>
     </nav>

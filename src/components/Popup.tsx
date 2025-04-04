@@ -21,7 +21,7 @@ import {
   ListItemText,
 } from "@mui/material";
 
-export default function PopupComponent() {
+export default function Popup() {
   const [open, setOpen] = React.useState(false);
   const [project, setProject] = React.useState<string[]>([]);
 

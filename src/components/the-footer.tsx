@@ -6,7 +6,7 @@ import ZaloIcon from "@/shared/assets/icons/ZaloIcon";
 import EmailIcon from "@/shared/assets/icons/EmailIcon";
 import LinkedIn from "@/shared/assets/icons/LinkedIn";
 import { projects } from "@/app/libs/data";
-import PopupComponent from "./popup";
+import Popup from "./popup";
 
 export const social_media = [
   { name: "zalo", href: "https://zalo.me/0909751772", icon: <ZaloIcon /> },
@@ -30,7 +30,7 @@ const TheFooter = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2">
           <div className="md:flex flex-col justify-start items-center">
             <div className="hidden md:flex">
-              <PopupComponent />
+              <Popup />
             </div>
             <div className="flex justify-center items-center mt-4">
               {social_media.length > 0 &&
