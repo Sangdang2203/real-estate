@@ -42,9 +42,15 @@ const TheHeader: React.FC<InputSearchProps> = ({ onSearch }) => {
         </div>
 
         <div
-          className="block z-50 md:flex items-center"
+          className="z-50 flex items-center text-[#7D614B]"
           onClick={handleNavigation}
         >
+          <Typography
+            variant="body1"
+            className="hidden md:block uppercase cursor-pointer font-medium"
+          >
+            menu
+          </Typography>
           <div className="block w-[35.36px] h-[85.71px] hover:opacity-80 cursor-pointer z-50 mr-4">
             {navigation ? <CloseIcon /> : <MenuIcon />}
           </div>
@@ -56,36 +62,20 @@ const TheHeader: React.FC<InputSearchProps> = ({ onSearch }) => {
           navigation ? "block" : "hidden"
         }`}
       >
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-10 max-w-[669px] h-[295px]">
+        <div className="grid grid-cols-2 md:grid-cols-5">
           {navLinks.length > 0 &&
-            navLinks
-              .reduce<NavLink[][]>((acc, link, index) => {
-                if (index % 2 === 0) acc.push([]);
-                acc[acc.length - 1].push(link);
-                return acc;
-              }, [])
-              .map((group, groupIndex) => (
-                <div
-                  key={groupIndex}
-                  className="flex flex-col px-[64px] py-[32px]"
-                >
-                  {group.map((link) => (
-                    <Link
-                      key={link.path}
-                      href={link.path}
-                      className="text-[#7D614B] w-[315px] h-[77px]"
-                      onClick={closeNavigation}
-                    >
-                      <Typography
-                        variant="body1"
-                        className="uppercase font-semibold hover:pl-3 ease-linear duration-200"
-                      >
-                        {link.name}
-                      </Typography>
-                    </Link>
-                  ))}
-                </div>
-              ))}
+            navLinks.map((link: NavLink) => (
+              <Link
+                key={link.path}
+                href={link.path}
+                className="text-[#7D614B] text-center p-5 md:p-10"
+                onClick={closeNavigation}
+              >
+                <Typography className="text-sm md:text-lg uppercase font-semibold hover:pl-3 ease-linear duration-200">
+                  {link.name}
+                </Typography>
+              </Link>
+            ))}
         </div>
         <div className="w-full fixed flex justify-center items-center bottom-0 right-0 bg-white py-2 sm:hidden">
           <PopupForm />
