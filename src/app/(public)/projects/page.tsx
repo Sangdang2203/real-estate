@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import ProjectList from "./project-list";
 
 export const metadata: Metadata = {
-  title: "Real Estate List",
+  title: "Danh sách bất động sản",
   description: "Danh sách bất động sản.",
   keywords: ["real estate", "bat dong san"],
 };

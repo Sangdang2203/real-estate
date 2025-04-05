@@ -1,4 +1,4 @@
-import { NavLink, Project } from "../interfaces";
+import { NavLink, Project, Unit } from "../interfaces";
 
 import elysian_favicon from "@/images/elysian/favicon.png";
 import haus_favicon from "@/images/haus_dalat/favicon.jpeg";
@@ -19,10 +19,6 @@ export const navLinks: NavLink[] = [
   {
     name: "trang chủ",
     path: "/",
-  },
-  {
-    name: "giới thiệu",
-    path: "/gioi-thieu",
   },
   {
     name: "dự án",
@@ -209,5 +205,88 @@ export const projects: Project[] = [
       title: "celesta gold",
       src: celestaRise_favicon,
     },
+  },
+];
+
+export const units: Unit[] = [
+  {
+    id: 1,
+    name: "string",
+    projectUrl: "string",
+    description: "string",
+    images: [
+      {
+        alt: "eco retreat long an",
+        title: "eco retreat long an",
+        src: ecoretreat_longan,
+      },
+    ],
+    price: "string",
+    currency: "string",
+    status: "available",
+  },
+  {
+    id: 5,
+    name: "string",
+    projectUrl: "string",
+    description: "string",
+    images: [
+      {
+        alt: "eco retreat long an",
+        title: "eco retreat long an",
+        src: ecoretreat_longan,
+      },
+    ],
+    price: "string",
+    currency: "string",
+    status: "available",
+  },
+  {
+    id: 2,
+    name: "string",
+    projectUrl: "string",
+    description: "string",
+    images: [
+      {
+        alt: "eco retreat long an",
+        title: "eco retreat long an",
+        src: ecoretreat_longan,
+      },
+    ],
+    price: "string",
+    currency: "string",
+    status: "available",
+  },
+  {
+    id: 3,
+    name: "string",
+    projectUrl: "string",
+    description: "string",
+    images: [
+      {
+        alt: "eco retreat long an",
+        title: "eco retreat long an",
+        src: ecoretreat_longan,
+      },
+    ],
+    price: "string",
+    currency: "string",
+    status: "available",
+  },
+  {
+    id: 4,
+    name: "string",
+    projectUrl: "string",
+    description: "string",
+    images: [
+      {
+        alt: "eco retreat long an",
+        title: "eco retreat long an",
+        src: ecoretreat_longan,
+      },
+    ],
+    price: "string",
+    currency: "string",
+    status: "available",
   },
 ];

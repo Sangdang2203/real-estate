@@ -5,16 +5,17 @@ import Link from "next/link";
 import Image from "next/image";
 
 import { Typography } from "@mui/material";
-import { InputSearchProps, NavLink } from "@/app/interfaces";
+import { InputSearchProps, NavLink, Project } from "@/app/interfaces";
 import logo from "@/images/logo.png";
 import MenuIcon from "@/icons/MenuIcon";
 import CloseIcon from "@/icons/CLoseIcon";
 import InputSearch from "@/components/InputSearch";
-import { navLinks } from "@/app/libs/data";
+import { navLinks, projects } from "@/app/libs/data";
 import PopupForm from "@/components/PopupForm";
 
 const TheHeader: React.FC<InputSearchProps> = ({ onSearch }) => {
   const [navigation, setNavigation] = React.useState(false);
+  const [showProjects, setShowProjects] = React.useState(false);
 
   const handleNavigation = () => {
     setNavigation(!navigation);
@@ -22,6 +23,14 @@ const TheHeader: React.FC<InputSearchProps> = ({ onSearch }) => {
 
   const closeNavigation = () => {
     setNavigation(false);
+  };
+
+  const handleShowProjects = () => {
+    setShowProjects(true);
+  };
+
+  const handleHiddenProjects = () => {
+    setShowProjects(false);
   };
 
   return (
@@ -62,19 +71,49 @@ const TheHeader: React.FC<InputSearchProps> = ({ onSearch }) => {
           navigation ? "block" : "hidden"
         }`}
       >
-        <div className="grid grid-cols-2 md:grid-cols-5">
+        <div className="grid grid-cols-1 md:grid-cols-4">
           {navLinks.length > 0 &&
             navLinks.map((link: NavLink) => (
-              <Link
+              <div
                 key={link.path}
-                href={link.path}
-                className="text-[#7D614B] text-center p-5 md:p-10"
-                onClick={closeNavigation}
+                onMouseEnter={
+                  link.path === "/projects" ? handleShowProjects : undefined
+                }
+                onMouseLeave={
+                  link.path === "/projects" ? handleHiddenProjects : undefined
+                }
               >
-                <Typography className="text-sm md:text-lg uppercase font-semibold hover:pl-3 ease-linear duration-200">
-                  {link.name}
-                </Typography>
-              </Link>
+                <Link
+                  href={link.path}
+                  className="text-[#7D614B] text-center p-5 md:p-10"
+                  onClick={closeNavigation}
+                >
+                  <Typography className="text-sm md:text-lg uppercase font-semibold hover:pl-3 ease-linear duration-200">
+                    {link.name}
+                  </Typography>
+                </Link>
+                {link.path === "/projects" && showProjects && (
+                  <div className="w-full rounded-lg bg-white text-black shadow-lg p-10">
+                    <div onClick={closeNavigation}>
+                      {projects.length > 0 &&
+                        projects.map((item: Project) => (
+                          <Link
+                            key={`${item.id}-${item.name}`}
+                            href={item.projectUrl}
+                            className="text-[#7D614B] uppercase"
+                          >
+                            <Typography
+                              variant="body1"
+                              className="hover:border-r-4 hover:bg-yellow-100 hover:border-[#7D614B] p-2"
+                            >
+                              {item.name}
+                            </Typography>
+                          </Link>
+                        ))}
+                    </div>
+                  </div>
+                )}
+              </div>
             ))}
         </div>
         <div className="w-full fixed flex justify-center items-center bottom-0 right-0 bg-white py-2 sm:hidden">

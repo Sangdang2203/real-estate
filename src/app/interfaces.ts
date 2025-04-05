@@ -46,6 +46,17 @@ export interface Project {
   favicon: ImageProp;
 }
 
+export interface Unit {
+  id: number;
+  name: string;
+  projectUrl: string;
+  description: string;
+  images: ImageProp[];
+  price: string;
+  currency: string;
+  status: string;
+}
+
 export interface InputSearchProps {
   onSearch: (results: Project[]) => void;
 }

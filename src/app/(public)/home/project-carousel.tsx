@@ -2,9 +2,9 @@ import React from "react";
 import { projects } from "@/app/libs/data";
 import { Typography } from "@mui/material";
 import { Project } from "@/app/interfaces";
-import ProjectItem from "@/components/ProjectItem";
 import TheHeaderComponent from "@/components/TheHeader";
 import CarouselItems from "@/components/CarouselItem";
+import ItemCard from "@/components/ItemCard";
 
 export default function ProjectCarousel() {
   const [filteredProjects, setFilteredProjects] = React.useState(projects);
@@ -89,7 +89,7 @@ export default function ProjectCarousel() {
               .slice(currentSlide, currentSlide + (isMobile ? 1 : 4))
               .map((project) => (
                 <div key={project.id}>
-                  <ProjectItem project={project} />
+                  <ItemCard item={project} />
                 </div>
               ))
           ) : (
