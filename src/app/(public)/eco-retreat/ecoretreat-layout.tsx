@@ -116,7 +116,7 @@ export default function EcoRetreatLayout() {
       </h2>
       <Image
         src={MasterLayout}
-        className="block w-full h-auto rounded-t-lg md:rounded-lg"
+        className="block w-full min-h-[220px] sm:min-h-[420px] lg:min-h-[600px] rounded-t-lg md:rounded-lg"
         alt="eco retreat master layout"
       />
       <div className="hidden sm:block">
