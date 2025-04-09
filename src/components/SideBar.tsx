@@ -14,6 +14,7 @@ import ContactPhoneIcon from "@mui/icons-material/ContactPhone";
 import PaymentIcon from "@mui/icons-material/Payment";
 import SectionIcon from "@/shared/assets/icons/Section";
 import { Button, Drawer, Tooltip } from "@mui/material";
+import PopupForm from "./PopupForm";
 
 const sideBarItems = [
   {
@@ -74,6 +75,9 @@ const SideBar = () => {
             </ListItemButton>
           </ListItem>
         ))}
+        <div className="my-4 mx-2">
+          <PopupForm />
+        </div>
       </List>
     </Box>
   );
