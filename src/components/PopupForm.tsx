@@ -24,7 +24,11 @@ const PopupForm = () => {
     <>
       <Button onClick={handleClickOpen} className="fancy hover:opacity-80">
         <span className="top-key"></span>
-        <Link href="https://forms.gle/bjKMAmmwJs3NCXkn9" className="text">
+        <Link
+          href="https://forms.gle/bjKMAmmwJs3NCXkn9"
+          target="_blank"
+          className="text"
+        >
           Đăng ký nhận thông tin
         </Link>
         <span className="bottom-key-1"></span>
