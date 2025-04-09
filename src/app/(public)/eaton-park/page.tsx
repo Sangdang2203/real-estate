@@ -4,6 +4,7 @@ import EatonParkProject from "./eatonpark-project";
 import { Metadata } from "next";
 import image from "@/images/eaton_park/model_housing.jpg";
 import SideBar from "@/components/SideBar";
+import { updatingMessage } from "@/shared/constants";
 
 export const metadata: Metadata = {
   title: "Eaton Park by Gamuda Land - Khu phức hợp căn hộ hạng sang.",
@@ -50,9 +51,7 @@ export default function Page() {
         </div>
       ) : (
         <div className="flex justify-center items-center">
-          <Typography variant="body2" className="capitalize">
-            đang cập nhật ...
-          </Typography>
+          <Typography>{updatingMessage}</Typography>
         </div>
       )}
     </>

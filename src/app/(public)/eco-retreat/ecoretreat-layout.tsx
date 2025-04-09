@@ -21,6 +21,7 @@ import ShopVilla from "@/images/eco_retreat/ShopVilla.jpg";
 import ShopVilla_Layout from "@/images/eco_retreat/ShopVilla_layout.jpg";
 import ShopVilla_Layout_01 from "@/images/eco_retreat/ShopVilla_layout_01.jpg";
 import ShopVilla_Layout_02 from "@/images/eco_retreat/ShopVilla_layout_02.jpg";
+import MasterLayout from "@/images/eco_retreat/EcoRetreat_MB.jpg";
 import Image from "next/image";
 
 const images = [
@@ -113,6 +114,11 @@ export default function EcoRetreatLayout() {
       <h2 className="text-[#8b5a3e] py-2 font-semibold uppercase text-center leading-loose md:text-2xl">
         mặt bằng thiết kế
       </h2>
+      <Image
+        src={MasterLayout}
+        className="w-full h-auto rounded-t-lg md:rounded-lg"
+        alt="eco retreat master layout"
+      />
       <div className="hidden sm:block">
         <CustomCarousel images={images} />
       </div>

@@ -209,84 +209,84 @@ export const projects: Project[] = [
 ];
 
 export const units: Unit[] = [
-  {
-    id: 1,
-    name: "string",
-    projectUrl: "string",
-    description: "string",
-    images: [
-      {
-        alt: "eco retreat long an",
-        title: "eco retreat long an",
-        src: ecoretreat_longan,
-      },
-    ],
-    price: "string",
-    currency: "string",
-    status: "available",
-  },
-  {
-    id: 5,
-    name: "string",
-    projectUrl: "string",
-    description: "string",
-    images: [
-      {
-        alt: "eco retreat long an",
-        title: "eco retreat long an",
-        src: ecoretreat_longan,
-      },
-    ],
-    price: "string",
-    currency: "string",
-    status: "available",
-  },
-  {
-    id: 2,
-    name: "string",
-    projectUrl: "string",
-    description: "string",
-    images: [
-      {
-        alt: "eco retreat long an",
-        title: "eco retreat long an",
-        src: ecoretreat_longan,
-      },
-    ],
-    price: "string",
-    currency: "string",
-    status: "available",
-  },
-  {
-    id: 3,
-    name: "string",
-    projectUrl: "string",
-    description: "string",
-    images: [
-      {
-        alt: "eco retreat long an",
-        title: "eco retreat long an",
-        src: ecoretreat_longan,
-      },
-    ],
-    price: "string",
-    currency: "string",
-    status: "available",
-  },
-  {
-    id: 4,
-    name: "string",
-    projectUrl: "string",
-    description: "string",
-    images: [
-      {
-        alt: "eco retreat long an",
-        title: "eco retreat long an",
-        src: ecoretreat_longan,
-      },
-    ],
-    price: "string",
-    currency: "string",
-    status: "available",
-  },
+  // {
+  //   id: 1,
+  //   name: "string",
+  //   projectUrl: "string",
+  //   description: "string",
+  //   images: [
+  //     {
+  //       alt: "eco retreat long an",
+  //       title: "eco retreat long an",
+  //       src: ecoretreat_longan,
+  //     },
+  //   ],
+  //   price: "string",
+  //   currency: "string",
+  //   status: "available",
+  // },
+  // {
+  //   id: 5,
+  //   name: "string",
+  //   projectUrl: "string",
+  //   description: "string",
+  //   images: [
+  //     {
+  //       alt: "eco retreat long an",
+  //       title: "eco retreat long an",
+  //       src: ecoretreat_longan,
+  //     },
+  //   ],
+  //   price: "string",
+  //   currency: "string",
+  //   status: "available",
+  // },
+  // {
+  //   id: 2,
+  //   name: "string",
+  //   projectUrl: "string",
+  //   description: "string",
+  //   images: [
+  //     {
+  //       alt: "eco retreat long an",
+  //       title: "eco retreat long an",
+  //       src: ecoretreat_longan,
+  //     },
+  //   ],
+  //   price: "string",
+  //   currency: "string",
+  //   status: "available",
+  // },
+  // {
+  //   id: 3,
+  //   name: "string",
+  //   projectUrl: "string",
+  //   description: "string",
+  //   images: [
+  //     {
+  //       alt: "eco retreat long an",
+  //       title: "eco retreat long an",
+  //       src: ecoretreat_longan,
+  //     },
+  //   ],
+  //   price: "string",
+  //   currency: "string",
+  //   status: "available",
+  // },
+  // {
+  //   id: 4,
+  //   name: "string",
+  //   projectUrl: "string",
+  //   description: "string",
+  //   images: [
+  //     {
+  //       alt: "eco retreat long an",
+  //       title: "eco retreat long an",
+  //       src: ecoretreat_longan,
+  //     },
+  //   ],
+  //   price: "string",
+  //   currency: "string",
+  //   status: "available",
+  // },
 ];

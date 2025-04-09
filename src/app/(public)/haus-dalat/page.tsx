@@ -4,6 +4,7 @@ import { projects } from "@/app/libs/data";
 import { Typography } from "@mui/material";
 import HausDalatProject from "./hausdalat-project";
 import image from "@/images/haus_dalat/haus_dalat_1.jpg";
+import { updatingMessage } from "@/shared/constants";
 
 export const metadata: Metadata = {
   title: "Haus Dalat - bất động sản tiêu chuẩn ESG đầu tiên tại Việt Nam",
@@ -53,9 +54,7 @@ export default function Page() {
         </div>
       ) : (
         <div className="flex justify-center items-center">
-          <Typography variant="body2" className="capitalize">
-            đang cập nhật ...
-          </Typography>
+          <Typography>{updatingMessage}</Typography>
         </div>
       )}
     </>

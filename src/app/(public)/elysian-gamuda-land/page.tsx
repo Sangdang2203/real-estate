@@ -4,6 +4,7 @@ import ElysianProject from "./elysian-project";
 import { Typography } from "@mui/material";
 import { projects } from "@/app/libs/data";
 import image from "@/images/elysian/elysian.jpg";
+import { updatingMessage } from "@/shared/constants";
 
 export const metadata: Metadata = {
   title: "Elysian by Gamuda Land - Dự án bất động sản xanh",
@@ -52,9 +53,7 @@ export default function Page() {
         </div>
       ) : (
         <div className="flex justify-center items-center">
-          <Typography variant="body2" className="capitalize">
-            đang cập nhật ...
-          </Typography>
+          <Typography>{updatingMessage}</Typography>
         </div>
       )}
     </>

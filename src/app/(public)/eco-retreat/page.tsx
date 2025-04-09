@@ -4,6 +4,7 @@ import { Typography } from "@mui/material";
 import image from "@/images/eco_retreat/EcoRetreat_image_21.jpg";
 import EcoRetreatProject from "./ecoretreat-project";
 import SideBar from "@/components/SideBar";
+import { updatingMessage } from "@/shared/constants";
 
 export const metadata: Metadata = {
   title: "Eco Retreat Long An - Viên ngọc bên sông Vàm Cỏ",
@@ -52,9 +53,7 @@ export default function Page() {
         </div>
       ) : (
         <div className="flex justify-center items-center">
-          <Typography variant="body2" className="capitalize">
-            đang cập nhật ...
-          </Typography>
+          <Typography>{updatingMessage}</Typography>
         </div>
       )}
     </>
