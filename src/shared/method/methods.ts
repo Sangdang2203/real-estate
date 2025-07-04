@@ -1,4 +1,4 @@
-import { ApiResponse, CustomerMessage } from "@/app/interfaces";
+import { ApiResponse, CustomerMessage } from "@/app/libs/interfaces";
 import { apiKey, sheetId } from "../constants";
 
 export async function CreateContact(contact: CustomerMessage) {

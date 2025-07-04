@@ -6,15 +6,6 @@ import elysian_banner from "@/images/elysian/elysian_banner.jpg";
 export default function ElysianIntroduction() {
   return (
     <>
-      <Typography className="py-2 text-sm md:text-lg">
-        <strong className="text-green-700 ">Dự án Elysian</strong> là một một bộ
-        sưu tập các ngôi nhà tinh tế nằm giữa khu rừng đô thị sinh thái, mang
-        đến cuộc sống xanh bền vững, với thiết kế Biophilic đầy cảm hứng tạo nên
-        một cộng đồng thịnh vượng. Dự án tọa lạc tại đường Lò Lu, phường Trường
-        Thạnh,Thành Phố Thủ Đức, được Chủ đầu tư Gamuda Land phát triển có quy
-        mô 4 block cung ứng 1396 căn hộ chuẩn xanh.
-      </Typography>
-
       <div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           <Image
@@ -25,6 +16,12 @@ export default function ElysianIntroduction() {
             loading="eager"
           />
           <div className="h-auto">
+            <Typography className="py-2 text-sm md:text-lg">
+              <strong className="text-green-700 ">Dự án Elysian</strong> tọa lạc
+              tại đường Lò Lu, phường Trường Thạnh,Thành Phố Thủ Đức, được Chủ
+              đầu tư Gamuda Land phát triển có quy mô 4 block cung ứng 1396 căn
+              hộ chuẩn xanh.
+            </Typography>
             <Typography className="text-sm md:text-lg">
               <strong className="text-green-700 ">Elysian</strong> là một một bộ
               sưu tập các ngôi nhà tinh tế nằm giữa khu rừng đô thị sinh thái,
@@ -34,7 +31,7 @@ export default function ElysianIntroduction() {
               nghi hiện đại và vẫn trong lành yên ả, nơi chăm chút từng trải
               nghiệm sống, nâng niu thỏa mãn mọi giác quan.
             </Typography>
-            <div className="grid grid-cols-2 gap-6 my-5">
+            <div className="grid grid-cols-2 my-5">
               <div>
                 <Typography className="text-sm md:text-lg">
                   Chủ đầu tư:
@@ -53,9 +50,6 @@ export default function ElysianIntroduction() {
                 </Typography>
 
                 <Typography className="text-sm md:text-lg">Pháp lý:</Typography>
-                <Typography className="text-sm md:text-lg">
-                  Hiện trạng:
-                </Typography>
               </div>
               <div>
                 <Typography className="text-sm md:text-lg">
@@ -77,21 +71,16 @@ export default function ElysianIntroduction() {
                 <Typography className="text-sm md:text-lg">
                   Sở hữu lâu dài
                 </Typography>
-                <Typography className="text-sm md:text-lg">
-                  Đã xây tới tầng 4
-                </Typography>
               </div>
             </div>
 
             <Typography className="text-sm md:text-lg">
               Chủ đầu tư Gamuda Land cam kết xây dựng Elysian với thiết kế đặc
               trưng độc đáo, tập trung chính vào bảo vệ toàn diện không gian
-              sống hòa quyện với thiên nhiên và đa dạng sinh học. Công ty sẽ
-              không ngừng cải tiến sản phẩm để nâng cao chất lượng các dự án
-              thiết kế xanh cho các dự án ra mắt sắp tới. Trong tương lai gần,
-              khách hàng sẽ thấy nhiều dự án mang phong cách Biophilic của
-              Gamuda Land, với sự quy hoạch tổng thể để tạo ra nhiều “rừng trong
-              phố” hơn và trồng cây nhiều hơn.
+              sống hòa quyện với thiên nhiên và đa dạng sinh học. Khách hàng sẽ
+              thấy nhiều dự án mang phong cách Biophilic của Gamuda Land, với sự
+              quy hoạch tổng thể để tạo ra nhiều “rừng trong phố” hơn và trồng
+              cây nhiều hơn.
             </Typography>
             <Image
               className="rounded-lg w-full h-auto mt-3"

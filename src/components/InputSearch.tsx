@@ -5,7 +5,7 @@ import Divider from "@mui/material/Divider";
 import IconButton from "@mui/material/IconButton";
 import SearchIcon from "@mui/icons-material/Search";
 import { projects } from "@/app/libs/data";
-import { InputSearchProps } from "@/app/interfaces";
+import { InputSearchProps } from "@/app/libs/interfaces";
 
 const InputSearch: React.FC<InputSearchProps> = ({ onSearch }) => {
   const [nameSearch, setNameSearch] = React.useState("");

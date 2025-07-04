@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import { projects } from "@/app/libs/data";
-import { Project } from "@/app/interfaces";
+import { Project } from "@/app/libs/interfaces";
 import TheHeader from "@/components/TheHeader";
 import ItemList from "@/components/ItemList";
 import ProjectItem from "./project-item";

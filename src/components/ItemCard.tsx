@@ -13,7 +13,7 @@ import {
 } from "@mui/material";
 import ShareIcon from "@/shared/assets/icons/ShareIcon";
 import ReadmoreIcon from "@/shared/assets/icons/ReadmoreIcon";
-import { ImageProp } from "@/app/interfaces";
+import { ImageProp } from "@/app/libs/interfaces";
 
 interface Item {
   id: number;

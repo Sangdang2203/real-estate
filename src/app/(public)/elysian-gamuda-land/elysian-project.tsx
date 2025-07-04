@@ -39,13 +39,13 @@ export default function ElysianProject() {
         </h2>
         <div className="uppercase text-[#8b5a3e] text-center leading-loose">
           <Typography className="text-sm md:text-xl py-1">
-            Trả trước 5% ký Hợp Đồng Mua Bán.
+            Trả trước 5% ký ngay Hợp Đồng Mua Bán.
           </Typography>
           <Typography className="text-sm md:text-xl py-1">
-            Thanh toán tiến độ đến đủ 65% nhận nhà ở ngay | khai thác cho thuê
+            Thanh toán tiến độ đến đủ 80% nhận nhà ở ngay | khai thác cho thuê
           </Typography>
           <Typography className="text-sm md:text-xl py-1">
-            35% cuối thanh toán tiến độ trong 12 tháng.
+            20% cuối thanh toán tiến độ sau khi nhận nhà.
           </Typography>
         </div>
         <Image
@@ -56,6 +56,17 @@ export default function ElysianProject() {
           priority
           loading="eager"
         />
+        <video
+          controls
+          width="100%"
+          height="auto"
+          autoPlay
+          title="Elysian"
+          muted
+          className="rounded-lg my-4"
+        >
+          <source src="/videos/elysian_tiendothicong.mp4" type="video/mp4" />
+        </video>
       </section>
 
       <ReturnButton />

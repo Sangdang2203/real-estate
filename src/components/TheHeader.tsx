@@ -5,13 +5,14 @@ import Link from "next/link";
 import Image from "next/image";
 
 import { Typography } from "@mui/material";
-import { InputSearchProps, NavLink, Project } from "@/app/interfaces";
+import { InputSearchProps, NavLink, Project } from "@/app/libs/interfaces";
 import logo from "@/images/logo.png";
 import MenuIcon from "@/icons/MenuIcon";
 import CloseIcon from "@/icons/CLoseIcon";
 import InputSearch from "@/components/InputSearch";
 import { navLinks, projects } from "@/app/libs/data";
 import PopupForm from "@/components/PopupForm";
+import DarkModeToggle from "./ui/DarkMode";
 
 const TheHeader: React.FC<InputSearchProps> = ({ onSearch }) => {
   const [navigation, setNavigation] = React.useState(false);
@@ -50,18 +51,21 @@ const TheHeader: React.FC<InputSearchProps> = ({ onSearch }) => {
           <InputSearch onSearch={onSearch} />
         </div>
 
-        <div
-          className="z-50 flex items-center text-[#7D614B]"
-          onClick={handleNavigation}
-        >
-          <Typography
-            variant="body1"
-            className="hidden md:block uppercase cursor-pointer font-medium"
+        <div className="flex items-center">
+          <DarkModeToggle />
+          <div
+            className="z-50 flex items-center text-yellow-600"
+            onClick={handleNavigation}
           >
-            menu
-          </Typography>
-          <div className="block w-[35.36px] h-[85.71px] hover:opacity-80 cursor-pointer z-50 mr-4">
-            {navigation ? <CloseIcon /> : <MenuIcon />}
+            <Typography
+              variant="body1"
+              className="hidden md:block uppercase cursor-pointer font-medium pr-2"
+            >
+              menu
+            </Typography>
+            <div className="block hover:opacity-80 cursor-pointer z-50">
+              {navigation ? <CloseIcon /> : <MenuIcon />}
+            </div>
           </div>
         </div>
       </div>

@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import NextStep from "@/icons/NextStep";
 import PreviousStep from "@/icons/PreviousStep";
-import { ImageProp } from "@/app/interfaces";
+import { ImageProp } from "@/app/libs/interfaces";
 
 interface CarouselProps {
   images: ImageProp[];

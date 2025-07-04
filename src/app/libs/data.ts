@@ -1,4 +1,4 @@
-import { NavLink, Project, Unit } from "../interfaces";
+import { NavLink, Project, Unit } from "./interfaces";
 
 import elysian_favicon from "@/images/elysian/favicon.png";
 import haus_favicon from "@/images/haus_dalat/favicon.jpeg";

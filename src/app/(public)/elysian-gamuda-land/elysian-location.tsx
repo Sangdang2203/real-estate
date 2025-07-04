@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { Typography } from "@mui/material";
 import elysian_map from "@/images/elysian/elysian_map.jpg";
-import elysian_location from "@/images/elysian/elysian_location.webp";
 
 export default function ElysianLocation() {
   return (
@@ -20,15 +19,17 @@ export default function ElysianLocation() {
             cho cư dân không gian sống trong lành và thoáng mát.
           </Typography>
         </div>
-        <Image
-          src={elysian_location}
-          className="w-full h-auto rounded-b-lg z-0"
-          alt="Elysian Location"
-          title="Elysian Location"
-          priority
-          loading="eager"
-        />
-
+        <video
+          controls
+          width="100%"
+          height="auto"
+          autoPlay
+          title="Elysian"
+          muted
+          className="rounded-lg"
+        >
+          <source src="/videos/elysian_teaser.mp4" type="video/mp4" />
+        </video>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 my-4">
           <Image
             src={elysian_map}

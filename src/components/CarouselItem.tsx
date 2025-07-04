@@ -1,4 +1,4 @@
-import { Project } from "@/app/interfaces";
+import { Project } from "@/app/libs/interfaces";
 import { FiberManualRecord } from "@mui/icons-material";
 import React from "react";
 

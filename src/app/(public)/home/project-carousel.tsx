@@ -1,7 +1,7 @@
 import React from "react";
 import { projects } from "@/app/libs/data";
 import { Typography } from "@mui/material";
-import { Project } from "@/app/interfaces";
+import { Project } from "@/app/libs/interfaces";
 import TheHeaderComponent from "@/components/TheHeader";
 import CarouselItems from "@/components/CarouselItem";
 import ItemCard from "@/components/ItemCard";

@@ -1,4 +1,4 @@
-import { Unit } from "@/app/interfaces";
+import { Unit } from "@/app/libs/interfaces";
 import ItemCard from "@/components/ItemCard";
 
 interface Props {
